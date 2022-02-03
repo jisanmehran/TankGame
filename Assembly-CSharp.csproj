@@ -36,7 +36,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BulletScript\BulletScript.cs" />
+     <Compile Include="Assets\Scripts\Unready Scripts\BulletScript.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\TankScript.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\FiringScript.cs" />
+     <Compile Include="Assets\Scripts\Unready Scripts\TurretScript.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity 2021.1.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
