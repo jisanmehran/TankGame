@@ -16,12 +16,12 @@ public class BulletScript : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.gameObject.tag == "Tank")
-        {
-            Destroy(gameObject);
-            //other.gameObject.GetComponent<"The Tank's health script name here">().TakeDamage(damage);
-            //Health decrease here
-            //TakeDamage is the name of the damage function and damage is the parameter.
-        }
+        // if (other.gameObject.tag == "Tank")
+        // { 
+        //     //other.gameObject.GetComponent<"The Tank's health script name here">().TakeDamage(damage);
+        //     //Health decrease here
+        //     //TakeDamage is the name of the damage function and damage is the parameter.
+        // }
+        Destroy(gameObject);
     }
 }

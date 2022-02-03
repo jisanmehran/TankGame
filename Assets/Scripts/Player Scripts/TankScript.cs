@@ -21,19 +21,19 @@ public class TankScript : MonoBehaviour
 
     bool moveForward = false;
     bool moveReverse = false;
-    float moveSpeed = 0f;
-    float moveSpeedReverse = 0f;
-    float moveAcceleration = 0.1f;
-    float moveDeceleration = 0.20f;
-    float moveSpeedMax = 2.5f;
+    public float moveSpeed = 0f;
+    public float moveSpeedReverse = 0f;
+    public float moveAcceleration = 0.1f;
+    public float moveDeceleration = 0.20f;
+    public float moveSpeedMax = 2.5f;
 
     bool rotateRight = false;
     bool rotateLeft = false;
-    float rotateSpeedRight = 0f;
-    float rotateSpeedLeft = 0f;
-    float rotateAcceleration = 4f;
-    float rotateDeceleration = 10f;
-    float rotateSpeedMax = 130f;
+    public float rotateSpeedRight = 0f;
+    public float rotateSpeedLeft = 0f;
+    public float rotateAcceleration = 4f;
+    public float rotateDeceleration = 10f;
+    public float rotateSpeedMax = 130f;
 
 //Funtions
 

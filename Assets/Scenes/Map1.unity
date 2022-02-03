@@ -646,75 +646,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &877879879
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1044925587940456577, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044925587940456577, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044925587940456577, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1002915407
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044925587940456578, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044925587940456578, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044925587940456578, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.35185027
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044925587940456578, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044925587940456578, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044925587940456578, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044925587940456578, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044925587940456578, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044925587940456578, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044925587940456578, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044925587940456578, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1044925587940456589, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-      propertyPath: m_Name
-      value: Tank
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
 --- !u!1 &1085397369
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,7 +797,7 @@ Transform:
   - {fileID: 598496498}
   - {fileID: 1665390782}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1378201398
 GameObject:
@@ -1171,6 +1102,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1526108189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1526108191}
+  - component: {fileID: 1526108190}
+  m_Layer: 0
+  m_Name: TankSpawn2
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1526108190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526108189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf51d47e4683314da6c33a2504284f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tank2: {fileID: 1044925587940456589, guid: 80feb0d4767e03c46bf9c9b2bfc196b8, type: 3}
+  spawnPos: {fileID: 1526108191}
+--- !u!4 &1526108191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526108189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1632180796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,6 +1706,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2136548542}
+  - component: {fileID: 2136548543}
   m_Layer: 0
   m_Name: TankSpawn1
   m_TagString: Untagged
@@ -1749,5 +1726,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2136548543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136548541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 714e918c84b7ad44eb4a7a445d6daa7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tank1: {fileID: 1044925587940456589, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
+  spawnPos: {fileID: 2136548542}
