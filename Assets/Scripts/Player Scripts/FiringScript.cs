@@ -10,6 +10,8 @@ public class FiringScript : MonoBehaviour
     public float cd;
     public GameObject Tank; 
     public float speed = 2;
+    public bool TripleShot = false;
+    public float TSBtw;
     // Start is called before the first frame update
 
     void Start()
@@ -22,12 +24,23 @@ public class FiringScript : MonoBehaviour
     {
         if (Cooldown == false)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space) && TripleShot == false)
             {  
                 Cooldown = true;
                 timeBtwShots = cd;
                 GameObject shotBullet = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
-            }       
+            }  
+            else if (Input.GetKey(KeyCode.Space) && TripleShot == true)    
+            {
+                Cooldown = true;
+                timeBtwShots = cd;
+                GameObject shotBullet = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
+                //need wait
+                GameObject shotBullet2 = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
+                //need wait
+                GameObject shotBullet3 = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
+                TripleShot = false;
+            } 
         }
         else
         {

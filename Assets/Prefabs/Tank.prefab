@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1044925587940456577}
   - component: {fileID: 1044925587940456576}
   - component: {fileID: 1044925587940456591}
+  - component: {fileID: 4523627803307892567}
   - component: {fileID: 1044925587940456590}
   m_Layer: 0
   m_Name: Tank
@@ -31,8 +32,8 @@ Transform:
   m_LocalPosition: {x: -18, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5878220801329987929}
   - {fileID: 7706230909218474220}
+  - {fileID: 5878220801329987929}
   - {fileID: 2094229456081044044}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -136,6 +137,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4523627803307892567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044925587940456589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7937118a8ba0d8f41acce2ad49e56c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Connect: 0
+  FirePoint: {fileID: 6227759023262998922}
 --- !u!114 &1044925587940456590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,7 +289,7 @@ Transform:
   m_LocalScale: {x: 0.25, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1044925587940456578}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5280786057838903801
 SpriteRenderer:
@@ -358,7 +373,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 1044925587940456578}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &19251638756330416
 SpriteRenderer:
@@ -429,3 +444,4 @@ MonoBehaviour:
   cd: 1
   Tank: {fileID: 1044925587940456589}
   speed: 2
+  TripleShot: 0
