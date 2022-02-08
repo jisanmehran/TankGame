@@ -7,6 +7,7 @@ TagManager:
   - Shell
   - Tank
   - Servant
+  - SelectionImages
   layers:
   - Default
   - TransparentFX

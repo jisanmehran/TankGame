@@ -10,6 +10,7 @@ public class Control : MonoBehaviour
     private float timeBtwShots;
     public float cd;
     private int ServantNumber;
+    public bool Possessed;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,32 +24,39 @@ public class Control : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.R))
             {  
-                // GameObject[] objs = GameObject.FindGameObjectsWithTag("Servant");
-                // GameObject closestEnemy = null;
-                // float closestDistance;
-                // bool first = true;
-         
-                // foreach (var obj in objs)
-                // {
-                //     float distance = Vector2.Distance(obj.transform.position, transform.position);
-                //     if (first)
-                //     {
-                //     closestDistance = distance;
-                 
-                //     first = false;
-                //     }            
-                //     else if (distance < closestDistance)
-                //     {
-                //     closestEnemy = obj;
-                //     closestDistance = distance;
-                //     }                                                         
-                // }
-                // return closestEnemy;
-                Debug.Log("Switch??");
-                Cooldown = true;
-                timeBtwShots = cd;
-                gameObject.GetComponent<TankScript>().enabled = false;
-                //closestEnemy.GetComponent<TankScript>().enabled = true;
+                float distanceToClosestServant = Mathf.Infinity;
+                Servant closestServant = null;
+                //Edit Servant in the FindObjectsOfType to a component on the object you
+                //want to find nearest 
+                Servant[] allServants = GameObject.FindObjectsOfType<Servant>();
+
+                foreach (Servant currentServant in allServants)
+                {
+                    float distanceToServant = (currentServant.transform.position - this.transform.position).sqrMagnitude;
+                    if (distanceToServant < distanceToClosestServant)
+                    {
+                        distanceToClosestServant = distanceToServant;
+                        closestServant = currentServant;
+                    }
+                }
+                if (Possessed == false)
+                {
+                    Debug.Log("Switch To");
+                    Cooldown = true;
+                    timeBtwShots = cd;
+                    gameObject.GetComponent<TankScript>().enabled = false;
+                    closestServant.GetComponent<TankScript>().enabled = true;
+                    Possessed = true;
+                }
+                else if (Possessed == true)
+                {
+                    Debug.Log("Switch Back");
+                    Cooldown = true;
+                    timeBtwShots = cd;
+                    gameObject.GetComponent<TankScript>().enabled = true;
+                    closestServant.GetComponent<TankScript>().enabled = false;
+                }  
+                    
             }
         }
         else

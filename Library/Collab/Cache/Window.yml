@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Prefabs/Teleport Tank.prefab
-    - Assets/Scripts/Player Scripts/Special Tank Scripts/TeleportTankScript.cs
     - 
-    m_Values: 000000
+    m_Values: 01
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

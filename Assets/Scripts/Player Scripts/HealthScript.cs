@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthScript : MonoBehaviour
 {
 
-    public int maxHealth = 100;
     public int Health;
+    public int maxHealth = 2;
+    public int currentHealth;
+    public Slider slider;
 
 
     //public HealthBar healthBar;
@@ -29,5 +32,17 @@ public class HealthScript : MonoBehaviour
     void Update()
     {
 
+    }
+   
+    
+    public void SetMaxHealth(int maxHealth)
+    {
+        slider.maxValue = maxHealth;
+        slider.value = maxHealth;  
+    }
+
+    public void SetHealth(int currentHealth)
+    {
+        slider.value = currentHealth;
     }
 }

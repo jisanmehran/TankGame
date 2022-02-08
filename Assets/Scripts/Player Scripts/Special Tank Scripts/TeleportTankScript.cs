@@ -23,6 +23,8 @@ public class TeleportTankScript : MonoBehaviour
 
     {
 
+        elapsedTime += timeamountincrease * Time.deltaTime;
+
         //Detect if the player pressed e 
 
         if (Input.GetKeyDown(KeyCode.E))
@@ -30,10 +32,20 @@ public class TeleportTankScript : MonoBehaviour
         {
 
             TeleportEnabled = true;
-
-            TimeTracker();
+            
+            elapsedTime = 0;
 
         }
+
+
+        if (elapsedTime >= 5)
+
+        {
+
+            TeleportOff();
+
+        }
+
         
 
         if (TeleportEnabled == true)
@@ -70,24 +82,6 @@ public class TeleportTankScript : MonoBehaviour
     {
 
         Physics2D.IgnoreLayerCollision (8, 9, true);
-
-    }
-
-    private void TimeTracker()
-
-    {
-
-        elapsedTime += timeamountincrease * Time.deltaTime;
-
-        if (elapsedTime >= 5)
-
-        {
-
-            TeleportOff();
-
-            elapsedTime = 0;
-
-        }
 
     }
 
