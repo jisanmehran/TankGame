@@ -35,20 +35,10 @@ public class TankScript : MonoBehaviour
     public float rotateDeceleration = 10f;
     public float rotateSpeedMax = 130f;
 
-    //Health
-    public int maxHealth = 2;
-    public int currentHealth;
-    //public HealthBar healthBar;
 
 //Functions
 
 
-
-    void Start()
-    {
-        currentHealth = maxHealth;
-        //healthBar.SetMaxHealth(maxHealth);
-    }
 
 
     void Update ( )
@@ -121,23 +111,6 @@ public class TankScript : MonoBehaviour
         // }
 
     }
-
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Shell")
-        {
-            int Damage = 1;
-        }
-    }
-
-    void TakeDamage(int Damage)
-    {
-        currentHealth -= Damage;
-
-        //healthBar.SetHealth(CurrentHealth);
-    }
-
     // void trackStart()
     // {
     //     trackLeft.animator.SetBool("isMoving", true);

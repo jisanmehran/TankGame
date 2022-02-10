@@ -73,6 +73,8 @@ public class TeleportTankScript : MonoBehaviour
 
         Physics2D.IgnoreLayerCollision (8, 9, false);
 
+        Physics2D.IgnoreLayerCollision (8, 10, false);
+
         TeleportEnabled= false;
 
     }
@@ -82,6 +84,8 @@ public class TeleportTankScript : MonoBehaviour
     {
 
         Physics2D.IgnoreLayerCollision (8, 9, true);
+
+        Physics2D.IgnoreLayerCollision (8, 10, true);
 
     }
 

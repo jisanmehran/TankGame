@@ -8,6 +8,7 @@ TagManager:
   - Tank
   - Servant
   - SelectionImages
+  - VFX
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - 
   - TankLayer
   - WallLayer
-  - 
+  - BulletLayer
   - 
   - 
   - 
