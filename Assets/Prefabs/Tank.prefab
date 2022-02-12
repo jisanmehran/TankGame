@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1044925587940456591}
   - component: {fileID: 4523627803307892567}
   - component: {fileID: 1044925587940456590}
+  - component: {fileID: -8046345644857927619}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Tank
@@ -177,6 +178,18 @@ MonoBehaviour:
   rotateAcceleration: 8
   rotateDeceleration: 10
   rotateSpeedMax: 170
+--- !u!114 &-8046345644857927619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044925587940456589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa032c2eee7c5d4fac994e476f25dc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1911024658559518383
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,3 +458,4 @@ MonoBehaviour:
   Tank: {fileID: 1044925587940456589}
   speed: 2
   TripleShot: 0
+  TSBtw: 0

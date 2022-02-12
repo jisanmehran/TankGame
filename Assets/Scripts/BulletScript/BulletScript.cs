@@ -9,21 +9,40 @@ public class BulletScript : MonoBehaviour
     public float damage;
     public bool InVFX;
     public GameObject RangeVFX;
+    public bool Stop;
+    public GameObject TSTank;
+    public bool isTS;
     //public int damage;
     // Start is called before the first frame update
-    void FixedUpdate()
+    void Update()
     {
         if (InVFX == true)
         {
             this.transform.Translate(Vector2.up * modifiedSpeed * Time.deltaTime);
+            Debug.Log("true");
+        }
+        else if (Stop == true)
+        {
+            this.transform.Translate(Vector2.up * 0 * Time.deltaTime);
+            Debug.Log("stop");
         }
         else
         {
             this.transform.Translate(Vector2.up * bulletSpeed * Time.deltaTime);
+            Debug.Log("else");
         }
+
         if (RangeVFX == null)
         {
             InVFX = false;
+        }
+
+        TimeStop scr = TSTank.GetComponent<TimeStop>();
+        scr.TimeStopped = isTS;
+        if (isTS)
+        {
+            Stop = true;
+            Debug.Log("TimeStopped");
         }
         Destroy(gameObject, 3f);
     }
@@ -37,6 +56,7 @@ public class BulletScript : MonoBehaviour
            if (scr.Active == true)  
            {
                InVFX = true;
+               Debug.Log("in");
            }
         }
         else
@@ -54,6 +74,7 @@ public class BulletScript : MonoBehaviour
            if (scr.Active == true)  
            {
                InVFX = true;
+               Debug.Log("stay");
            }
         }
     }
@@ -63,6 +84,7 @@ public class BulletScript : MonoBehaviour
         if (other.gameObject.CompareTag("VFX"))
         {
             InVFX = false;
+            Debug.Log("out");
         }
         else
         {

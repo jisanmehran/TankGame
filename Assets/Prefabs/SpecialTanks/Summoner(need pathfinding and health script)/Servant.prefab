@@ -91,7 +91,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3247215519355221793}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b36cec75f419c4a41a19658ba555b3e4, type: 3}
   m_Name: 
@@ -447,8 +447,6 @@ MonoBehaviour:
   rotateAcceleration: 8
   rotateDeceleration: 10
   rotateSpeedMax: 170
-  maxHealth: 2
-  currentHealth: 0
 --- !u!114 &-7944529048993913398
 MonoBehaviour:
   m_ObjectHideFlags: 0

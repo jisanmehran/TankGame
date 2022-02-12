@@ -9,6 +9,7 @@ TagManager:
   - Servant
   - SelectionImages
   - VFX
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - TankLayer
   - WallLayer
   - BulletLayer
-  - 
+  - SelfTankLayer
   - 
   - 
   - 

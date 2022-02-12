@@ -36,12 +36,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AI Scripts\CustomAI Scripts\EnemyShootingAI.cs" />
      <Compile Include="Assets\Scripts\StageScripts\MenuScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Scripts\StageScripts\BarrierMovement.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Summoner(need pathfinding and health script)\Bind.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\Special Tank Scripts\GilgameshTank.cs" />
+     <Compile Include="Assets\Scripts\HealthScripts\GilgameshHealth.cs" />
+     <Compile Include="Assets\Prefabs\SpecialTanks\Trashed idea for now\TimeStop.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Summoner(need pathfinding and health script)\Summon.cs" />
@@ -64,6 +67,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
+     <Compile Include="Assets\Prefabs\SpecialTanks\Trashed idea for now\Slow.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
@@ -78,7 +82,9 @@
      <Compile Include="Assets\Scripts\Player Scripts\TankScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
+     <Compile Include="Assets\Prefabs\SpecialTanks\Trashed idea for now\PauseBullet.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Summoner(need pathfinding and health script)\Servant.cs" />
+     <Compile Include="Assets\Tank2HealthScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\HealthScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
@@ -89,11 +95,8 @@
      <Compile Include="Assets\Scripts\Player Scripts\FiringScript.cs" />
      <Compile Include="Assets\Scripts\PlayerSelect\PlayerSelect.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+     <Compile Include="Assets\Tank1HealthScript.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\Prefabs\SpecialTanks\Pause Tank\TimeStop.cs" />
-     <Compile Include="Assets\Prefabs\SpecialTanks\Pause Tank\Slow.cs" />
-     <Compile Include="Assets\Prefabs\SpecialTanks\Pause Tank\PauseBullet.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\CustomAI Scripts\EnemyShootingAI.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -349,11 +352,11 @@
     <Reference Include="UnityEditor.UnityConnectModule">
         <HintPath>C:/Program Files/Unity 2021.1.15f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
         <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Assets/Scripts/AI Scripts/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+        <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity 2021.1.15f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -819,13 +822,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="AstarPathfindingProject.csproj">
-      <Project>{ffa7c530-9e0c-38fa-2575-09c1005e3da5}</Project>
-      <Name>AstarPathfindingProject</Name>
-    </ProjectReference>
     <ProjectReference Include="PackageToolsEditor.csproj">
       <Project>{5a666e72-37bb-0c6c-5424-1b4c94a00990}</Project>
       <Name>PackageToolsEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{ffa7c530-9e0c-38fa-2575-09c1005e3da5}</Project>
+      <Name>AstarPathfindingProject</Name>
     </ProjectReference>
     <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
       <Project>{f22a094c-8d63-7b84-029c-41d377c12d0b}</Project>

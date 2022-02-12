@@ -15,7 +15,7 @@ public class Control : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+    
     }
 
     // Update is called once per frame
@@ -25,7 +25,6 @@ public class Control : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.R))
             {  
-                
                 if (Possessed == false)
                 {
                     float distanceToClosestServant = Mathf.Infinity;
@@ -48,7 +47,9 @@ public class Control : MonoBehaviour
                     Cooldown = true;
                     timeBtwShots = cd;
                     gameObject.GetComponent<TankScript>().enabled = false;
+                    gameObject.GetComponentInChildren<FiringScript>().enabled = false;
                     closestServant.GetComponent<TankScript>().enabled = true;
+                    closestServant.GetComponentInChildren<FiringScript>().enabled = true;
                     Possessed = true;
                 }
                 else if (Possessed == true)
@@ -57,7 +58,9 @@ public class Control : MonoBehaviour
                     Cooldown = true;
                     timeBtwShots = cd;
                     gameObject.GetComponent<TankScript>().enabled = true;
+                    gameObject.GetComponentInChildren<FiringScript>().enabled = true;
                     thePossessed.GetComponent<TankScript>().enabled = false;
+                    thePossessed.GetComponentInChildren<FiringScript>().enabled = false;
                     Possessed = false;
                 }  
                     

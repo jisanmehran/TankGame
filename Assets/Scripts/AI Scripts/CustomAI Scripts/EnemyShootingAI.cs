@@ -36,6 +36,21 @@ public class EnemyShootingAI : MonoBehaviour
             shoot = true;
         }
 
+        else if (distToPlayer > range)
+        {
+            shoot = false;
+        }
+
+        if (shoot == true)
+        {
+            Physics2D.IgnoreLayerCollision (10, 11, true);
+        }
+
+        else if (shoot == false)
+        {
+            Physics2D.IgnoreLayerCollision (10, 11, false);
+        }
+
         if (Cooldown == false)
         {
             if (shoot == true && TripleShot == false)
@@ -68,55 +83,3 @@ public class EnemyShootingAI : MonoBehaviour
     }
 
 }
-
-    // IEnumerator Shoot()
-    // {
-    //     yield return new WaitForSeconds(1);
-    //     GameObject newBullet = Instantiate(bullet, shootPos.position, Quaternion.identity);
-    //     newBullet.GetComponent<Rigidbody2D>().velocity = new Vector2(shootSpeed * Time.fixedDeltaTime, 0f);
-
-    // }
-    // public Transform target;    
-    // public Transform projectile;
-    // public float maximumLookDistance = 30f;
-    // public float maximumAttackDistance = 10f;
-    // public float minimumDistanceFromPlayer  = 2f;
-    // public float rotationDamping = 2f;
-    // public float shotInterval = 0.5f;
-    // private float shotTime = 0f;
- 
-    // //Functions
-
-    // private void Update()
-    // {
-    //     var distance = Vector2.Distance(target.position, transform.position);
-
-    //     if(distance <= maximumLookDistance)
-    //     {
-    //         LookAtTarget();
-
-    //         //Check distance and time
-    //         if(distance <= maximumAttackDistance && (Time.time - shotTime) > shotInterval)
-    //         {
-    //             Shoot();
-    //         }
-    //     }   
-    // }
- 
-    // private void LookAtTarget()
-    // {
-    //     Vector2 dir = target.position - transform.position;
-    //     dir.y = 0;
-    //     var rotation = Quaternion.LookRotation(dir);
-    //     transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * rotationDamping);
-    // }
-
-
-    // private void Shoot()
-    // {
-    //     //Reset the time when we shoot
-    //     shotTime = Time.time;
-    //     Instantiate(projectile, transform.position + (target.position - transform.position).normalized, Quaternion.LookRotation(target.position - transform.position));
-    // }
-
-//}

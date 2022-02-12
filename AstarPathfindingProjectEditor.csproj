@@ -36,24 +36,24 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\SeekerEditor.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\AILerpEditor.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\GraphEditors\GridGeneratorEditor.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\ProceduralGridMoverEditor.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\AstarPathEditor.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\AstarUpdateChecker.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\GraphUpdateSceneEditor.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\AstarUpdateWindow.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\GraphEditors\PointGeneratorEditor.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\GraphEditors\GraphEditor.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\ModifierEditors\SmoothModifierEditor.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\GraphUpdateSceneEditor.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\Legacy\LegacyAIPathEditor2.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\AnimationLinkEditor.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\GraphEditors\NavMeshGeneratorEditor.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\Legacy\LegacyAIPathEditor2.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\CustomGraphEditorAttribute.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\ModifierEditors\RaycastModifierEditor.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\SeekerEditor.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\Legacy\LegacyEditorHelper2.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\AIBaseEditor.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\AILerpEditor.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\GraphEditors\GraphEditor.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\ModifierEditors\SmoothModifierEditor.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\ProceduralGridMoverEditor.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\GraphEditors\PointGeneratorEditor.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\ModifierEditors\RaycastModifierEditor.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\Legacy\LegacyEditorHelper2.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\AstarPathEditor.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\AstarUpdateChecker.cs" />
      <None Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\AstarPathfindingProjectEditor.asmdef" />
      <None Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.cginc" />
      <None Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
@@ -313,14 +313,14 @@
     <Reference Include="Unity.VisualScripting.IonicZip">
         <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+        <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Assets/Scripts/AI Scripts/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
         <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
         <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-        <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Assets/Scripts/AI Scripts/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>

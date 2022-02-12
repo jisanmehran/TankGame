@@ -313,7 +313,6 @@
 -r:"C:/Users/jisan/Documents/GitHub/TankGame/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
--analyzer:"Assets/Scripts/AI Scripts/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll"
 "Assets/Scripts/AI Scripts/AstarPathfindingProject/Behaviors/AIDestinationSetter.cs"
 "Assets/Scripts/AI Scripts/AstarPathfindingProject/Behaviors/Patrol.cs"
 "Assets/Scripts/AI Scripts/AstarPathfindingProject/Core/AI/AIBase.cs"
