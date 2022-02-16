@@ -14,9 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Prefabs/SpecialTanks/Summoner(need pathfinding and health script)/Control.cs
+    - Assets/Character Selection Menu And Scene/Character Selection Menu.unity
+    - Assets/Character Selection Menu And Scene/Prefabs/AI Tank.prefab
+    - Assets/Character Selection Menu And Scene/Prefabs/AI Tank.prefab.meta
+    - Assets/Scenes/Map1.unity
+    - Assets/Scenes/Map2.unity
+    - Assets/Scenes/Map3.unity
+    - Assets/Scenes/Map4.unity
     - 
-    m_Values: 0000
+    m_Values: 0101010101010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

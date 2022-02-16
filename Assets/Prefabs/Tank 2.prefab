@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 1044925587940456576}
   - component: {fileID: 1044925587940456591}
   - component: {fileID: 1044925587940456590}
-  - component: {fileID: -8174215094937206256}
-  m_Layer: 0
+  - component: {fileID: 2046580555739781899}
+  m_Layer: 8
   m_Name: Tank 2
   m_TagString: Tank
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ MonoBehaviour:
   rotateAcceleration: 4
   rotateDeceleration: 10
   rotateSpeedMax: 130
---- !u!114 &-8174215094937206256
+--- !u!114 &2046580555739781899
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1044925587940456589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6e585edfb6756844ba2ce8e66b82274, type: 3}
+  m_Script: {fileID: 11500000, guid: 620cf60f5862632469be8226561d98ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3092487859679640700
@@ -184,7 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5878220801329987929}
   - component: {fileID: 5280786057838903801}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 7706230909218474220}
   - component: {fileID: 19251638756330416}
   - component: {fileID: 2044263816647815517}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}

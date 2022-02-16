@@ -44,7 +44,7 @@ public class BulletScript : MonoBehaviour
             Stop = true;
             Debug.Log("TimeStopped");
         }
-        Destroy(gameObject, 3f);
+        //Destroy(gameObject, 3f);
     }
 
     void OnTriggerEnter2D (Collider2D other)
@@ -61,7 +61,7 @@ public class BulletScript : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
         
     }
@@ -88,7 +88,7 @@ public class BulletScript : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
         
     }

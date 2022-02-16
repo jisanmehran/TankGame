@@ -21,6 +21,8 @@ public class TankScript : MonoBehaviour
 
     bool moveForward = false;
     bool moveReverse = false;
+
+    public bool isPlayer2Input;
     public float moveSpeed = 0f;
     public float moveSpeedReverse = 0f;
     public float moveAcceleration = 0.1f;
@@ -44,63 +46,125 @@ public class TankScript : MonoBehaviour
     void Update ( )
 
     {
-
-        rotateLeft = ( Input.GetKeyDown(keyRotateLeft ) ) ? true : rotateLeft;
-
-        rotateLeft = ( Input.GetKeyUp(keyRotateLeft ) ) ? false : rotateLeft;
-
-        if ( rotateLeft )
-
-        {
-
-            rotateSpeedLeft = ( rotateSpeedLeft < rotateSpeedMax ) ? rotateSpeedLeft + rotateAcceleration : rotateSpeedMax; } else { rotateSpeedLeft = ( rotateSpeedLeft > 0 ) ? rotateSpeedLeft - rotateDeceleration : 0;
         
-        }
-
-        transform.Rotate(0f, 0f, rotateSpeedLeft * Time.deltaTime);
-
-        rotateRight = ( Input.GetKeyDown(keyRotateRight ) ) ? true : rotateRight;
-
-        rotateRight = ( Input.GetKeyUp(keyRotateRight ) ) ? false : rotateRight;
-
-        if ( rotateRight )
-
+        if (isPlayer2Input == true)
         {
+
+            rotateLeft = ( Input.GetKeyDown("a") ) ? true : rotateLeft;
+
+            rotateLeft = ( Input.GetKeyUp("a") ) ? false : rotateLeft;
+
+            if ( rotateLeft )
+
+            {
+
+                rotateSpeedLeft = ( rotateSpeedLeft < rotateSpeedMax ) ? rotateSpeedLeft + rotateAcceleration : rotateSpeedMax; } else { rotateSpeedLeft = ( rotateSpeedLeft > 0 ) ? rotateSpeedLeft - rotateDeceleration : 0;
             
-            rotateSpeedRight = ( rotateSpeedRight < rotateSpeedMax ) ? rotateSpeedRight + rotateAcceleration : rotateSpeedMax; } else { rotateSpeedRight = ( rotateSpeedRight > 0 ) ? rotateSpeedRight - rotateDeceleration : 0;
-        
-        }
+            }
 
-        transform.Rotate( 0f, 0f, rotateSpeedRight * Time.deltaTime * -1f );
+            transform.Rotate(0f, 0f, rotateSpeedLeft * Time.deltaTime);
 
-        moveForward = ( Input.GetKeyDown(keyMoveForward ) ) ? true : moveForward;
-        
-        moveForward = ( Input.GetKeyUp(keyMoveForward ) ) ? false : moveForward;
-        
-        if ( moveForward )
+            rotateRight = ( Input.GetKeyDown("d") ) ? true : rotateRight;
 
-        {
+            rotateRight = ( Input.GetKeyUp("d") ) ? false : rotateRight;
+
+            if ( rotateRight )
+
+            {
+                
+                rotateSpeedRight = ( rotateSpeedRight < rotateSpeedMax ) ? rotateSpeedRight + rotateAcceleration : rotateSpeedMax; } else { rotateSpeedRight = ( rotateSpeedRight > 0 ) ? rotateSpeedRight - rotateDeceleration : 0;
             
-            moveSpeed = ( moveSpeed < moveSpeedMax ) ? moveSpeed + moveAcceleration : moveSpeedMax; } else { moveSpeed = ( moveSpeed > 0 ) ? moveSpeed - moveDeceleration : 0;
-        
+            }
+
+            transform.Rotate( 0f, 0f, rotateSpeedRight * Time.deltaTime * -1f );
+
+            moveForward = ( Input.GetKeyDown("w") ) ? true : moveForward;
+            
+            moveForward = ( Input.GetKeyUp("w") ) ? false : moveForward;
+            
+            if ( moveForward )
+
+            {
+                
+                moveSpeed = ( moveSpeed < moveSpeedMax ) ? moveSpeed + moveAcceleration : moveSpeedMax; } else { moveSpeed = ( moveSpeed > 0 ) ? moveSpeed - moveDeceleration : 0;
+            
+            }
+
+            transform.Translate( 0f, moveSpeed * Time.deltaTime, 0f );
+
+            moveReverse = ( Input.GetKeyDown ( "s" ) ) ? true : moveReverse;
+
+            moveReverse = ( Input.GetKeyUp ( "s" ) ) ? false : moveReverse;
+
+            if ( moveReverse )
+
+            {
+
+                moveSpeedReverse = ( moveSpeedReverse < moveSpeedMax) ? moveSpeedReverse + moveAcceleration : moveSpeedMax; } else { moveSpeedReverse = ( moveSpeedReverse > 0 ) ? moveSpeedReverse - moveDeceleration : 0;
+            
+            }
+
+            transform.Translate( 0f, moveSpeedReverse * Time.deltaTime * -1f, 0f );
         }
 
-        transform.Translate( 0f, moveSpeed * Time.deltaTime, 0f );
-
-        moveReverse = ( Input.GetKeyDown ( keyMoveReverse ) ) ? true : moveReverse;
-
-        moveReverse = ( Input.GetKeyUp ( keyMoveReverse ) ) ? false : moveReverse;
-
-        if ( moveReverse )
-
+        if (isPlayer2Input == false)
         {
+            rotateLeft = ( Input.GetKeyDown("left") ) ? true : rotateLeft;
 
-            moveSpeedReverse = ( moveSpeedReverse < moveSpeedMax) ? moveSpeedReverse + moveAcceleration : moveSpeedMax; } else { moveSpeedReverse = ( moveSpeedReverse > 0 ) ? moveSpeedReverse - moveDeceleration : 0;
-        
+            rotateLeft = ( Input.GetKeyUp("left") ) ? false : rotateLeft;
+
+            if ( rotateLeft )
+
+            {
+
+                rotateSpeedLeft = ( rotateSpeedLeft < rotateSpeedMax ) ? rotateSpeedLeft + rotateAcceleration : rotateSpeedMax; } else { rotateSpeedLeft = ( rotateSpeedLeft > 0 ) ? rotateSpeedLeft - rotateDeceleration : 0;
+            
+            }
+
+            transform.Rotate(0f, 0f, rotateSpeedLeft * Time.deltaTime);
+
+            rotateRight = ( Input.GetKeyDown("right") ) ? true : rotateRight;
+
+            rotateRight = ( Input.GetKeyUp("right") ) ? false : rotateRight;
+
+            if ( rotateRight )
+
+            {
+                
+                rotateSpeedRight = ( rotateSpeedRight < rotateSpeedMax ) ? rotateSpeedRight + rotateAcceleration : rotateSpeedMax; } else { rotateSpeedRight = ( rotateSpeedRight > 0 ) ? rotateSpeedRight - rotateDeceleration : 0;
+            
+            }
+
+            transform.Rotate( 0f, 0f, rotateSpeedRight * Time.deltaTime * -1f );
+
+            moveForward = ( Input.GetKeyDown("up") ) ? true : moveForward;
+            
+            moveForward = ( Input.GetKeyUp("up") ) ? false : moveForward;
+            
+            if ( moveForward )
+
+            {
+                
+                moveSpeed = ( moveSpeed < moveSpeedMax ) ? moveSpeed + moveAcceleration : moveSpeedMax; } else { moveSpeed = ( moveSpeed > 0 ) ? moveSpeed - moveDeceleration : 0;
+            
+            }
+
+            transform.Translate( 0f, moveSpeed * Time.deltaTime, 0f );
+
+            moveReverse = ( Input.GetKeyDown ( "down" ) ) ? true : moveReverse;
+
+            moveReverse = ( Input.GetKeyUp ( "down" ) ) ? false : moveReverse;
+
+            if ( moveReverse )
+
+            {
+
+                moveSpeedReverse = ( moveSpeedReverse < moveSpeedMax) ? moveSpeedReverse + moveAcceleration : moveSpeedMax; } else { moveSpeedReverse = ( moveSpeedReverse > 0 ) ? moveSpeedReverse - moveDeceleration : 0;
+            
+            }
+
+            transform.Translate( 0f, moveSpeedReverse * Time.deltaTime * -1f, 0f );
         }
-
-        transform.Translate( 0f, moveSpeedReverse * Time.deltaTime * -1f, 0f );
-
         // if (moveForward | moveReverse | rotateRight | rotateLeft)
         // {
         //     trackStart();

@@ -43,7 +43,6 @@
      <Compile Include="Assets\Scripts\StageScripts\BarrierMovement.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Summoner(need pathfinding and health script)\Bind.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\Special Tank Scripts\GilgameshTank.cs" />
-     <Compile Include="Assets\Scripts\HealthScripts\GilgameshHealth.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Trashed idea for now\TimeStop.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
@@ -53,6 +52,7 @@
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark04.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
+     <Compile Include="Assets\Character Selection Menu And Scene\GameControl.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\Scripts\PowerUpScript\HealthUp.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
@@ -78,15 +78,15 @@
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
      <Compile Include="Assets\Scripts\StartScreen\MainMenu.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\Character Selection Menu And Scene\CharacterSelectionMenu.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\TankScript.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\VertexJitter.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Trashed idea for now\PauseBullet.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Summoner(need pathfinding and health script)\Servant.cs" />
-     <Compile Include="Assets\Tank2HealthScript.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-     <Compile Include="Assets\Scripts\Player Scripts\HealthScript.cs" />
+     <Compile Include="Assets\Scripts\HealthScripts\HealthScript.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\DropdownSample.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
      <Compile Include="Assets\Scripts\PowerUpScript\Immunity.cs" />
@@ -95,11 +95,8 @@
      <Compile Include="Assets\Scripts\Player Scripts\FiringScript.cs" />
      <Compile Include="Assets\Scripts\PlayerSelect\PlayerSelect.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\VertexZoom.cs" />
-     <Compile Include="Assets\Tank1HealthScript.cs" />
-     <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\Character Selection Menu And Scene\GameControl.cs" />
      <Compile Include="Assets\Character Selection Menu And Scene\PlayerController.cs" />
-     <Compile Include="Assets\Character Selection Menu And Scene\CharacterSelectionMenu.cs" />
+     <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <None Include="Assets\Test Char Select\Shaders\TMPro.cginc" />
      <None Include="Assets\Test Char Select\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Test Char Select\Shaders\TMP_Bitmap.shader" />
