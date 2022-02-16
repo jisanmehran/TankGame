@@ -17,6 +17,8 @@ public class GameControl : MonoBehaviour
     {
         selectedCharacter = PlayerPrefs.GetInt(selectedCharacterDataName,0);
         playerObject = Instantiate(characters[selectedCharacter],playerStartPosition.position,characters[selectedCharacter].transform.rotation);
+        playerObject.GetComponent<TankScript>().isPlayer2Input = false;
+
     }
 
     // Update is called once per frame

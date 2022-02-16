@@ -97,6 +97,8 @@
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\Character Selection Menu And Scene\PlayerController.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+     <Compile Include="Assets\Character Selection Menu And Scene\Game2Control.cs" />
+     <Compile Include="Assets\Character Selection Menu And Scene\Character2Selection.cs" />
      <None Include="Assets\Test Char Select\Shaders\TMPro.cginc" />
      <None Include="Assets\Test Char Select\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Test Char Select\Shaders\TMP_Bitmap.shader" />

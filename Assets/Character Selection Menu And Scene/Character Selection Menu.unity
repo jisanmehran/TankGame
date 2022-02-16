@@ -356,7 +356,6 @@ MonoBehaviour:
   - {fileID: 4908879708957073028}
   - {fileID: 597903657}
   selectedCharacter: 0
-  gameScene: Map1
 --- !u!4 &275591574
 Transform:
   m_ObjectHideFlags: 0
@@ -1208,6 +1207,18 @@ PrefabInstance:
     - target: {fileID: 5405339199842148737, guid: 3d3785ff1f7bd644badcff6ca98711f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405339199842148738, guid: 3d3785ff1f7bd644badcff6ca98711f3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.122774996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405339199842148738, guid: 3d3785ff1f7bd644badcff6ca98711f3, type: 3}
+      propertyPath: m_Color.g
+      value: 0.122774996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405339199842148738, guid: 3d3785ff1f7bd644badcff6ca98711f3, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8396226
       objectReference: {fileID: 0}
     - target: {fileID: 5405339199842148750, guid: 3d3785ff1f7bd644badcff6ca98711f3, type: 3}
       propertyPath: m_Name
