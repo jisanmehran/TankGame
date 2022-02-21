@@ -14,20 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Character Selection Menu And Scene/Character Selection Menu Player 2.unity
-    - Assets/Character Selection Menu And Scene/Character Selection Menu Player 2.unity.meta
-    - Assets/Character Selection Menu And Scene/Character Selection Scene.unity
-    - Assets/Character Selection Menu And Scene/GameControl Player 2.cs
-    - Assets/Character Selection Menu And Scene/GameControl Player 2.cs.meta
-    - Assets/Scenes/Map1.unity
     - 
-    m_Values: 01010101010101
-  RevisionSummary: 'Player Differentiation Script Completed
-
-    A* Implementation
-    Fixed in Every Scene
-
-    Character Spawn Fixed in Every Scene'
+    m_Values: 01
+  RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

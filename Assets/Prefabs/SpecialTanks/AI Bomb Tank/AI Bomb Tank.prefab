@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 262375534855524861}
   - component: {fileID: 262375534855524860}
   - component: {fileID: 262375534855524851}
-  - component: {fileID: 4893949235203775544}
+  - component: {fileID: 5870021348103577223}
   - component: {fileID: 3738921058062202411}
   - component: {fileID: 262375534855524850}
   m_Layer: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.23529412, g: 0, b: 0.6745098, a: 1}
+  m_Color: {r: 0.5792015, g: 0.3537736, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -138,7 +138,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4893949235203775544
+--- !u!114 &5870021348103577223
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 262375534855524849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67fb563eab61b894c8db17e9f0dcb01f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f4ca0e8944ef3e47929abcaf3d7d72d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Master: {fileID: 262375534855524849}
@@ -185,6 +185,7 @@ MonoBehaviour:
   keyMoveReverse: s
   keyRotateRight: d
   keyRotateLeft: a
+  isPlayer2Input: 0
   moveSpeed: 0
   moveSpeedReverse: 0
   moveAcceleration: 1

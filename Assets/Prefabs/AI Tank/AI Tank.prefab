@@ -226,6 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
+  TargetPlayer1: 0
 --- !u!1001 &6898406851357077073
 PrefabInstance:
   m_ObjectHideFlags: 0

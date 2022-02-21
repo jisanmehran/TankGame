@@ -18,12 +18,25 @@ public class EnemyShootingAI : MonoBehaviour
     public float TSBtw;
 
     private bool shoot;
+
+    private GameObject GameControl;
+
     // Start is called before the first frame update
 
     void Start()
     {
+        GameControl = GameObject.Find("GameControl");
         Cooldown = false;
         shoot = false;
+        if (GameControl.GetComponent<GameControl>().TargetPlayer1 == false)
+        {
+            player = GameObject.FindWithTag("Player2").transform;
+        }
+
+        if (GameControl.GetComponent<GameControl>().TargetPlayer1 == true)
+        {
+            player = GameObject.FindWithTag("Player1").transform;				
+        }
     }
 
     // Update is called once per frame

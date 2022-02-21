@@ -41,11 +41,11 @@
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Scripts\StageScripts\BarrierMovement.cs" />
-     <Compile Include="Assets\Prefabs\SpecialTanks\Summoner(need pathfinding and health script)\Bind.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\Special Tank Scripts\GilgameshTank.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Trashed idea for now\TimeStop.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+     <Compile Include="Assets\Character Selection Menu And Scene\Character2Selection.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Summoner(need pathfinding and health script)\Summon.cs" />
      <Compile Include="Assets\Scripts\PowerUpScript\TripleShot.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
@@ -57,9 +57,7 @@
      <Compile Include="Assets\Scripts\PowerUpScript\HealthUp.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\Special Tank Scripts\TeleportTankScript.cs" />
-     <Compile Include="Assets\Scripts\SpawnScript\TankSpawn1.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
-     <Compile Include="Assets\Scripts\SpawnScript\TankSpawn2.cs" />
      <Compile Include="Assets\Scripts\BulletScript\BulletScript.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\CameraController.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
@@ -77,6 +75,7 @@
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
      <Compile Include="Assets\Scripts\StartScreen\MainMenu.cs" />
+     <Compile Include="Assets\Rotate.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Character Selection Menu And Scene\CharacterSelectionMenu.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -96,9 +95,9 @@
      <Compile Include="Assets\Scripts\PlayerSelect\PlayerSelect.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\Character Selection Menu And Scene\PlayerController.cs" />
-     <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\Character Selection Menu And Scene\Game2Control.cs" />
-     <Compile Include="Assets\Character Selection Menu And Scene\Character2Selection.cs" />
+     <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+     <Compile Include="Assets\Prefabs\SpecialTanks\AI Bomb Tank\Backend Scripts\AIBombTank.cs" />
      <None Include="Assets\Test Char Select\Shaders\TMPro.cginc" />
      <None Include="Assets\Test Char Select\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Test Char Select\Shaders\TMP_Bitmap.shader" />

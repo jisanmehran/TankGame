@@ -99,13 +99,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 10
-  modifiedSpeed: 2.5
-  damage: 0
-  InVFX: 0
-  RangeVFX: {fileID: 5727466310676842781, guid: b64a3cef2cab75743bfb20b094eb5dbb, type: 3}
-  Stop: 0
-  TSTank: {fileID: 8403316670232131117, guid: 048a3fc17b2b77444b2aa243915c2956, type: 3}
-  isTS: 0
 --- !u!58 &6006328467932691881
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -115,13 +108,13 @@ CircleCollider2D:
   m_GameObject: {fileID: 7924436910818419937}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: a8e86d77b36275f42beca2df709f1787, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.60651624
+  m_Radius: 0.5
 --- !u!50 &1367487907364471145
 Rigidbody2D:
   serializedVersion: 4
@@ -134,12 +127,12 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.0001
+  m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
+  m_CollisionDetection: 1
+  m_Constraints: 0

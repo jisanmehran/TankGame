@@ -11,7 +11,7 @@ public class Character2Selection : MonoBehaviour
 
     public string gameScene;
 
-    private string selected2CharacterDataName = "SelectedCharacter";
+    private string selected2CharacterDataName = "Selected2Character";
 
     void Start()
     {
