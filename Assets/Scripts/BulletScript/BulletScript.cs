@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-    public float bulletSpeed;
+    private Rigidbody2D rb;
+    Vector3 lastVelocity;
 
     void Update()
     {
-        this.transform.Translate(Vector2.up * bulletSpeed * Time.deltaTime);
+        rb = GetComponent<Rigidbody2D>();
+        lastVelocity = rb.velocity;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D coll)
     {
-        this.transform.Translate(-Vector2.up * bulletSpeed * Time.deltaTime);
-        Debug.Log("Hi");
+        var speed = lastVelocity.magnitude;
+        var direction = Vector3.Reflect(lastVelocity.normalized, coll.contacts[0].normal);
+
+        rb.velocity = direction * Mathf.Max(speed, 0f);
     }
 }

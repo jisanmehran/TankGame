@@ -19,9 +19,9 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Collaborate
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 989
-  m_MinSize: {x: 875, y: 300}
+  m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -116,10 +116,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 939
-  m_MinSize: {x: 881, y: 492}
+  m_MinSize: {x: 862, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 18
+  controlID: 16
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 19
+  controlID: 17
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 20
+  controlID: 18
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -190,8 +190,8 @@ MonoBehaviour:
     y: 0
     width: 201
     height: 583
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -242,8 +242,8 @@ MonoBehaviour:
     y: 0
     width: 688
     height: 583
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: InspectorWindow
+  m_Name: CollaborateWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -296,15 +296,15 @@ MonoBehaviour:
     y: 0
     width: 301
     height: 939
-  m_MinSize: {x: 276, y: 71}
+  m_MinSize: {x: 257, y: 421}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 21}
+  m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 21}
   - {fileID: 14}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -382,7 +382,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 38256
+  m_LastSelectedObjectID: -13884
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -411,23 +411,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0e5e0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4c7affff427bffffd47cffff547dffff3082fffffa82ffff9484fffff684ffff3886ffff7487ffffd887fffffc8dffff8a95ffff2c9bffffde9cffff809fffff70a2ffff10a3ffffd6a3ffff56a7ffff1ea8ffff9aaaffff1eaeffff80b0ffffeab2ffff90b4ffffecb9ffffd8bcffff32bfffff3ac6ffffd4c6ffffa2ccffff14ceffffdaceffff96d0ffff82d4ffffb2d6ffffdcd7ffff96e9ffff52ecffff7aedffff68f2ffffb8f3ffff3cf6ffffb8f7ffffeaf7ffff24f8ffff3cfbffff6a5b0000ac810000bc820000d084000068880000fe890000108d0000a68e0000a2950000f69800008e9a0000d69c00009e9e0000caa1000010a4000056a600006ea7000042a8000018a90000aeaa00008aac00005aad000092af00005cb000001eb40000
+      m_ExpandedIDs: c4c9ffff18caffff34d5ffffc6d6ffff58dbffff5ce2ffff6ee2ffff78e3ffff7ae3ffff16e6ffff70e8ffff52ecffff0ef4ffff3cfbffff5a870000f0880000e0950000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: AI Bomb Tank
-        m_OriginalName: AI Bomb Tank
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 42872
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -682,22 +682,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Character Selection Menu And Scene
+    - Assets/Prefabs/AI Tank
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Character Selection Menu And Scene
+  - Assets/Prefabs/AI Tank
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\jisan\Documents\GitHub\TankGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 159}
-    m_SelectedIDs: 745d0000
-    m_LastClickedID: 23924
-    m_ExpandedIDs: 000000006a5d00006c5d00006e5d0000705d0000725d0000765d0000785d00007a5d00007c5d0000ea5d0000f65d0000fe5d000000ca9a3b
+    scrollPos: {x: 0, y: 60}
+    m_SelectedIDs: 325d0000
+    m_LastClickedID: 23858
+    m_ExpandedIDs: 000000002a5d00002c5d00002e5d0000305d0000325d0000345d0000365d0000385d00003a5d0000525d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -725,7 +725,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000006a5d00006c5d00006e5d0000705d0000725d0000745d0000765d0000785d00007a5d00007c5d0000
+    m_ExpandedIDs: 000000002a5d00002c5d00002e5d0000305d0000325d0000345d0000365d0000385d00003a5d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

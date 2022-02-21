@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Pathfinding;
 
 public class GameControl : MonoBehaviour
 {
@@ -13,9 +14,11 @@ public class GameControl : MonoBehaviour
     int selectedCharacter;
     public GameObject playerObject;
 
+    public GameObject Aitank;
+
     public bool TargetPlayer1;
 
-    public bool TargetPlayer2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,15 +26,19 @@ public class GameControl : MonoBehaviour
         playerObject = Instantiate(characters[selectedCharacter],playerStartPosition.position,characters[selectedCharacter].transform.rotation);
         playerObject.GetComponent<TankScript>().isPlayer2Input = false;
         playerObject.tag = "Player1";
-        
+
         if (selectedCharacter == 2)
         {
             TargetPlayer1 = false;
+            Aitank.GetComponent<AIDestinationSetter>().TargetPlayer1 = false; 
+
         }
 
         if(selectedCharacter != 2)
         {
             TargetPlayer1 = true;
+            Aitank.GetComponent<AIDestinationSetter>().TargetPlayer1 = true; 
+
         }
     }
 

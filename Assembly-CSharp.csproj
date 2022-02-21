@@ -69,6 +69,7 @@
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\Prefabs\SpecialTanks\AI Bomb Tank\Backend Scripts\AIBombTank.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Summoner(need pathfinding and health script)\Control.cs" />
@@ -97,7 +98,6 @@
      <Compile Include="Assets\Character Selection Menu And Scene\PlayerController.cs" />
      <Compile Include="Assets\Character Selection Menu And Scene\Game2Control.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\Prefabs\SpecialTanks\AI Bomb Tank\Backend Scripts\AIBombTank.cs" />
      <None Include="Assets\Test Char Select\Shaders\TMPro.cginc" />
      <None Include="Assets\Test Char Select\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Test Char Select\Shaders\TMP_Bitmap.shader" />

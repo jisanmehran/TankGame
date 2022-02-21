@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 namespace Pathfinding {
 	/// <summary>
@@ -16,9 +18,9 @@ namespace Pathfinding {
 	public class AIDestinationSetter : VersionedMonoBehaviour {
 		/// <summary>The object that the AI should move to</summary>
 		public Transform target;
-		IAstarAI ai;
 
 		public bool TargetPlayer1;
+		IAstarAI ai;
 
 		void OnEnable () {
 			ai = GetComponent<IAstarAI>();
@@ -48,4 +50,5 @@ namespace Pathfinding {
 			if (target != null && ai != null) ai.destination = target.position;
 		}
 	}
+
 }
