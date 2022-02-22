@@ -31,7 +31,7 @@ public class FiringScript : MonoBehaviour
                 Cooldown = true;
                 timeBtwShots = cd;
                 GameObject shotBullet = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
-                thebullet.AddRelativeForce(Vector3.up * bulletSpeed);
+                //thebullet.AddRelativeForce(Vector3.up * bulletSpeed);
                 var destroyTime = 5;
                 Destroy (shotBullet, destroyTime);
 

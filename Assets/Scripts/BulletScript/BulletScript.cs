@@ -4,20 +4,38 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    Vector3 lastVelocity;
+    public float bulletSpeed;
+    public float damage;
+    private Rigidbody2D m_rigid2D;
+    private Vector3 m_dir;
 
-    void Update()
+
+    private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        lastVelocity = rb.velocity;
+        m_rigid2D = GetComponent<Rigidbody2D>();
     }
 
-    void OnCollisionEnter2D(Collision2D coll)
+    void FixedUpdate()
     {
-        var speed = lastVelocity.magnitude;
-        var direction = Vector3.Reflect(lastVelocity.normalized, coll.contacts[0].normal);
+        this.transform.Translate(Vector2.up * bulletSpeed * Time.deltaTime);
+        Destroy(gameObject, 3f);
+    }
 
-        rb.velocity = direction * Mathf.Max(speed, 0f);
+    void OnCollisionEnter2D (Collision2D other)
+    {
+        if (other.gameObject.layer == 9)
+        {
+            float bulletSpeed = 0;
+            this.transform.rotation = Quaternion.Inverse(transform.rotation);
+            this.transform.Translate(Vector2.up * bulletSpeed * Time.deltaTime);
+        }
+
+        if (other.gameObject.layer == 12)
+        {
+            float bulletSpeed = 0;
+
+            this.transform.rotation = Quaternion.Euler(0, 0, (this.transform.rotation.z - 180)) * transform.rotation;
+            this.transform.Translate(Vector2.up * bulletSpeed * Time.deltaTime);
+        }
     }
 }
