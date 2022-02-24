@@ -13,6 +13,7 @@ public class FiringScript : MonoBehaviour
     public bool TripleShot = false;
     public float TSBtw;
     public float bulletSpeed = 10;
+    public bool isPlayer2Input;
     // Start is called before the first frame update
 
     void Start()
@@ -23,9 +24,34 @@ public class FiringScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Cooldown == false)
+        if (Cooldown == false & isPlayer2Input == false)
         {
-            if (Input.GetKey(KeyCode.Space) && TripleShot == false)
+            if (Input.GetKey(KeyCode.LeftControl) && TripleShot == false)
+            {  
+                Rigidbody2D thebullet = bullet.GetComponent<Rigidbody2D>();
+                Cooldown = true;
+                timeBtwShots = cd;
+                GameObject shotBullet = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
+                //thebullet.AddRelativeForce(Vector3.up * bulletSpeed);
+                var destroyTime = 5;
+                Destroy (shotBullet, destroyTime);
+
+            }
+        }
+
+        else
+        {
+            timeBtwShots -= Time.deltaTime;
+        }
+
+        if (timeBtwShots <= 0)
+        {
+            Cooldown = false;
+        }
+
+        if (Cooldown == false & isPlayer2Input == true)
+        {
+            if (Input.GetKey(KeyCode.A) && TripleShot == false)
             {  
                 Rigidbody2D thebullet = bullet.GetComponent<Rigidbody2D>();
                 Cooldown = true;
@@ -36,26 +62,16 @@ public class FiringScript : MonoBehaviour
                 Destroy (shotBullet, destroyTime);
 
             }  
-            else if (Input.GetKey(KeyCode.Space) && TripleShot == true)    
-            {
-                Cooldown = true;
-                timeBtwShots = cd;
-                GameObject shotBullet = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
-                //need wait
-                GameObject shotBullet2 = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
-                //need wait
-                GameObject shotBullet3 = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
-                TripleShot = false;
-            } 
         }
+
         else
         {
             timeBtwShots -= Time.deltaTime;
         }
+        
         if (timeBtwShots <= 0)
         {
             Cooldown = false;
         }
-
     }
 }

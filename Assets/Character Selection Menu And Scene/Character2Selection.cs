@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Character2Selection : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     public GameObject[] player2Objects;
     public int selected2Character = 0;
 

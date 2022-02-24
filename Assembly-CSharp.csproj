@@ -76,7 +76,7 @@
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
      <Compile Include="Assets\Scripts\StartScreen\MainMenu.cs" />
-     <Compile Include="Assets\Rotate.cs" />
+     <Compile Include="Assets\Scripts\StageScripts\Rotate.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Character Selection Menu And Scene\CharacterSelectionMenu.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -98,6 +98,9 @@
      <Compile Include="Assets\Character Selection Menu And Scene\PlayerController.cs" />
      <Compile Include="Assets\Character Selection Menu And Scene\Game2Control.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+     <Compile Include="Assets\Scripts\PlayAgain\PlayAgainYes.cs" />
+     <Compile Include="Assets\Scripts\PlayAgain\PlayAgainNo.cs" />
+     <Compile Include="Assets\Scripts\PlayAgain\Choice.cs" />
      <None Include="Assets\Test Char Select\Shaders\TMPro.cginc" />
      <None Include="Assets\Test Char Select\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Test Char Select\Shaders\TMP_Bitmap.shader" />

@@ -18,7 +18,7 @@ public class CharacterSelectionMenu : MonoBehaviour
 
         HideAllCharacters();
 
-        selectedCharacter = PlayerPrefs.GetInt(selectedCharacterDataName, 0);
+        selectedCharacter = PlayerPrefs.GetInt(selectedCharacterDataName, 0);//???
 
         playerObjects[selectedCharacter].SetActive(true);
     }
@@ -57,7 +57,6 @@ public class CharacterSelectionMenu : MonoBehaviour
     public void StartGame()
     {
         PlayerPrefs.SetInt(selectedCharacterDataName, selectedCharacter);
-        //SceneManager.LoadScene(gameScene);
         SceneManager.LoadScene("Character Selection Menu Player 2");
     }
 

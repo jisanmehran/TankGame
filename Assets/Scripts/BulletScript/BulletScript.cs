@@ -4,38 +4,38 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-    public float bulletSpeed;
-    public float damage;
-    private Rigidbody2D m_rigid2D;
-    private Vector3 m_dir;
-
-
-    private void Start()
+    private Rigidbody2D rb;
+    public float bulletSpeed = 20;
+    private Vector3 direction;
+ 
+    void Start()
     {
-        m_rigid2D = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
+        direction = transform.up;
+    }
+ 
+    // Update is called once per frame
+    void Update()
+    {
+        rb.velocity = direction * bulletSpeed;
+        float rotationz = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, rotationz - 90);
     }
 
     void FixedUpdate()
     {
-        this.transform.Translate(Vector2.up * bulletSpeed * Time.deltaTime);
         Destroy(gameObject, 3f);
     }
-
-    void OnCollisionEnter2D (Collision2D other)
+ 
+ 
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.gameObject.layer == 9)
+ 
+        ContactPoint2D contact = collision.GetContact(0);
+ 
+        if (collision.gameObject.layer == 9 | collision.gameObject.layer == 12)
         {
-            float bulletSpeed = 0;
-            this.transform.rotation = Quaternion.Inverse(transform.rotation);
-            this.transform.Translate(Vector2.up * bulletSpeed * Time.deltaTime);
-        }
-
-        if (other.gameObject.layer == 12)
-        {
-            float bulletSpeed = 0;
-
-            this.transform.rotation = Quaternion.Euler(0, 0, (this.transform.rotation.z - 180)) * transform.rotation;
-            this.transform.Translate(Vector2.up * bulletSpeed * Time.deltaTime);
+            direction = Vector3.Reflect(direction, contact.normal);
         }
     }
 }
