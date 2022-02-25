@@ -11,7 +11,7 @@ public class GameControl : MonoBehaviour
     public Transform playerStartPosition;
     public string menuScene = "Character Selection Menu";
     private string selectedCharacterDataName = "SelectedCharacter";
-    int selectedCharacter;
+    public int selectedCharacter;
     public GameObject playerObject;
 
     public GameObject Aitank;

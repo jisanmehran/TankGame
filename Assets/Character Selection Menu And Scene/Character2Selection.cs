@@ -57,6 +57,7 @@ public class Character2Selection : MonoBehaviour
     public void StartGame()
     {
         PlayerPrefs.SetInt(selected2CharacterDataName, selected2Character);
-        SceneManager.LoadScene("Map1");
+        //int number = Random.Range(1, 5);
+        //SceneManager.LoadScene (sceneName:"Map" + number.ToString());
     }
 }

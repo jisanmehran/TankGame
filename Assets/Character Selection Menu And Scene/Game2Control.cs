@@ -8,7 +8,7 @@ public class Game2Control : MonoBehaviour
     public GameObject[] characters;
     public Transform player2StartPosition;
     private string selected2CharacterDataName = "Selected2Character";
-    int selected2Character;
+    public int selected2Character;
     public GameObject player2Object;
 
 

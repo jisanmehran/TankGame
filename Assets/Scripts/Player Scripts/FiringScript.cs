@@ -13,7 +13,7 @@ public class FiringScript : MonoBehaviour
     public bool TripleShot = false;
     public float TSBtw;
     public float bulletSpeed = 10;
-    public bool isPlayer2Input;
+    public TankScript isPlayer2Input;
     // Start is called before the first frame update
 
     void Start()

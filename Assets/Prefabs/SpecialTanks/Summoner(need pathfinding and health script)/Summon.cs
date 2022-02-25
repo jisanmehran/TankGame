@@ -21,7 +21,7 @@ public class Summon : MonoBehaviour
     {
         if (Cooldown == false)
         {
-            if (Input.GetKey(KeyCode.E) && ServantNum < 3)
+            if (Input.GetKey(KeyCode.E) && ServantNum < 6)
             {  
                 Cooldown = true;
                 timeBtwShots = cd;

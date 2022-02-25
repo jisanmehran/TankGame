@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Character Selection Menu And Scene/Character Selection Menu.unity
+- path: Assets/Scenes/ChooseScreen.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

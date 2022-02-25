@@ -310,6 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db5313f17782ffa4bbf44978c322dc34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holdTime: 3
   keyMoveForward: w
   keyMoveReverse: s
   keyRotateRight: d
@@ -485,6 +486,7 @@ MonoBehaviour:
   TripleShot: 0
   TSBtw: 0
   bulletSpeed: 10
+  isPlayer2Input: 0
 --- !u!1 &8170684501438179409
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,6 +674,7 @@ MonoBehaviour:
   TripleShot: 0
   TSBtw: 0
   bulletSpeed: 10
+  isPlayer2Input: 0
 --- !u!1 &8170684502358769979
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,6 +862,7 @@ MonoBehaviour:
   TripleShot: 0
   TSBtw: 0
   bulletSpeed: 10
+  isPlayer2Input: 0
 --- !u!1 &8170684503049284631
 GameObject:
   m_ObjectHideFlags: 0

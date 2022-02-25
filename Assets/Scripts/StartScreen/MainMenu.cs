@@ -12,6 +12,6 @@ public class MainMenu : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene(sceneName:"Character Selection Menu");
+        SceneManager.LoadScene(sceneName:"ChooseScreen");
     }
 }

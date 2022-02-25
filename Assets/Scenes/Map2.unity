@@ -905,6 +905,8 @@ MonoBehaviour:
   playerStartPosition: {fileID: 2136548542}
   menuScene: Character Selection Menu
   playerObject: {fileID: 0}
+  Aitank: {fileID: 0}
+  TargetPlayer1: 0
 --- !u!1 &1085397369
 GameObject:
   m_ObjectHideFlags: 0

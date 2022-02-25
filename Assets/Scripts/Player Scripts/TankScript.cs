@@ -238,7 +238,7 @@ public class TankScript : MonoBehaviour
     
     void EscapeButtonHeld()
     {
-        Debug.Log("held for " + holdTime + " seconds");
+        //Debug.Log("held for " + holdTime + " seconds");
         Application.Quit();
     }
 }
