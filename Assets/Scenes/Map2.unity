@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 147194015}
   - component: {fileID: 147194017}
   - component: {fileID: 147194016}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: WhiteBorderLeft
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -327,9 +327,9 @@ GameObject:
   - component: {fileID: 598496498}
   - component: {fileID: 598496500}
   - component: {fileID: 598496499}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: WhiteBorderBottom
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1168,8 +1168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cf51d47e4683314da6c33a2504284f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tank2: {fileID: 1044925587940456589, guid: 80feb0d4767e03c46bf9c9b2bfc196b8, type: 3}
-  spawnPos: {fileID: 1341932156}
 --- !u!1 &1646769296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,9 +1179,9 @@ GameObject:
   - component: {fileID: 1646769297}
   - component: {fileID: 1646769299}
   - component: {fileID: 1646769298}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: WhiteBorderRight
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1291,9 +1289,9 @@ GameObject:
   - component: {fileID: 1665390782}
   - component: {fileID: 1665390784}
   - component: {fileID: 1665390783}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: WhiteBorderTop
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1801,5 +1799,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 714e918c84b7ad44eb4a7a445d6daa7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tank1: {fileID: 1044925587940456578, guid: f25008c1bc29b6b46a615d39143045d3, type: 3}
-  spawnPos: {fileID: 2136548542}
