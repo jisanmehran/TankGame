@@ -16,6 +16,8 @@ TagManager:
   - Player2
   - Player1Select
   - Player2Select
+  - mapselectionoption
+  - mapselector
   layers:
   - Default
   - TransparentFX

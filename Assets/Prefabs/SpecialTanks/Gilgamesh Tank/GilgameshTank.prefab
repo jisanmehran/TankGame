@@ -486,7 +486,6 @@ MonoBehaviour:
   TripleShot: 0
   TSBtw: 0
   bulletSpeed: 10
-  isPlayer2Input: 0
 --- !u!1 &8170684501438179409
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,12 +668,11 @@ MonoBehaviour:
   bullet: {fileID: 7924436910818419937, guid: 985e03b946b05de4999f204c9a712bf9, type: 3}
   Cooldown: 0
   cd: 1
-  Tank: {fileID: 0}
+  Tank: {fileID: 4378854754298259409}
   speed: 2
   TripleShot: 0
   TSBtw: 0
   bulletSpeed: 10
-  isPlayer2Input: 0
 --- !u!1 &8170684502358769979
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,12 +855,11 @@ MonoBehaviour:
   bullet: {fileID: 7924436910818419937, guid: 985e03b946b05de4999f204c9a712bf9, type: 3}
   Cooldown: 0
   cd: 1
-  Tank: {fileID: 0}
+  Tank: {fileID: 4378854754298259409}
   speed: 2
   TripleShot: 0
   TSBtw: 0
   bulletSpeed: 10
-  isPlayer2Input: 0
 --- !u!1 &8170684503049284631
 GameObject:
   m_ObjectHideFlags: 0

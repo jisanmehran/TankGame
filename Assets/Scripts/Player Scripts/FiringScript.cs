@@ -13,7 +13,6 @@ public class FiringScript : MonoBehaviour
     public bool TripleShot = false;
     public float TSBtw;
     public float bulletSpeed = 10;
-    public TankScript isPlayer2Input;
     // Start is called before the first frame update
 
     void Start()
@@ -24,7 +23,8 @@ public class FiringScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Cooldown == false & isPlayer2Input == false)
+        TankScript scr = Tank.GetComponent<TankScript>();
+        if (Cooldown == false && scr.isPlayer2Input == false)
         {
             if (Input.GetKey(KeyCode.LeftControl) && TripleShot == false)
             {  
@@ -49,7 +49,7 @@ public class FiringScript : MonoBehaviour
             Cooldown = false;
         }
 
-        if (Cooldown == false & isPlayer2Input == true)
+        if (Cooldown == false && scr.isPlayer2Input == true)
         {
             if (Input.GetKey(KeyCode.A) && TripleShot == false)
             {  

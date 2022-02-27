@@ -904,6 +904,7 @@ MonoBehaviour:
   - {fileID: 4378854754298259409, guid: 8f3d001c6a8aa3d4c9e6262ca77f546a, type: 3}
   playerStartPosition: {fileID: 2136548542}
   menuScene: Character Selection Menu
+  selectedCharacter: 0
   playerObject: {fileID: 0}
   Aitank: {fileID: 0}
   TargetPlayer1: 0
@@ -1032,6 +1033,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Barrier: {fileID: 1085397370}
   speed: 0.002
+--- !u!1 &1145550736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1145550738}
+  - component: {fileID: 1145550737}
+  m_Layer: 0
+  m_Name: GameControl Player 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1145550737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145550736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b046b4dac3e82942a2c166256f18785, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characters:
+  - {fileID: 6403202279296066995, guid: 1e6389f03fdac344aa083d04fed3f851, type: 3}
+  - {fileID: 4021340305451364958, guid: ee057ed880bf96a4d9752291c297a8cb, type: 3}
+  - {fileID: 262375534855524849, guid: 8eecab15f4dd01243a9919e988686ed0, type: 3}
+  - {fileID: 4378854754298259409, guid: 8f3d001c6a8aa3d4c9e6262ca77f546a, type: 3}
+  player2StartPosition: {fileID: 1341932156}
+  selected2Character: 0
+  player2Object: {fileID: 0}
+--- !u!4 &1145550738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145550736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.6813516, y: 1.8973342, z: -18.555946}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1153518769
 GameObject:
   m_ObjectHideFlags: 0

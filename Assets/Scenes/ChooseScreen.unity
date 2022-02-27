@@ -342,6 +342,7 @@ MonoBehaviour:
   CharacterSelectorScript: {fileID: 0}
   Player2CharacterSelectorScript: {fileID: 0}
   selectionOnGrid: 1
+  Level: 
 --- !u!1 &269756000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,6 +1001,7 @@ MonoBehaviour:
   CharacterSelectorScript: {fileID: 0}
   Player2CharacterSelectorScript: {fileID: 0}
   selectionOnGrid: 3
+  Level: 
 --- !u!1 &900949108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,6 +1829,7 @@ MonoBehaviour:
   CharacterSelectorScript: {fileID: 0}
   Player2CharacterSelectorScript: {fileID: 0}
   selectionOnGrid: 2
+  Level: 
 --- !u!1 &1406657265
 GameObject:
   m_ObjectHideFlags: 0
@@ -3035,6 +3038,7 @@ MonoBehaviour:
   CharacterSelectorScript: {fileID: 0}
   Player2CharacterSelectorScript: {fileID: 0}
   selectionOnGrid: 0
+  Level: 
 --- !u!1 &2106855185
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Barrage : MonoBehaviour
 {
     public GameObject BarrageHit;
+    public GameObject FirePoint;
     public bool Cooldown;
     private float timeBtwShots;
     public float cd;
@@ -20,21 +21,14 @@ public class Barrage : MonoBehaviour
     {
         if (Cooldown == false)
         {
-            while (Input.GetButton("Fire2"))
+            while (Input.GetButton("Fire2") && punchnumber < 7)
             {  
-                if (punchnumber == 6)
-                {
-                    punchnumber -= 1;
-
-                }
-                else
-                {
-                    GameObject Punch = Instantiate(BarrageHit, new Vector2(transform.position.x, transform.position.y+0.5f), transform.rotation);
-                    punchnumber += 1;
-                    Destroy(Punch,0.5f);
-                }
-                
+                GameObject Punch = Instantiate(BarrageHit, new Vector2(FirePoint.transform.position.x, FirePoint.transform.position.y), transform.rotation);
+                punchnumber += 1;
+                Destroy(Punch,0.5f);
             }
+            Cooldown = true;
+            punchnumber = 0;
         }
         else
         {

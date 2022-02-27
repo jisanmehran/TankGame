@@ -9,6 +9,8 @@ public class PlayerSelect : MonoBehaviour
     public Image PTwoSelect;
     public bool TankChosen1;
     public bool TankChosen2;
+
+    public string Level;
     public Image PlayerOne;
     public Image PlayerTwo;
     public Text PlayerOneTxt;
@@ -39,6 +41,7 @@ public class PlayerSelect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         RectTransform picture1 = POneSelect.GetComponent<RectTransform>();
         if (picture1.anchoredPosition == new Vector2(0,0))
         {

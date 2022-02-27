@@ -10,6 +10,8 @@ public class PlayerSaverScript : MonoBehaviour
     public GameObject Player2CharacterSelectorScript;
 
     public int selectionOnGrid;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +22,9 @@ public class PlayerSaverScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            SceneManager.LoadScene("Map1");
+            SceneManager.LoadScene("MapChooseScreen");
         }
         
     }
@@ -33,14 +35,12 @@ public class PlayerSaverScript : MonoBehaviour
         {
             CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter = selectionOnGrid;
             CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().StartGame();
-            Debug.Log("Player 1 Tank is changed to element " + selectionOnGrid);
         }
 
         if (other.gameObject.tag == "Player2Select")
         {
             Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character = selectionOnGrid;
             Player2CharacterSelectorScript.GetComponent<Character2Selection>().StartGame();
-            Debug.Log("Player 2 Tank is changed to element " + selectionOnGrid);
         }
 
     }
