@@ -103,6 +103,7 @@ MonoBehaviour:
   speed: 2
   TripleShot: 0
   TSBtw: 0
+  bulletSpeed: 10
 --- !u!1 &5879350118049065687
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +285,6 @@ GameObject:
   - component: {fileID: 5024393340832041468}
   - component: {fileID: 8502038342541946405}
   - component: {fileID: -7944529048993913398}
-  - component: {fileID: -4744000357106053279}
   m_Layer: 0
   m_Name: Servant
   m_TagString: Servant
@@ -434,10 +434,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db5313f17782ffa4bbf44978c322dc34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holdTime: 3
   keyMoveForward: w
   keyMoveReverse: s
   keyRotateRight: d
   keyRotateLeft: a
+  isPlayer2Input: 0
   moveSpeed: 0
   moveSpeedReverse: 0
   moveAcceleration: 1
@@ -458,17 +460,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b61906b04c71c5c43b9bf01caacf095c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-4744000357106053279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8502038342541946406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 620cf60f5862632469be8226561d98ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

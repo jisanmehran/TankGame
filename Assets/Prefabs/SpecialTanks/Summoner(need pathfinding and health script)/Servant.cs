@@ -15,4 +15,13 @@ public class Servant : MonoBehaviour
     {
         
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Bullet")
+        {
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+        }
+    }
 }

@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scenes/Map2.unity
+    - Assets/Prefabs/SpecialTanks/Summoner(need pathfinding and health script)/Servant.cs
+    - Assets/Prefabs/SpecialTanks/Summoner(need pathfinding and health script)/Servant.prefab
     - 
-    m_Values: 0101
+    m_Values: 000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

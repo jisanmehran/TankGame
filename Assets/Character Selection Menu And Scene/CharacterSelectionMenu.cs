@@ -9,8 +9,6 @@ public class CharacterSelectionMenu : MonoBehaviour
     public GameObject[] playerObjects;
     public int selectedCharacter = 0;
 
-    //public string gameScene = "Character Selection Scene";
-
     private string selectedCharacterDataName = "SelectedCharacter";
 
     void Start()
@@ -57,7 +55,6 @@ public class CharacterSelectionMenu : MonoBehaviour
     public void StartGame()
     {
         PlayerPrefs.SetInt(selectedCharacterDataName, selectedCharacter);
-        //SceneManager.LoadScene("Character Selection Menu Player 2");
     }
 
 }

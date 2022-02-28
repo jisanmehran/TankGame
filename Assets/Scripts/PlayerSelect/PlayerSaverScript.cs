@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayerSaverScript : MonoBehaviour
@@ -8,6 +9,12 @@ public class PlayerSaverScript : MonoBehaviour
 
     public GameObject CharacterSelectorScript;
     public GameObject Player2CharacterSelectorScript;
+
+    public GameObject ErrorMessagePanel;
+    public Text ReturntoScreenText;
+
+    private float TimeElapsed;
+    private float timeincrease = 1f;
 
     public int selectionOnGrid;
     
@@ -22,11 +29,29 @@ public class PlayerSaverScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        TimeElapsed += timeincrease * Time.deltaTime;
+
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            SceneManager.LoadScene("MapChooseScreen");
+            if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter == Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character)
+            {
+                ErrorMessagePanel.SetActive(true);
+                TimeElapsed = 0;
+            }
+
+            if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter != Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character)
+            {
+                SceneManager.LoadScene("MapChooseScreen");                
+            }
+
         }
-        
+
+        if (TimeElapsed >= 4)
+        {
+            TurnOffErrorMessage();
+        }
+
+        ReturntoScreenText.text = ("returning to screen in " + Mathf.RoundToInt(TimeElapsed).ToString() +" seconds");
     }
 
     void OnTriggerEnter2D (Collider2D other)
@@ -43,5 +68,10 @@ public class PlayerSaverScript : MonoBehaviour
             Player2CharacterSelectorScript.GetComponent<Character2Selection>().StartGame();
         }
 
+    }
+
+    void TurnOffErrorMessage ()
+    {
+        ErrorMessagePanel.SetActive(false);
     }
 }

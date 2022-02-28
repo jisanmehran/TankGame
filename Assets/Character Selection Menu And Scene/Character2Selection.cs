@@ -9,8 +9,6 @@ public class Character2Selection : MonoBehaviour
     public GameObject[] player2Objects;
     public int selected2Character = 0;
 
-    public string gameScene;
-
     private string selected2CharacterDataName = "Selected2Character";
 
     void Start()
@@ -57,7 +55,5 @@ public class Character2Selection : MonoBehaviour
     public void StartGame()
     {
         PlayerPrefs.SetInt(selected2CharacterDataName, selected2Character);
-        //int number = Random.Range(1, 5);
-        //SceneManager.LoadScene (sceneName:"Map" + number.ToString());
     }
 }
