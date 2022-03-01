@@ -9,15 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Character Selection Menu And Scene/Character Selection Menu.unity
-    guid: d88da844d07162f428e89ef6f1c78bdd
-  - enabled: 1
-    path: Assets/Character Selection Menu And Scene/Character Selection Menu Player
-      2.unity
-    guid: e4beb38238f826c42ad7eb4c9258fc5f
+    path: Assets/Scenes/StartScreen.unity
+    guid: 37dcc953785570c4abaf4bd8aaeaff3f
   - enabled: 1
     path: Assets/Scenes/ChooseScreen.unity
     guid: b32c27ca19ceac24fbcb8650e4ea3fa3
+  - enabled: 1
+    path: Assets/Scenes/MapChooseScreen.unity
+    guid: 05a188d65304ae9488d287f3eb559918
   - enabled: 1
     path: Assets/Scenes/Map1.unity
     guid: ed19c72daffaf454bb1fe5bd0254c84e
@@ -30,10 +29,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map4.unity
     guid: 6a9a4bda8f896824da42cac9b062dea9
-  - enabled: 1
-    path: Assets/Scenes/StartScreen.unity
-    guid: 37dcc953785570c4abaf4bd8aaeaff3f
-  - enabled: 1
-    path: Assets/Scenes/MapChooseScreen.unity
-    guid: 05a188d65304ae9488d287f3eb559918
   m_configObjects: {}

@@ -1,4 +1,0 @@
-repository "TankGame@GSMST_Student@cloud"
-  path "/"
-    br "/main"
-    co "/main"

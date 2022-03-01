@@ -10,8 +10,13 @@ public class PlayerSaverScript : MonoBehaviour
     public GameObject CharacterSelectorScript;
     public GameObject Player2CharacterSelectorScript;
 
+    private string WhichPlayer;
+
     public GameObject ErrorMessagePanel;
+    public GameObject NotAvailableMessagePanel;
     public Text ReturntoScreenText;
+    public Text ReturntoScreenforNotAvailText;
+    public Text Playerdeterminererrortext;
 
     private float TimeElapsed;
     private float timeincrease = 1f;
@@ -41,9 +46,28 @@ public class PlayerSaverScript : MonoBehaviour
 
             if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter != Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character)
             {
-                SceneManager.LoadScene("MapChooseScreen");                
+                if (Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character <= 3)
+                {
+                    if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter <=3)
+                    {
+                        SceneManager.LoadScene("MapChooseScreen");                
+                    }
+                }
             }
 
+            if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter > 3)
+            {
+                NotAvailableMessagePanel.SetActive(true);
+                TimeElapsed = 0;
+                WhichPlayer = ("Player 1");
+            }
+
+            if (Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character > 3)
+            {
+                NotAvailableMessagePanel.SetActive(true);
+                TimeElapsed = 0;
+                WhichPlayer = ("Player 2");
+            }
         }
 
         if (TimeElapsed >= 4)
@@ -52,6 +76,8 @@ public class PlayerSaverScript : MonoBehaviour
         }
 
         ReturntoScreenText.text = ("returning to screen in " + Mathf.RoundToInt(TimeElapsed).ToString() +" seconds");
+        ReturntoScreenforNotAvailText.text = ("returning to screen in " + Mathf.RoundToInt(TimeElapsed).ToString() +" seconds");
+        Playerdeterminererrortext.text = (WhichPlayer + " Must Select a Tank");
     }
 
     void OnTriggerEnter2D (Collider2D other)
@@ -73,5 +99,6 @@ public class PlayerSaverScript : MonoBehaviour
     void TurnOffErrorMessage ()
     {
         ErrorMessagePanel.SetActive(false);
+        NotAvailableMessagePanel.SetActive(false);
     }
 }

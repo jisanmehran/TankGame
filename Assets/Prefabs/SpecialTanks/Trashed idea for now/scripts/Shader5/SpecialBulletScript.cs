@@ -7,11 +7,15 @@ public class SpecialBulletScript : MonoBehaviour
     private Rigidbody2D rb;
     public float bulletSpeed = 20;
     private Vector3 direction;
+    public bool Cooldown;
+    private float timeBtwShots;
+    public float cd;
  
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         direction = transform.up;
+        Cooldown = false;
     }
  
     // Update is called once per frame
@@ -36,6 +40,10 @@ public class SpecialBulletScript : MonoBehaviour
         if (collision.gameObject.layer == 9 | collision.gameObject.layer == 12)
         {
             direction = Vector3.Reflect(direction, contact.normal);
+        }
+        if (collision.gameObject.tag == "Tank")
+        {
+            Destroy(gameObject);
         }
     }
 }

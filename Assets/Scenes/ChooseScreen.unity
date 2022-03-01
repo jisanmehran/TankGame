@@ -418,10 +418,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterSelectorScript: {fileID: 0}
-  Player2CharacterSelectorScript: {fileID: 0}
-  ErrorMessagePanel: {fileID: 0}
-  ReturntoScreenText: {fileID: 0}
+  CharacterSelectorScript: {fileID: 1232150644}
+  Player2CharacterSelectorScript: {fileID: 1129081025}
+  ErrorMessagePanel: {fileID: 791679311}
+  NotAvailableMessagePanel: {fileID: 0}
+  ReturntoScreenText: {fileID: 33120461}
+  ReturntoScreenforNotAvailText: {fileID: 0}
+  Playerdeterminererrortext: {fileID: 0}
   selectionOnGrid: 1
 --- !u!1 &269756000
 GameObject:
@@ -506,6 +509,85 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &409232785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 409232786}
+  - component: {fileID: 409232787}
+  - component: {fileID: 409232788}
+  m_Layer: 5
+  m_Name: ReturnTimeText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &409232786
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409232785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1580042496}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00000012852, y: -108}
+  m_SizeDelta: {x: 535.95, y: 68.91}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &409232787
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409232785}
+  m_CullTransparentMesh: 1
+--- !u!114 &409232788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409232785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.15566038, g: 0.2738123, b: 0.6226415, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'returning to selection screen in '
 --- !u!1 &441331070
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,8 +863,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.720001, y: 5.799988}
-  m_SizeDelta: {x: -264.05, y: -320.51}
+  m_AnchoredPosition: {x: -4.7199707, y: -0.000030517578}
+  m_SizeDelta: {x: -264.05, y: -149.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &791679313
 MonoBehaviour:
@@ -984,6 +1066,7 @@ GameObject:
   - component: {fileID: 846290601}
   - component: {fileID: 846290603}
   - component: {fileID: 846290602}
+  - component: {fileID: 846290606}
   - component: {fileID: 846290605}
   - component: {fileID: 846290604}
   m_Layer: 5
@@ -1097,6 +1180,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &846290606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846290600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterSelectorScript: {fileID: 0}
+  Player2CharacterSelectorScript: {fileID: 0}
+  ErrorMessagePanel: {fileID: 0}
+  NotAvailableMessagePanel: {fileID: 0}
+  ReturntoScreenText: {fileID: 0}
+  ReturntoScreenforNotAvailText: {fileID: 0}
+  Playerdeterminererrortext: {fileID: 0}
+  selectionOnGrid: 10
 --- !u!1 &851107696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,10 +1337,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterSelectorScript: {fileID: 0}
-  Player2CharacterSelectorScript: {fileID: 0}
+  CharacterSelectorScript: {fileID: 1232150644}
+  Player2CharacterSelectorScript: {fileID: 1129081025}
   ErrorMessagePanel: {fileID: 791679311}
+  NotAvailableMessagePanel: {fileID: 1580042495}
   ReturntoScreenText: {fileID: 33120461}
+  ReturntoScreenforNotAvailText: {fileID: 409232788}
+  Playerdeterminererrortext: {fileID: 2015565549}
   selectionOnGrid: 3
 --- !u!1 &900949108
 GameObject:
@@ -1300,6 +1406,7 @@ GameObject:
   - component: {fileID: 991685186}
   - component: {fileID: 991685185}
   - component: {fileID: 991685188}
+  - component: {fileID: 991685189}
   - component: {fileID: 991685187}
   m_Layer: 5
   m_Name: MiddleImage
@@ -1412,6 +1519,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &991685189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991685183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterSelectorScript: {fileID: 0}
+  Player2CharacterSelectorScript: {fileID: 0}
+  ErrorMessagePanel: {fileID: 0}
+  NotAvailableMessagePanel: {fileID: 0}
+  ReturntoScreenText: {fileID: 0}
+  ReturntoScreenforNotAvailText: {fileID: 0}
+  Playerdeterminererrortext: {fileID: 0}
+  selectionOnGrid: 10
 --- !u!1 &1129081025
 GameObject:
   m_ObjectHideFlags: 0
@@ -2062,10 +2189,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterSelectorScript: {fileID: 0}
-  Player2CharacterSelectorScript: {fileID: 0}
-  ErrorMessagePanel: {fileID: 0}
-  ReturntoScreenText: {fileID: 0}
+  CharacterSelectorScript: {fileID: 1232150644}
+  Player2CharacterSelectorScript: {fileID: 1129081025}
+  ErrorMessagePanel: {fileID: 791679311}
+  NotAvailableMessagePanel: {fileID: 0}
+  ReturntoScreenText: {fileID: 33120461}
+  ReturntoScreenforNotAvailText: {fileID: 0}
+  Playerdeterminererrortext: {fileID: 0}
   selectionOnGrid: 2
 --- !u!1 &1406657265
 GameObject:
@@ -2078,6 +2208,7 @@ GameObject:
   - component: {fileID: 1406657266}
   - component: {fileID: 1406657268}
   - component: {fileID: 1406657267}
+  - component: {fileID: 1406657271}
   - component: {fileID: 1406657270}
   - component: {fileID: 1406657269}
   m_Layer: 5
@@ -2191,6 +2322,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1406657271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406657265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterSelectorScript: {fileID: 0}
+  Player2CharacterSelectorScript: {fileID: 0}
+  ErrorMessagePanel: {fileID: 0}
+  NotAvailableMessagePanel: {fileID: 0}
+  ReturntoScreenText: {fileID: 0}
+  ReturntoScreenforNotAvailText: {fileID: 0}
+  Playerdeterminererrortext: {fileID: 0}
+  selectionOnGrid: 10
 --- !u!1 &1467255346
 GameObject:
   m_ObjectHideFlags: 0
@@ -2345,6 +2496,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1500211930}
+  m_CullTransparentMesh: 1
+--- !u!1 &1580042495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1580042496}
+  - component: {fileID: 1580042498}
+  - component: {fileID: 1580042497}
+  m_Layer: 5
+  m_Name: Error MessageNotAvailable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1580042496
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580042495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2015565551}
+  - {fileID: 409232786}
+  m_Father: {fileID: 1884819155}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -4.7199707, y: -0.000030517578}
+  m_SizeDelta: {x: -264.05, y: -149.79}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1580042497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580042495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.87058824}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 2
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1580042498
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580042495}
   m_CullTransparentMesh: 1
 --- !u!1 &1601374571
 GameObject:
@@ -2505,6 +2733,7 @@ GameObject:
   - component: {fileID: 1691450964}
   - component: {fileID: 1691450967}
   - component: {fileID: 1691450966}
+  - component: {fileID: 1691450968}
   m_Layer: 5
   m_Name: LeftBottom
   m_TagString: SelectionImages
@@ -2616,6 +2845,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1691450968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691450962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterSelectorScript: {fileID: 0}
+  Player2CharacterSelectorScript: {fileID: 0}
+  ErrorMessagePanel: {fileID: 0}
+  NotAvailableMessagePanel: {fileID: 0}
+  ReturntoScreenText: {fileID: 0}
+  ReturntoScreenforNotAvailText: {fileID: 0}
+  Playerdeterminererrortext: {fileID: 0}
+  selectionOnGrid: 10
 --- !u!1 &1723076894
 GameObject:
   m_ObjectHideFlags: 0
@@ -2834,6 +3083,7 @@ RectTransform:
   - {fileID: 1723076895}
   - {fileID: 1900392934}
   - {fileID: 791679312}
+  - {fileID: 1580042496}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3274,11 +3524,93 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterSelectorScript: {fileID: 0}
-  Player2CharacterSelectorScript: {fileID: 0}
-  ErrorMessagePanel: {fileID: 0}
-  ReturntoScreenText: {fileID: 0}
+  CharacterSelectorScript: {fileID: 1232150644}
+  Player2CharacterSelectorScript: {fileID: 851107696}
+  ErrorMessagePanel: {fileID: 791679311}
+  NotAvailableMessagePanel: {fileID: 0}
+  ReturntoScreenText: {fileID: 33120461}
+  ReturntoScreenforNotAvailText: {fileID: 0}
+  Playerdeterminererrortext: {fileID: 0}
   selectionOnGrid: 0
+--- !u!1 &2015565548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2015565551}
+  - component: {fileID: 2015565550}
+  - component: {fileID: 2015565549}
+  m_Layer: 5
+  m_Name: ErrorMessageText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2015565549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015565548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.5, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
+    m_FontSize: 22
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Both Players Must Select a Tank
+--- !u!222 &2015565550
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015565548}
+  m_CullTransparentMesh: 1
+--- !u!224 &2015565551
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015565548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1580042496}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.00000012852, y: 34.455}
+  m_SizeDelta: {x: 535.95, y: 68.91}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2106855185
 GameObject:
   m_ObjectHideFlags: 0
@@ -3367,6 +3699,7 @@ GameObject:
   - component: {fileID: 2123190691}
   - component: {fileID: 2123190690}
   - component: {fileID: 2123190693}
+  - component: {fileID: 2123190694}
   - component: {fileID: 2123190692}
   m_Layer: 5
   m_Name: BottomRight
@@ -3479,3 +3812,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2123190694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123190688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterSelectorScript: {fileID: 0}
+  Player2CharacterSelectorScript: {fileID: 0}
+  ErrorMessagePanel: {fileID: 0}
+  NotAvailableMessagePanel: {fileID: 0}
+  ReturntoScreenText: {fileID: 0}
+  ReturntoScreenforNotAvailText: {fileID: 0}
+  Playerdeterminererrortext: {fileID: 0}
+  selectionOnGrid: 10
