@@ -5,6 +5,7 @@ using UnityEngine;
 public class Control : MonoBehaviour
 {
     public GameObject Master;
+    public GameObject inputdetector;
     public GameObject Servant;
     public bool Cooldown;
     private float timeBtwShots;
@@ -15,7 +16,7 @@ public class Control : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    
+        inputdetector = GameObject.Find("GameControl");
     }
 
     // Update is called once per frame
@@ -51,6 +52,16 @@ public class Control : MonoBehaviour
                     closestServant.GetComponent<TankScript>().enabled = true;
                     closestServant.GetComponentInChildren<FiringScript>().enabled = true;
                     Possessed = true;
+
+                    if (gameObject.GetComponent<TankScript>().isPlayer2Input == false)
+                    {
+                        closestServant.GetComponent<TankScript>().isPlayer2Input = false;
+                    }
+
+                    if (gameObject.GetComponent<TankScript>().isPlayer2Input == true)
+                    {
+                        closestServant.GetComponent<TankScript>().isPlayer2Input = true;
+                    }
                 }
                 else if (Possessed == true)
                 {

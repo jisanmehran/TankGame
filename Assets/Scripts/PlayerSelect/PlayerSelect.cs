@@ -86,7 +86,7 @@ public class PlayerSelect : MonoBehaviour
         }
         if (TankChosen1 == false) 
         {
-            if(Input.GetKeyDown(KeyCode.W))
+            if(Input.GetKeyDown(KeyCode.R))
             {
                 RectTransform picture = POneSelect.GetComponent<RectTransform>();
                 if (picture.anchoredPosition.y != 0)
@@ -94,7 +94,7 @@ public class PlayerSelect : MonoBehaviour
                     picture.anchoredPosition = new Vector2(picture.anchoredPosition.x, picture.anchoredPosition.y+75);
                 }     
             }
-            else if(Input.GetKeyDown(KeyCode.A))
+            else if(Input.GetKeyDown(KeyCode.D))
             {
                 RectTransform picture = POneSelect.GetComponent<RectTransform>();
                 if (picture.anchoredPosition.x != -150)
@@ -102,7 +102,7 @@ public class PlayerSelect : MonoBehaviour
                     picture.anchoredPosition = new Vector2(picture.anchoredPosition.x-75, picture.anchoredPosition.y);
                 }          
             }
-            else if (Input.GetKeyDown(KeyCode.S))
+            else if (Input.GetKeyDown(KeyCode.F))
             {
                 RectTransform picture = POneSelect.GetComponent<RectTransform>();
                 if (picture.anchoredPosition.y != -150)
@@ -111,7 +111,7 @@ public class PlayerSelect : MonoBehaviour
                 }
             
             }
-            else if (Input.GetKeyDown(KeyCode.D))
+            else if (Input.GetKeyDown(KeyCode.G))
             {
                 RectTransform picture = POneSelect.GetComponent<RectTransform>();
                 if (picture.anchoredPosition.x != 0)

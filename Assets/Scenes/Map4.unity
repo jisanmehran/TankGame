@@ -1454,7 +1454,10 @@ MonoBehaviour:
   - {fileID: 4378854754298259409, guid: 8f3d001c6a8aa3d4c9e6262ca77f546a, type: 3}
   playerStartPosition: {fileID: 0}
   menuScene: Character Selection Menu
+  selectedCharacter: 0
   playerObject: {fileID: 0}
+  Aitank: {fileID: 0}
+  TargetPlayer1: 0
 --- !u!4 &1311023561
 Transform:
   m_ObjectHideFlags: 0

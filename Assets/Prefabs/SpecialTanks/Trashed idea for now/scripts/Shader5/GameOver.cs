@@ -15,6 +15,7 @@ public class GameOver : MonoBehaviour
     public float bulletSpeed = 10;
     public TankScript isPlayer2Input;
     Camera m_MainCamera;
+    public bool Serious = false;
     // Start is called before the first frame update
 
     void Start()
@@ -28,14 +29,13 @@ public class GameOver : MonoBehaviour
         TankScript scr = Tank.GetComponent<TankScript>();
         if (Cooldown == false & scr.isPlayer2Input == false)
         {
-            if (Input.GetKey(KeyCode.Space) && TripleShot == false)
+            if (Serious)
             {  
                 Rigidbody2D thebullet = bullet.GetComponent<Rigidbody2D>();
                 Cooldown = true;
                 timeBtwShots = cd;
                 GameObject shotBullet = Instantiate(bullet, new Vector2(transform.position.x+0.75f, transform.position.y), transform.rotation);
-                //thebullet.AddRelativeForce(Vector3.up * bulletSpeed);
-
+                
             }
         }
 
@@ -51,14 +51,13 @@ public class GameOver : MonoBehaviour
 
         if (Cooldown == false & scr.isPlayer2Input == true)
         {
-            if (Input.GetKey(KeyCode.Q) && TripleShot == false)
+            if (Serious)
             {  
                 Rigidbody2D thebullet = bullet.GetComponent<Rigidbody2D>();
                 Cooldown = true;
                 timeBtwShots = cd;
                 GameObject shotBullet = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
-                //thebullet.AddRelativeForce(Vector3.up * bulletSpeed);
-
+                
 
             }  
         }

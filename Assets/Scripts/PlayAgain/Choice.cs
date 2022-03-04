@@ -42,7 +42,7 @@ public class Choice : MonoBehaviour
             }
             else if (picture.anchoredPosition == new Vector2(0,-64))
             {
-                Application.Quit();
+                //Application.Quit();
             }
         }   
     }

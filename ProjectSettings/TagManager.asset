@@ -18,6 +18,9 @@ TagManager:
   - Player2Select
   - mapselectionoption
   - mapselector
+  - choice
+  - nobutton
+  - yesbutton
   layers:
   - Default
   - TransparentFX

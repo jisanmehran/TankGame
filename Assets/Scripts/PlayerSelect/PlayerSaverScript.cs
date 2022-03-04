@@ -46,23 +46,23 @@ public class PlayerSaverScript : MonoBehaviour
 
             if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter != Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character)
             {
-                if (Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character <= 3)
+                if (Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character <= 4)
                 {
-                    if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter <=3)
+                    if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter <= 4)
                     {
                         SceneManager.LoadScene("MapChooseScreen");                
                     }
                 }
             }
 
-            if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter > 3)
+            if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter > 4)
             {
                 NotAvailableMessagePanel.SetActive(true);
                 TimeElapsed = 0;
                 WhichPlayer = ("Player 1");
             }
 
-            if (Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character > 3)
+            if (Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character > 4)
             {
                 NotAvailableMessagePanel.SetActive(true);
                 TimeElapsed = 0;
