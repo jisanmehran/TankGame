@@ -30,10 +30,14 @@ public class Timer : MonoBehaviour
                 timerIsRunning = false;
             }
 
-            if (theTime == roundTime/2)
+            if (Mathf.Round(theTime) == roundTime/2)
             {
-                GameOver scr = TheGameOver.GetComponent<GameOver>();
+                TheGameOver = GameObject.Find("One's Greatest High(Clone)");
+                GameObject child1 = TheGameOver.transform.GetChild(0).gameObject;
+                GameObject childofchild = child1.transform.GetChild(5).gameObject;
+                GameOver scr = childofchild.GetComponent<GameOver>();
                 scr.Serious = true;
+                Debug.Log("burh");
             }
         }
     }

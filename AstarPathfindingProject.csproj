@@ -77,8 +77,8 @@
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Core\GraphUpdateShape.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Utilities\AstarProfiler.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Core\Serialization\JsonSerializer.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Utilities\GraphGizmoHelper.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Behaviors\Patrol.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Utilities\GraphGizmoHelper.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Generators\NavMeshGenerator.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Core\AI\Seeker.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Core\Misc\GraphUpdateProcessor.cs" />
@@ -112,8 +112,8 @@
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Core\Misc\StackPool.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Utilities\RetainedGizmos.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Core\Serialization\SimpleJsonReplacement.cs" />
-     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Modifiers\RaycastModifier.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\ExampleScenes\ExampleScripts\MineBotAnimation.cs" />
+     <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Modifiers\RaycastModifier.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\ExampleScenes\ExampleScripts\AstarSmoothFollow2.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\ExampleScenes\ExampleScripts\SnapToNode.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\AstarPathfindingProject\Legacy\MiscLegacy.cs" />
@@ -395,29 +395,29 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
         <HintPath>C:/Program Files/Unity 2021.1.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Newtonsoft.Json">
-        <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-        <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.YamlDotNet">
-        <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
-    </Reference>
-    <Reference Include="unityplastic">
-        <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
+    <Reference Include="log4netPlastic">
+        <HintPath>C:/Users/jisan/Documents/System Files/Desktop/tmp/TankGame/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
-        <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
-    </Reference>
-    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
-        <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Assets/Scripts/AI Scripts/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-        <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+        <HintPath>C:/Users/jisan/Documents/System Files/Desktop/tmp/TankGame/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+        <HintPath>C:/Users/jisan/Documents/System Files/Desktop/tmp/TankGame/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+        <HintPath>C:/Users/jisan/Documents/System Files/Desktop/tmp/TankGame/Library/PackageCache/com.unity.visualscripting@1.6.1/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+        <HintPath>C:/Users/jisan/Documents/System Files/Desktop/tmp/TankGame/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Plastic.Newtonsoft.Json">
+        <HintPath>C:/Users/jisan/Documents/System Files/Desktop/tmp/TankGame/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+        <HintPath>C:/Users/jisan/Documents/System Files/Desktop/tmp/TankGame/Assets/Scripts/AI Scripts/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+        <HintPath>C:/Users/jisan/Documents/System Files/Desktop/tmp/TankGame/Library/PackageCache/com.unity.collab-proxy@1.15.12/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>C:/Program Files/Unity 2021.1.15f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -765,10 +765,10 @@
         <HintPath>C:/Program Files/Unity 2021.1.15f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/jisan/Documents/System Files/Desktop/tmp/TankGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/jisan/Documents/GitHub/TankGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/jisan/Documents/System Files/Desktop/tmp/TankGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

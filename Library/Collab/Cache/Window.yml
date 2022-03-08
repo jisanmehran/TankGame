@@ -16,8 +16,7 @@ MonoBehaviour:
     m_Keys:
     - 
     m_Values: 01
-  RevisionSummary: Fixed Play Again Screen and Health Script now has 3 lives and
-    automatically goes to play again screen when three lives are over
+  RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

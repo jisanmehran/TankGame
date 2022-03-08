@@ -421,10 +421,10 @@ MonoBehaviour:
   CharacterSelectorScript: {fileID: 1232150644}
   Player2CharacterSelectorScript: {fileID: 1129081025}
   ErrorMessagePanel: {fileID: 791679311}
-  NotAvailableMessagePanel: {fileID: 0}
+  NotAvailableMessagePanel: {fileID: 1580042495}
   ReturntoScreenText: {fileID: 33120461}
-  ReturntoScreenforNotAvailText: {fileID: 0}
-  Playerdeterminererrortext: {fileID: 0}
+  ReturntoScreenforNotAvailText: {fileID: 409232788}
+  Playerdeterminererrortext: {fileID: 2015565549}
   selectionOnGrid: 1
 --- !u!1 &269756000
 GameObject:
@@ -917,7 +917,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c50a0848ed11c6647a9d6ee459972e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player2CharacterSelectorScript: {fileID: 0}
 --- !u!1 &803504231
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,13 +1206,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterSelectorScript: {fileID: 0}
-  Player2CharacterSelectorScript: {fileID: 0}
-  ErrorMessagePanel: {fileID: 0}
-  NotAvailableMessagePanel: {fileID: 0}
-  ReturntoScreenText: {fileID: 0}
-  ReturntoScreenforNotAvailText: {fileID: 0}
-  Playerdeterminererrortext: {fileID: 0}
+  CharacterSelectorScript: {fileID: 1232150644}
+  Player2CharacterSelectorScript: {fileID: 1129081025}
+  ErrorMessagePanel: {fileID: 791679311}
+  NotAvailableMessagePanel: {fileID: 1580042495}
+  ReturntoScreenText: {fileID: 33120461}
+  ReturntoScreenforNotAvailText: {fileID: 409232788}
+  Playerdeterminererrortext: {fileID: 2015565549}
   selectionOnGrid: 10
 --- !u!114 &846290607
 MonoBehaviour:
@@ -1227,7 +1226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb4f03dfbaef99449c794fa93129b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterSelectorScript: {fileID: 0}
 --- !u!1 &851107696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,13 +1558,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterSelectorScript: {fileID: 0}
-  Player2CharacterSelectorScript: {fileID: 0}
-  ErrorMessagePanel: {fileID: 0}
-  NotAvailableMessagePanel: {fileID: 0}
-  ReturntoScreenText: {fileID: 0}
-  ReturntoScreenforNotAvailText: {fileID: 0}
-  Playerdeterminererrortext: {fileID: 0}
+  CharacterSelectorScript: {fileID: 1232150644}
+  Player2CharacterSelectorScript: {fileID: 1129081025}
+  ErrorMessagePanel: {fileID: 791679311}
+  NotAvailableMessagePanel: {fileID: 1580042495}
+  ReturntoScreenText: {fileID: 33120461}
+  ReturntoScreenforNotAvailText: {fileID: 409232788}
+  Playerdeterminererrortext: {fileID: 2015565549}
   selectionOnGrid: 10
 --- !u!1 &1129081025
 GameObject:
@@ -2222,10 +2220,10 @@ MonoBehaviour:
   CharacterSelectorScript: {fileID: 1232150644}
   Player2CharacterSelectorScript: {fileID: 1129081025}
   ErrorMessagePanel: {fileID: 791679311}
-  NotAvailableMessagePanel: {fileID: 0}
+  NotAvailableMessagePanel: {fileID: 1580042495}
   ReturntoScreenText: {fileID: 33120461}
-  ReturntoScreenforNotAvailText: {fileID: 0}
-  Playerdeterminererrortext: {fileID: 0}
+  ReturntoScreenforNotAvailText: {fileID: 409232788}
+  Playerdeterminererrortext: {fileID: 2015565549}
   selectionOnGrid: 2
 --- !u!1 &1406657265
 GameObject:
@@ -2364,13 +2362,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterSelectorScript: {fileID: 0}
-  Player2CharacterSelectorScript: {fileID: 0}
-  ErrorMessagePanel: {fileID: 0}
-  NotAvailableMessagePanel: {fileID: 0}
-  ReturntoScreenText: {fileID: 0}
-  ReturntoScreenforNotAvailText: {fileID: 0}
-  Playerdeterminererrortext: {fileID: 0}
+  CharacterSelectorScript: {fileID: 1232150644}
+  Player2CharacterSelectorScript: {fileID: 1129081025}
+  ErrorMessagePanel: {fileID: 791679311}
+  NotAvailableMessagePanel: {fileID: 1580042495}
+  ReturntoScreenText: {fileID: 33120461}
+  ReturntoScreenforNotAvailText: {fileID: 409232788}
+  Playerdeterminererrortext: {fileID: 2015565549}
   selectionOnGrid: 10
 --- !u!1 &1467255346
 GameObject:
@@ -2712,6 +2710,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb8c3d61dec94342a9554e58a0db637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player1hitCount: 0
+  player2hitCount: 0
 --- !u!4 &1611063434
 Transform:
   m_ObjectHideFlags: 0
@@ -2930,13 +2930,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterSelectorScript: {fileID: 0}
-  Player2CharacterSelectorScript: {fileID: 0}
-  ErrorMessagePanel: {fileID: 0}
-  NotAvailableMessagePanel: {fileID: 0}
-  ReturntoScreenText: {fileID: 0}
-  ReturntoScreenforNotAvailText: {fileID: 0}
-  Playerdeterminererrortext: {fileID: 0}
+  CharacterSelectorScript: {fileID: 1232150644}
+  Player2CharacterSelectorScript: {fileID: 1129081025}
+  ErrorMessagePanel: {fileID: 791679311}
+  NotAvailableMessagePanel: {fileID: 1580042495}
+  ReturntoScreenText: {fileID: 33120461}
+  ReturntoScreenforNotAvailText: {fileID: 409232788}
+  Playerdeterminererrortext: {fileID: 2015565549}
   selectionOnGrid: 10
 --- !u!1 &1723076894
 GameObject:
@@ -3598,12 +3598,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterSelectorScript: {fileID: 1232150644}
-  Player2CharacterSelectorScript: {fileID: 851107696}
+  Player2CharacterSelectorScript: {fileID: 1129081025}
   ErrorMessagePanel: {fileID: 791679311}
-  NotAvailableMessagePanel: {fileID: 0}
+  NotAvailableMessagePanel: {fileID: 1580042495}
   ReturntoScreenText: {fileID: 33120461}
-  ReturntoScreenforNotAvailText: {fileID: 0}
-  Playerdeterminererrortext: {fileID: 0}
+  ReturntoScreenforNotAvailText: {fileID: 409232788}
+  Playerdeterminererrortext: {fileID: 2015565549}
   selectionOnGrid: 0
 --- !u!1 &2015565548
 GameObject:
@@ -3897,11 +3897,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterSelectorScript: {fileID: 0}
-  Player2CharacterSelectorScript: {fileID: 0}
-  ErrorMessagePanel: {fileID: 0}
-  NotAvailableMessagePanel: {fileID: 0}
-  ReturntoScreenText: {fileID: 0}
-  ReturntoScreenforNotAvailText: {fileID: 0}
-  Playerdeterminererrortext: {fileID: 0}
+  CharacterSelectorScript: {fileID: 1232150644}
+  Player2CharacterSelectorScript: {fileID: 1129081025}
+  ErrorMessagePanel: {fileID: 791679311}
+  NotAvailableMessagePanel: {fileID: 1580042495}
+  ReturntoScreenText: {fileID: 33120461}
+  ReturntoScreenforNotAvailText: {fileID: 409232788}
+  Playerdeterminererrortext: {fileID: 2015565549}
   selectionOnGrid: 10

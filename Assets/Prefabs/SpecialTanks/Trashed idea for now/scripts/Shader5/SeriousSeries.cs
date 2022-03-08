@@ -24,6 +24,7 @@ public class SeriousSeries : MonoBehaviour
         rb.velocity = direction * bulletSpeed;
         float rotationz = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rotationz - 90);
+        Destroy(gameObject, 10f);
     }
 
     void FixedUpdate()

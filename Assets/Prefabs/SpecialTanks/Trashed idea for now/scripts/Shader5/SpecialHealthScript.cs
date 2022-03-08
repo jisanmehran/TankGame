@@ -9,10 +9,18 @@ public class SpecialHealthScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Bullet" && collision.gameObject.name != "specialBullet")
+        if (collision.gameObject.tag == "Bullet")
         {
-            //SceneManager.LoadScene("Map1");
-            Debug.Log("Hi");
+            if (collision.gameObject.name != "specialBullet(Clone)")
+            {
+                if (collision.gameObject.name != "THEPunch(Clone)")
+                {
+                    if (collision.gameObject.name != "BarrageHit(Clone)")
+                    {
+                        SceneManager.LoadScene("PlayAgain");
+                    }
+                }             
+            }          
         }
     }
 }

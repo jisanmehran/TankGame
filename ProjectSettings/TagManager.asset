@@ -35,7 +35,7 @@ TagManager:
   - BulletLayer
   - SelfTankLayer
   - BorderLayer
-  - 
+  - ThroughWalls
   - 
   - 
   - 

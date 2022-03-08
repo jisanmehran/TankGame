@@ -14,13 +14,14 @@ public class GameOver : MonoBehaviour
     public float TSBtw;
     public float bulletSpeed = 10;
     public TankScript isPlayer2Input;
-    Camera m_MainCamera;
+    public Camera m_MainCamera;
     public bool Serious = false;
     // Start is called before the first frame update
 
     void Start()
     {
         Cooldown = false;
+        m_MainCamera = Camera.main;
     }
 
     // Update is called once per frame
@@ -34,8 +35,11 @@ public class GameOver : MonoBehaviour
                 Rigidbody2D thebullet = bullet.GetComponent<Rigidbody2D>();
                 Cooldown = true;
                 timeBtwShots = cd;
-                GameObject shotBullet = Instantiate(bullet, new Vector2(transform.position.x+0.75f, transform.position.y), transform.rotation);
-                
+                GameObject shotBullet = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
+                m_MainCamera = Camera.main;
+                Camera.main.GetComponent<PostProcess>().enabled = true;
+                m_MainCamera.GetComponent<PostProcess>().enabled = true;
+                Debug.Log("here");
             }
         }
 
@@ -57,9 +61,11 @@ public class GameOver : MonoBehaviour
                 Cooldown = true;
                 timeBtwShots = cd;
                 GameObject shotBullet = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
-                
-
-            }  
+                m_MainCamera = Camera.main;
+                Camera.main.GetComponent<PostProcess>().enabled = true;
+                m_MainCamera.GetComponent<PostProcess>().enabled = true;
+                Debug.Log("here2");
+            }
         }
 
         else
