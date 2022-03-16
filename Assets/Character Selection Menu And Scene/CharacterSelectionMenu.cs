@@ -15,10 +15,8 @@ public class CharacterSelectionMenu : MonoBehaviour
     {
 
         HideAllCharacters();
-        
         selectedCharacter = PlayerPrefs.GetInt(selectedCharacterDataName, 0);
         selectedCharacter = 0;
-        playerObjects[selectedCharacter].SetActive(true);
     }
 
 
@@ -28,28 +26,6 @@ public class CharacterSelectionMenu : MonoBehaviour
         {
             g.SetActive(false);
         }
-    }
-
-    public void NextCharacter()
-    {
-        playerObjects[selectedCharacter].SetActive(false);
-        selectedCharacter++;
-        if (selectedCharacter >= playerObjects.Length)
-        {
-            selectedCharacter = 0;
-        }
-        playerObjects[selectedCharacter].SetActive(true);
-    }
-
-    public void PreviousCharacter()
-    {
-        playerObjects[selectedCharacter].SetActive(false);
-        selectedCharacter--;
-        if (selectedCharacter < 0)
-        {
-            selectedCharacter = playerObjects.Length-1;
-        }
-        playerObjects[selectedCharacter].SetActive(true);
     }
 
     public void StartGame()

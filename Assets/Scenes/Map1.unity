@@ -379,7 +379,6 @@ MonoBehaviour:
   - {fileID: 4378854754298259409, guid: 8f3d001c6a8aa3d4c9e6262ca77f546a, type: 3}
   - {fileID: 1044925587940456589, guid: 846615e6ce983d443804bf8dd5d4ac94, type: 3}
   playerStartPosition: {fileID: 2136548542}
-  menuScene: Character Selection Menu
   selectedCharacter: 0
   playerObject: {fileID: 0}
   Aitank: {fileID: 6898406850752110373, guid: f5a47017b5ba25349947b78a1a4d189b, type: 3}
@@ -1783,7 +1782,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1526108191}
-  - component: {fileID: 1526108190}
   m_Layer: 0
   m_Name: TankSpawn2
   m_TagString: Untagged
@@ -1791,18 +1789,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1526108190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1526108189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cf51d47e4683314da6c33a2504284f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1526108191
 Transform:
   m_ObjectHideFlags: 0
@@ -2331,7 +2317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b046b4dac3e82942a2c166256f18785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characters:
+  characters2:
   - {fileID: 6403202279296066995, guid: 1e6389f03fdac344aa083d04fed3f851, type: 3}
   - {fileID: 4021340305451364958, guid: ee057ed880bf96a4d9752291c297a8cb, type: 3}
   - {fileID: 262375534855524849, guid: 8eecab15f4dd01243a9919e988686ed0, type: 3}
@@ -2473,7 +2459,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2136548542}
-  - component: {fileID: 2136548543}
   m_Layer: 0
   m_Name: TankSpawn1
   m_TagString: Untagged
@@ -2495,15 +2480,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2136548543
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2136548541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 714e918c84b7ad44eb4a7a445d6daa7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

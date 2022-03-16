@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1131109462540492730}
   - component: {fileID: 1540052714656811096}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 6659710112039790770}
   - component: {fileID: 3199129192863007393}
   - component: {fileID: 2027432101749056888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AI Bomb Tank
   m_TagString: Tank
   m_Icon: {fileID: 0}
@@ -264,10 +264,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db5313f17782ffa4bbf44978c322dc34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holdTime: 3
   keyMoveForward: w
   keyMoveReverse: s
   keyRotateRight: d
   keyRotateLeft: a
+  isPlayer2Input: 0
   moveSpeed: 0
   moveSpeedReverse: 0
   moveAcceleration: 1
@@ -288,7 +290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4841671023273696431}
   - component: {fileID: 6623579511076363279}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +374,7 @@ GameObject:
   - component: {fileID: 8669632308980716826}
   - component: {fileID: 1362011007101933126}
   - component: {fileID: 1079772732141071531}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -464,3 +466,4 @@ MonoBehaviour:
   speed: 2
   TripleShot: 0
   TSBtw: 0
+  bulletSpeed: 10

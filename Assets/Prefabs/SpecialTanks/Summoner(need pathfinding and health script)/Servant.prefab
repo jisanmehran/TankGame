@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1265252784195034695}
   - component: {fileID: 8879262117236366619}
   - component: {fileID: 7431981200990054390}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -114,7 +114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3093619133901215730}
   - component: {fileID: 3617519056120993618}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7380605953336431847}
   - component: {fileID: 8971436377660031749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 5024393340832041468}
   - component: {fileID: 8502038342541946405}
   - component: {fileID: -7944529048993913398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Servant
   m_TagString: Servant
   m_Icon: {fileID: 0}

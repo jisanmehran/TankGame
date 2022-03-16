@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3738921058062202411}
   - component: {fileID: 1811665409292244673}
   - component: {fileID: 262375534855524850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AI Bomb Tank
   m_TagString: Tank
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1167635142012300080}
   - component: {fileID: 781825478164364498}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -303,7 +303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681043649405331493}
   - component: {fileID: 4930713239696435333}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 7482307808740991376}
   - component: {fileID: 963790261460361932}
   - component: {fileID: 1259557079992178721}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}

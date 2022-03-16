@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2064644138556863267}
   - component: {fileID: 8507717005832761471}
   - component: {fileID: 7641396722042030738}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -103,6 +103,7 @@ MonoBehaviour:
   speed: 2
   TripleShot: 0
   TSBtw: 0
+  bulletSpeed: 10
 --- !u!1 &6683244659746391987
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,7 +114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2866185357962672790}
   - component: {fileID: 4547509972158560822}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7729633062803388803}
   - component: {fileID: 8190063695803674209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +286,7 @@ GameObject:
   - component: {fileID: 4079035645756493451}
   - component: {fileID: 5229305116303238296}
   - component: {fileID: 8706949568215139137}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SummonerTank
   m_TagString: Tank
   m_Icon: {fileID: 0}
@@ -421,6 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Master: {fileID: 8706949568215139138}
+  inputdetector: {fileID: 0}
   Servant: {fileID: 8502038342541946406, guid: 1363db95f4b5d0a4a959a21574b171a6, type: 3}
   Cooldown: 0
   cd: 3
@@ -469,10 +471,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db5313f17782ffa4bbf44978c322dc34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  holdTime: 3
   keyMoveForward: w
   keyMoveReverse: s
   keyRotateRight: d
   keyRotateLeft: a
+  isPlayer2Input: 0
   moveSpeed: 0
   moveSpeedReverse: 0
   moveAcceleration: 1

@@ -15,10 +15,7 @@ public class Character2Selection : MonoBehaviour
     {
 
         HideAllCharacters();
-
         selected2Character = PlayerPrefs.GetInt(selected2CharacterDataName, 0);
-
-        player2Objects[selected2Character].SetActive(true);
     }
 
 
@@ -28,28 +25,6 @@ public class Character2Selection : MonoBehaviour
         {
             g.SetActive(false);
         }
-    }
-
-    public void NextCharacter()
-    {
-        player2Objects[selected2Character].SetActive(false);
-        selected2Character++;
-        if (selected2Character >= player2Objects.Length)
-        {
-            selected2Character = 0;
-        }
-        player2Objects[selected2Character].SetActive(true);
-    }
-
-    public void PreviousCharacter()
-    {
-        player2Objects[selected2Character].SetActive(false);
-        selected2Character--;
-        if (selected2Character < 0)
-        {
-            selected2Character = player2Objects.Length-1;
-        }
-        player2Objects[selected2Character].SetActive(true);
     }
 
     public void StartGame()
