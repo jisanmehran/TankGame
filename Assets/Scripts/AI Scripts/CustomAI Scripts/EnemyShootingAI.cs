@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
 public class EnemyShootingAI : MonoBehaviour
 {
@@ -19,11 +20,16 @@ public class EnemyShootingAI : MonoBehaviour
     public bool explodebomb;
 
     public GameObject ExplosionEffect;
+
+    private GameObject Player1;
+    private GameObject Player2;
     public float AlreadyCounted = 0;
 
 
     void Start()
     {
+        Player1 = GameObject.FindGameObjectWithTag("Player1");
+        Player2 = GameObject.FindGameObjectWithTag("Player2");
         explodebomb = false;
         GameControl = GameObject.Find("GameControl");
 
@@ -78,17 +84,18 @@ public class EnemyShootingAI : MonoBehaviour
 
             if (obj.gameObject.tag == "Player1" && AlreadyCounted == 0)
             {
-                obj.GetComponent<HealthScript>().player1deathiterator();
+                Player1.GetComponent<HealthScript>().Invoke("player1deathiterator", 3f);
                 AlreadyCounted++;
             }
 
             if (obj.gameObject.tag == "Player2" && AlreadyCounted == 0)
             {
-                obj.GetComponent<HealthScript>().player2deathiterator();
+                Player2.GetComponent<HealthScript>().Invoke("player2deathiterator", 3f);
                 AlreadyCounted++;
             }
         }
 
+        CameraShaker.Instance.ShakeOnce(4, 4, 0.1f, 1f);
         GameObject ExplosionEffectIns = Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
         Destroy(ExplosionEffectIns, 3f);
         Destroy(gameObject);

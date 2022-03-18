@@ -22,13 +22,11 @@ public class HealthScript : MonoBehaviour
         if (collision.gameObject.tag == "Bullet" & gameObject.tag == "Player1")
         {
             player1deathiterator();
-            Invoke("reloadScene", 3f);
         }
 
         if (collision.gameObject.tag == "Bullet" & gameObject.tag == "Player2")
         {
             player2deathiterator();
-            Invoke("reloadScene", 3f);
         }
     }
 
@@ -36,12 +34,14 @@ public class HealthScript : MonoBehaviour
     {
         DontDestroyOnLoad(gameManager);
         gameManager.GetComponent<gamemanagerscript>().player1hitCount += 1;
+        reloadScene();
     }
 
     public void player2deathiterator()
     {
         DontDestroyOnLoad(gameManager);
         gameManager.GetComponent<gamemanagerscript>().player2hitCount += 1;
+        reloadScene();
     }
 
     void reloadScene()
