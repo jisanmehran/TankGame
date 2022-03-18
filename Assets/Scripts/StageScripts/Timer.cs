@@ -9,13 +9,23 @@ public class Timer : MonoBehaviour
     public Text timeText;
     public GameObject TheGameOver;
     public float theTime;
+    public AudioClip SpecialMusic;
+    public bool themePlaying;
     private void Start()
     {
         timerIsRunning = true;
         theTime = roundTime;
+         
     }
     void Update()
     {
+        if (GameObject.Find("One's Greatest High(Clone)") != null && themePlaying == false)
+        {
+            AudioSource audio = timeText.GetComponent<AudioSource>();
+            audio.clip = SpecialMusic;
+            audio.Play(); 
+            themePlaying = true;
+        }
         if (timerIsRunning)
         {
             if (theTime > 0)
@@ -30,7 +40,7 @@ public class Timer : MonoBehaviour
                 timerIsRunning = false;
             }
 
-            if (Mathf.Round(theTime) == roundTime/2)
+            if (Mathf.Round(theTime) == 2)
             {
                 TheGameOver = GameObject.Find("One's Greatest High(Clone)");
                 GameObject child1 = TheGameOver.transform.GetChild(0).gameObject;

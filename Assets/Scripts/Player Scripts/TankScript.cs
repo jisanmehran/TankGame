@@ -89,7 +89,7 @@ public class TankScript : MonoBehaviour
         HandleMameInputs();
         EscapeButtonHeld();
         
-        if (isPlayer2Input == true)
+        if (isPlayer2Input == false)
         {
 
             rotateLeft = ( Input.GetKeyDown("left") ) ? true : rotateLeft;
@@ -149,7 +149,7 @@ public class TankScript : MonoBehaviour
             transform.Translate( 0f, moveSpeedReverse * Time.deltaTime * -1f, 0f );
         }
 
-        if (isPlayer2Input == false)
+        if (isPlayer2Input == true)
         {
             rotateLeft = ( Input.GetKeyDown("d") ) ? true : rotateLeft;
 
@@ -239,6 +239,6 @@ public class TankScript : MonoBehaviour
     void EscapeButtonHeld()
     {
         //Debug.Log("held for " + holdTime + " seconds");
-        Application.Quit();
+        //Application.Quit();
     }
 }

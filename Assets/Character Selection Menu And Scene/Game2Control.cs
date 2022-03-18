@@ -15,7 +15,7 @@ public class Game2Control : MonoBehaviour
     void Start()
     {
         selected2Character = PlayerPrefs.GetInt(selected2CharacterDataName,0);
-
+        characters2[selected2Character].SetActive(true);
         player2Object = Instantiate(characters2[selected2Character],player2StartPosition.position, characters2[selected2Character].transform.rotation);
         player2Object.GetComponent<TankScript>().isPlayer2Input = true;
         player2Object.tag = "Player2";

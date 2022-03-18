@@ -7,7 +7,7 @@ public class BulletScript : MonoBehaviour
     private Rigidbody2D rb;
     public float bulletSpeed = 20;
     private Vector3 direction;
- 
+    public AudioClip bounceSound;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -36,6 +36,14 @@ public class BulletScript : MonoBehaviour
         if (collision.gameObject.layer == 9 | collision.gameObject.layer == 12)
         {
             direction = Vector3.Reflect(direction, contact.normal);
+            AudioSource audio = gameObject.GetComponent<AudioSource>();
+            audio.clip = bounceSound;
+            audio.Play();
+        }
+
+        if (collision.gameObject.layer == 10)
+        {
+            Physics2D.IgnoreLayerCollision (10, 10, true);
         }
     }
 }

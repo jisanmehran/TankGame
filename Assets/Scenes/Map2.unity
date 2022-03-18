@@ -563,6 +563,7 @@ GameObject:
   - component: {fileID: 606030167}
   - component: {fileID: 606030166}
   - component: {fileID: 606030165}
+  - component: {fileID: 606030168}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -586,7 +587,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 134}
+  m_AnchoredPosition: {x: -2, y: 274}
   m_SizeDelta: {x: 275, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &606030165
@@ -640,6 +641,7 @@ MonoBehaviour:
   timeText: {fileID: 606030165}
   TheGameOver: {fileID: 0}
   theTime: 0
+  SpecialMusic: {fileID: 8300000, guid: 9ab7bd20d2b3a7241aa7fe68c2dcd7a0, type: 3}
 --- !u!222 &606030167
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -648,6 +650,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606030163}
   m_CullTransparentMesh: 1
+--- !u!82 &606030168
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606030163}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 776cd8273da50e7428f0f7402d4f718c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &691887110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,7 +1224,6 @@ MonoBehaviour:
   - {fileID: 4378854754298259409, guid: 8f3d001c6a8aa3d4c9e6262ca77f546a, type: 3}
   - {fileID: 1044925587940456589, guid: 846615e6ce983d443804bf8dd5d4ac94, type: 3}
   playerStartPosition: {fileID: 2136548542}
-  menuScene: Character Selection Menu
   selectedCharacter: 0
   playerObject: {fileID: 0}
   Aitank: {fileID: 6898406850752110373, guid: f5a47017b5ba25349947b78a1a4d189b, type: 3}
@@ -1285,12 +1382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b046b4dac3e82942a2c166256f18785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characters:
-  - {fileID: 6403202279296066995, guid: 1e6389f03fdac344aa083d04fed3f851, type: 3}
-  - {fileID: 4021340305451364958, guid: ee057ed880bf96a4d9752291c297a8cb, type: 3}
-  - {fileID: 262375534855524849, guid: 8eecab15f4dd01243a9919e988686ed0, type: 3}
-  - {fileID: 4378854754298259409, guid: 8f3d001c6a8aa3d4c9e6262ca77f546a, type: 3}
-  - {fileID: 1044925587940456589, guid: 846615e6ce983d443804bf8dd5d4ac94, type: 3}
+  characters2: []
   player2StartPosition: {fileID: 1341932156}
   selected2Character: 0
   player2Object: {fileID: 0}

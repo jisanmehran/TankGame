@@ -5,29 +5,28 @@ using UnityEngine;
 public class EnemyShootingAI : MonoBehaviour
 {
     public Transform player;
-    public Transform shootPos;
     public float range;
     private float distToPlayer;
-    public float timeBtwShots;
-    public GameObject bullet;
-    public bool Cooldown;
-    public float cd;
+
     public GameObject Tank; 
     public float speed = 2;
-    public bool TripleShot = false;
-    public float TSBtw;
 
-    private bool shoot;
-
+    public AudioClip fireSound;
+    public float fieldofImpact;
+    public float force;
+    public LayerMask LayerToHit;
     private GameObject GameControl;
+    public bool explodebomb;
 
-    // Start is called before the first frame update
+    public GameObject ExplosionEffect;
+    public float AlreadyCounted = 0;
+
 
     void Start()
     {
+        explodebomb = false;
         GameControl = GameObject.Find("GameControl");
-        Cooldown = false;
-        shoot = false;
+
         if (GameControl.GetComponent<GameControl>().TargetPlayer1 == false)
         {
             player = GameObject.FindWithTag("Player2").transform;
@@ -46,51 +45,17 @@ public class EnemyShootingAI : MonoBehaviour
 
         if (distToPlayer <= range)
         {
-            shoot = true;
+            explodebomb = true;
         }
 
         else if (distToPlayer > range)
         {
-            shoot = false;
+            explodebomb = false;
         }
 
-        if (shoot == true)
+        if (explodebomb == true)
         {
-            Physics2D.IgnoreLayerCollision (10, 11, true);
-        }
-
-        else if (shoot == false)
-        {
-            Physics2D.IgnoreLayerCollision (10, 11, false);
-        }
-
-        if (Cooldown == false)
-        {
-            if (shoot == true && TripleShot == false)
-            {  
-                Cooldown = true;
-                timeBtwShots = cd;
-                GameObject shotBullet = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
-            }  
-            else if (shoot == true && TripleShot == true)    
-            {
-                Cooldown = true;
-                timeBtwShots = cd;
-                GameObject shotBullet = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
-                //need wait
-                GameObject shotBullet2 = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
-                //need wait
-                GameObject shotBullet3 = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
-                TripleShot = false;
-            } 
-        }
-        else
-        {
-            timeBtwShots -= Time.deltaTime;
-        }
-        if (timeBtwShots <= 0)
-        {
-            Cooldown = false;
+            explode();
         }
 
     }
@@ -102,5 +67,37 @@ public class EnemyShootingAI : MonoBehaviour
             Destroy(gameObject, 1f);
         }
     }
+
+    void explode()
+    {
+        Collider2D[] objects = Physics2D.OverlapCircleAll(transform.position, fieldofImpact, LayerToHit);
+
+        foreach (Collider2D obj in objects)
+        {
+            Vector2 direction = obj.transform.position - transform.position;
+
+            if (obj.gameObject.tag == "Player1" && AlreadyCounted == 0)
+            {
+                obj.GetComponent<HealthScript>().player1deathiterator();
+                AlreadyCounted++;
+            }
+
+            if (obj.gameObject.tag == "Player2" && AlreadyCounted == 0)
+            {
+                obj.GetComponent<HealthScript>().player2deathiterator();
+                AlreadyCounted++;
+            }
+        }
+
+        GameObject ExplosionEffectIns = Instantiate(ExplosionEffect, transform.position, Quaternion.identity);
+        Destroy(ExplosionEffectIns, 3f);
+        Destroy(gameObject);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, fieldofImpact);
+    } 
 
 }

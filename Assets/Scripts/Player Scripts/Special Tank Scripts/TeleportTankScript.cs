@@ -19,15 +19,17 @@ public class TeleportTankScript : MonoBehaviour
 
     private float timeamountincrease = 1f;
 
+    public AudioClip phase;
+
+
     private void Update()
 
     {
 
         elapsedTime += timeamountincrease * Time.deltaTime;
-
-        //Detect if the player pressed e 
-
-        if (Input.GetKeyDown(KeyCode.E))
+        
+        
+        if (Input.GetKey(KeyCode.LeftAlt) | Input.GetKey(KeyCode.RightAlt) && gameObject.GetComponent<TankScript>().isPlayer2Input == false)
 
         {
 
@@ -35,6 +37,22 @@ public class TeleportTankScript : MonoBehaviour
             
             elapsedTime = 0;
 
+            AudioSource audio = TankCollider.GetComponent<AudioSource>();
+            audio.clip = phase;
+            audio.Play();
+        }
+
+        if (Input.GetKeyDown(KeyCode.S) && gameObject.GetComponent<TankScript>().isPlayer2Input == true)
+
+        {
+
+            TeleportEnabled = true;
+            
+            elapsedTime = 0;
+
+            AudioSource audio = TankCollider.GetComponent<AudioSource>();
+            audio.clip = phase;
+            audio.Play();
         }
 
 

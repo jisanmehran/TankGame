@@ -203,16 +203,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  shootPos: {fileID: 6898406850050038869}
-  range: 10
-  timeBtwShots: 5
-  bullet: {fileID: 7924436910818419937, guid: 985e03b946b05de4999f204c9a712bf9, type: 3}
-  Cooldown: 0
-  cd: 1
+  range: 3
   Tank: {fileID: 6898406850752110373}
   speed: 2
-  TripleShot: 0
-  TSBtw: 0
+  fireSound: {fileID: 8300000, guid: ec6472795b363614baf01dae7ce7d1a0, type: 3}
+  fieldofImpact: 3
+  force: 10
+  LayerToHit:
+    serializedVersion: 2
+    m_Bits: 256
+  explodebomb: 0
+  ExplosionEffect: {fileID: 1170567192047786, guid: dfbdf2134f769dc4486867bd0989e1f4, type: 3}
 --- !u!114 &6898406850752110374
 MonoBehaviour:
   m_ObjectHideFlags: 0

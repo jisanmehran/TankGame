@@ -11,6 +11,7 @@ public class AIBombTank : MonoBehaviour
     private float timeBtwShots;
     public float cd;
     public int ServantNum = 0;
+    public AudioClip bombSpawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,20 +21,50 @@ public class AIBombTank : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Cooldown == false)
+        
+        TankScript scr = gameObject.GetComponent<TankScript>();
+        if (Cooldown == false && scr.isPlayer2Input == false)
         {
-            if (Input.GetKey(KeyCode.E) && ServantNum < 3)
+            if (Input.GetKey(KeyCode.LeftAlt) | Input.GetKey(KeyCode.RightAlt) && ServantNum < 2)
             {  
                 Cooldown = true;
                 timeBtwShots = cd;
                 GameObject Summon = Instantiate(Servant, new Vector2(transform.position.x, transform.position.y), transform.rotation);
                 ServantNum += 1;
+                AudioSource audio = Master.GetComponent<AudioSource>();
+                audio.clip = bombSpawn;
+                audio.Play();
+
             }
         }
         else
         {
             timeBtwShots -= Time.deltaTime;
         }
+        if (timeBtwShots <= 0)
+        {
+            Cooldown = false;
+        }
+
+        if (Cooldown == false && scr.isPlayer2Input == true)
+        {
+            if (Input.GetKey(KeyCode.S) && ServantNum < 2)
+            {  
+                Cooldown = true;
+                timeBtwShots = cd;
+                GameObject Summon = Instantiate(Servant, new Vector2(transform.position.x, transform.position.y), transform.rotation);
+                ServantNum += 1;
+                AudioSource audio = gameObject.GetComponent<AudioSource>();
+                audio.clip = bombSpawn;
+                audio.Play();
+            }  
+        }
+
+        else
+        {
+            timeBtwShots -= Time.deltaTime;
+        }
+        
         if (timeBtwShots <= 0)
         {
             Cooldown = false;

@@ -28,6 +28,7 @@ public class PlayerSelect : MonoBehaviour
     public Sprite SummonTank;
     public Sprite AIBombTank;
     public Sprite TeleportTank;
+    public AudioClip PlayerSelection;
 
 
     //public bool OneSelected;
@@ -86,174 +87,158 @@ public class PlayerSelect : MonoBehaviour
         }
         if (TankChosen1 == false) 
         {
-            if(Input.GetKeyDown(KeyCode.R))
+            if(Input.GetKeyDown("up"))
             {
                 RectTransform picture = POneSelect.GetComponent<RectTransform>();
                 if (picture.anchoredPosition.y != 0)
                 {
                     picture.anchoredPosition = new Vector2(picture.anchoredPosition.x, picture.anchoredPosition.y+75);
+                    AudioSource audio = gameObject.GetComponent<AudioSource>();
+                    audio.clip = PlayerSelection;
+                    audio.Play();
                 }     
             }
-            else if(Input.GetKeyDown(KeyCode.D))
+            else if(Input.GetKeyDown("left"))
             {
                 RectTransform picture = POneSelect.GetComponent<RectTransform>();
                 if (picture.anchoredPosition.x != -150)
                 {
                     picture.anchoredPosition = new Vector2(picture.anchoredPosition.x-75, picture.anchoredPosition.y);
+                    AudioSource audio = gameObject.GetComponent<AudioSource>();
+                    audio.clip = PlayerSelection;
+                    audio.Play();
                 }          
             }
-            else if (Input.GetKeyDown(KeyCode.F))
+            else if (Input.GetKeyDown("down"))
             {
                 RectTransform picture = POneSelect.GetComponent<RectTransform>();
                 if (picture.anchoredPosition.y != -150)
                 {
                     picture.anchoredPosition = new Vector2(picture.anchoredPosition.x, picture.anchoredPosition.y-75);
+                    AudioSource audio = gameObject.GetComponent<AudioSource>();
+                    audio.clip = PlayerSelection;
+                    audio.Play();
                 }
             
             }
-            else if (Input.GetKeyDown(KeyCode.G))
+            else if (Input.GetKeyDown("right"))
             {
                 RectTransform picture = POneSelect.GetComponent<RectTransform>();
                 if (picture.anchoredPosition.x != 0)
                 {
                     picture.anchoredPosition = new Vector2(picture.anchoredPosition.x+75, picture.anchoredPosition.y);
+                    AudioSource audio = gameObject.GetComponent<AudioSource>();
+                    audio.clip = PlayerSelection;
+                    audio.Play();
                 }         
             }
         }
         if (TankChosen2 == false) 
         {
-            if(Input.GetKeyDown("up"))
+            if(Input.GetKeyDown(KeyCode.R))
             {
                 RectTransform picture = PTwoSelect.GetComponent<RectTransform>();
                 if (picture.anchoredPosition.y != 0)
                 {
                     picture.anchoredPosition = new Vector2(picture.anchoredPosition.x, picture.anchoredPosition.y+75);
+                    AudioSource audio = gameObject.GetComponent<AudioSource>();
+                    audio.clip = PlayerSelection;
+                    audio.Play();
                 }
             }
-            else if(Input.GetKeyDown("left"))
+            else if(Input.GetKeyDown(KeyCode.D))
             {
                 RectTransform picture = PTwoSelect.GetComponent<RectTransform>();
                 if (picture.anchoredPosition.x != -150)
                 {
                     picture.anchoredPosition = new Vector2(picture.anchoredPosition.x-75, picture.anchoredPosition.y);
+                    AudioSource audio = gameObject.GetComponent<AudioSource>();
+                    audio.clip = PlayerSelection;
+                    audio.Play();
                 }
             }
-            else if (Input.GetKeyDown("down"))
+            else if (Input.GetKeyDown(KeyCode.F))
             {
                 RectTransform picture = PTwoSelect.GetComponent<RectTransform>();
                 if (picture.anchoredPosition.y != -150)
                 {
                     picture.anchoredPosition = new Vector2(picture.anchoredPosition.x, picture.anchoredPosition.y-75);
+                    AudioSource audio = gameObject.GetComponent<AudioSource>();
+                    audio.clip = PlayerSelection;
+                    audio.Play();
                 }
             }
-            else if (Input.GetKeyDown("right"))
+            else if (Input.GetKeyDown(KeyCode.G))
             {
                 RectTransform picture = PTwoSelect.GetComponent<RectTransform>();
                 if (picture.anchoredPosition.x != 0)
                 {
                     picture.anchoredPosition = new Vector2(picture.anchoredPosition.x+75, picture.anchoredPosition.y);
+                    AudioSource audio = gameObject.GetComponent<AudioSource>();
+                    audio.clip = PlayerSelection;
+                    audio.Play();
                 } 
             }
-        } 
-        if (Input.GetKeyDown("z"))
-        {
-            //Image3 is giltank
-            //Image2 is tptank
-            //Image1 is Aibombtank
-            //Image4 is summontank
-            RectTransform picture = POneSelect.GetComponent<RectTransform>();
-            if (picture.anchoredPosition == new Vector2(0,0))
-            {
-                PlayerOne.color = Image3.color;
-                TankChosen1 = true;
-            }
-            else if (picture.anchoredPosition == new Vector2(-75,0))
-            {
-                PlayerOne.color = Image2.color;
-                TankChosen1 = true;
-            }
-            else if (picture.anchoredPosition == new Vector2(-150,0))
-            {
-                PlayerOne.color = Image1.color;
-                TankChosen1 = true;
-            }
-            else if (picture.anchoredPosition == new Vector2(-150,-75))
-            {
-                PlayerOne.color = Image4.color;
-                TankChosen1 = true;
-            }
-            // else if (picture.anchoredPosition == new Vector2(0,-75))
-            // {
-            //     PlayerOne.color = Image6.color;
-            // }
-            // else if (picture.anchoredPosition == new Vector2(0,-150))
-            // {
-            //     PlayerOne.color = Image9.color;
-            // }
-            // else if (picture.anchoredPosition == new Vector2(-75,-75))
-            // {
-            //     PlayerOne.color = Image5.color;
-            // }
-            // else if (picture.anchoredPosition == new Vector2(-75,-150))
-            // {
-            //     PlayerOne.color = Image8.color;
-            // }
-            // else if (picture.anchoredPosition == new Vector2(-150,-150))
-            // {
-            //     PlayerOne.color = Image7.color;
-            // }
-        }   
-        if (Input.GetKeyDown("m"))
-        {
-            
-            RectTransform picture = PTwoSelect.GetComponent<RectTransform>();
-            if (picture.anchoredPosition == new Vector2(0,0))
-            {
-                PlayerTwo.color = Image3.color;
-                TankChosen2 = true;
-            }
-            else if (picture.anchoredPosition == new Vector2(-150,0))
-            {
-                PlayerTwo.color = Image1.color;
-                TankChosen2 = true;
-            }
-            else if (picture.anchoredPosition == new Vector2(-150,-75))
-            {
-                PlayerTwo.color = Image4.color;
-                TankChosen2 = true;
-            }
-            else if (picture.anchoredPosition == new Vector2(-75,0))
-            {
-                PlayerTwo.color = Image2.color;
-                TankChosen2 = true;
-            }
-            // else if (picture.anchoredPosition == new Vector2(0,-75))
-            // {
-            //     PlayerTwo.color = Image6.color;
-            // }
-            // else if (picture.anchoredPosition == new Vector2(0,-150))
-            // {
-            //     PlayerTwo.color = Image9.color;
-            // }
-            // else if (picture.anchoredPosition == new Vector2(-75,-75))
-            // {
-            //     PlayerTwo.color = Image5.color;
-            // }
-            // else if (picture.anchoredPosition == new Vector2(-75,-150))
-            // {
-            //     PlayerTwo.color = Image8.color;
-            // }
-            // else if (picture.anchoredPosition == new Vector2(-150,-150))
-            // {
-            //     PlayerTwo.color = Image7.color;
-            // }
-        }  
-        if (TankChosen1 == true && TankChosen2 == true)
-        {
-            int number = Random.Range(1, 5);
-            SceneManager.LoadScene (sceneName:"Map" + number.ToString());
-        } 
-    }
+        }
 
-    
+        // if (Input.GetKeyDown(KeyCode.LeftControl))
+        // {
+        //     //Image3 is giltank
+        //     //Image2 is tptank
+        //     //Image1 is Aibombtank
+        //     //Image4 is summontank
+        //     RectTransform picture = POneSelect.GetComponent<RectTransform>();
+        //     if (picture.anchoredPosition == new Vector2(0,0))
+        //     {
+        //         PlayerOne.color = Image3.color;
+        //         TankChosen1 = true;
+        //     }
+        //     else if (picture.anchoredPosition == new Vector2(-75,0))
+        //     {
+        //         PlayerOne.color = Image2.color;
+        //         TankChosen1 = true;
+        //     }
+        //     else if (picture.anchoredPosition == new Vector2(-150,0))
+        //     {
+        //         PlayerOne.color = Image1.color;
+        //         TankChosen1 = true;
+        //     }
+        //     else if (picture.anchoredPosition == new Vector2(-150,-75))
+        //     {
+        //         PlayerOne.color = Image4.color;
+        //         TankChosen1 = true;
+        //     }
+        // }
+
+        // if (Input.GetKeyDown("a"))
+        // {
+            
+        //     RectTransform picture = PTwoSelect.GetComponent<RectTransform>();
+        //     if (picture.anchoredPosition == new Vector2(0,0))
+        //     {
+        //         PlayerTwo.color = Image3.color;
+        //         TankChosen2 = true;
+        //     }
+        //     else if (picture.anchoredPosition == new Vector2(-150,0))
+        //     {
+        //         PlayerTwo.color = Image1.color;
+        //         TankChosen2 = true;
+        //     }
+        //     else if (picture.anchoredPosition == new Vector2(-150,-75))
+        //     {
+        //         PlayerTwo.color = Image4.color;
+        //         TankChosen2 = true;
+        //     }
+        //     else if (picture.anchoredPosition == new Vector2(-75,0))
+        //     {
+        //         PlayerTwo.color = Image2.color;
+        //         TankChosen2 = true;
+        //     }
+        // }  
+        // if (TankChosen1 == true && TankChosen2 == true)
+        // {
+        //     int number = Random.Range(1, 5);
+        //     SceneManager.LoadScene (sceneName:"Map" + number.ToString());
+        // } 
+    }
 }
