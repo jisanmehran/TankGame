@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1265252784195034695}
   - component: {fileID: 8879262117236366619}
   - component: {fileID: 7431981200990054390}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -115,7 +115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3093619133901215730}
   - component: {fileID: 3617519056120993618}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7380605953336431847}
   - component: {fileID: 8971436377660031749}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +286,8 @@ GameObject:
   - component: {fileID: 5024393340832041468}
   - component: {fileID: 8502038342541946405}
   - component: {fileID: -7944529048993913398}
-  m_Layer: 8
+  - component: {fileID: -1711123086948886553}
+  m_Layer: 14
   m_Name: Servant
   m_TagString: Servant
   m_Icon: {fileID: 0}
@@ -463,3 +464,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b61906b04c71c5c43b9bf01caacf095c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-1711123086948886553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8502038342541946406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44e469567347de94ebb699de58a541b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  range: 10
+  Tank: {fileID: 8502038342541946406}
+  speed: 2
+  fireSound: {fileID: 8300000, guid: ec6472795b363614baf01dae7ce7d1a0, type: 3}
+  fieldofImpact: 3
+  force: 10
+  LayerToHit:
+    serializedVersion: 2
+    m_Bits: 256
+  explodebomb: 0
+  ExplosionEffect: {fileID: 0}
+  AlreadyCounted: 0

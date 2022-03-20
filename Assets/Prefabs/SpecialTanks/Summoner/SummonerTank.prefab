@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7556296175395900298}
   - component: {fileID: 8072674888409238314}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2620755657784379551}
   - component: {fileID: 4517977641586040701}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 4021340305451364957}
   - component: {fileID: -2677719819008025053}
   - component: {fileID: -2700760002685932613}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: SummonerTank
   m_TagString: Tank
   m_Icon: {fileID: 0}
@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 6033963494201737791}
   - component: {fileID: 4110269932336431459}
   - component: {fileID: 2670730127640476558}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}

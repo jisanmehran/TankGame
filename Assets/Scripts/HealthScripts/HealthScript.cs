@@ -8,25 +8,42 @@ public class HealthScript : MonoBehaviour
     private Scene scene;
 
     private GameObject gameManager;
-
+    public bool alreadycounted;
 
     void Start()
     {
         gameManager = GameObject.Find("GameManager");
         scene = SceneManager.GetActiveScene();
+        alreadycounted = false;
     }
 
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (collision.gameObject.tag == "Bullet" & gameObject.tag == "Player1")
+        if (other.gameObject.tag == "Bullet" && gameObject.tag == "Player1" && alreadycounted == false)
         {
             player1deathiterator();
+            alreadycounted = true;
+            Invoke("ResetBullets", 2f);
+            Destroy(other.gameObject);
+        }
+        
+        if (other.gameObject.tag == "Bullet" && gameObject.tag == "Player2" && alreadycounted == false)
+        {   
+            player2deathiterator();
+            alreadycounted = true;
+            Invoke("ResetBullets", 2f);
+            Destroy(other.gameObject);
         }
 
-        if (collision.gameObject.tag == "Bullet" & gameObject.tag == "Player2")
-        {
-            player2deathiterator();
+        if (other.gameObject.tag == "Bullet" && gameObject.tag == "Player1" && alreadycounted == true)
+        {   
+            Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.tag == "Bullet" && gameObject.tag == "Player2" && alreadycounted == true)
+        {   
+            Destroy(other.gameObject);
         }
     }
 
@@ -34,14 +51,19 @@ public class HealthScript : MonoBehaviour
     {
         DontDestroyOnLoad(gameManager);
         gameManager.GetComponent<gamemanagerscript>().player1hitCount += 1;
-        reloadScene();
+        //reloadScene();
+    }
+
+    void ResetBullets()
+    {
+        alreadycounted = false;
     }
 
     public void player2deathiterator()
     {
         DontDestroyOnLoad(gameManager);
         gameManager.GetComponent<gamemanagerscript>().player2hitCount += 1;
-        reloadScene();
+        //reloadScene();
     }
 
     void reloadScene()

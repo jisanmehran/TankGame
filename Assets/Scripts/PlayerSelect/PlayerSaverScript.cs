@@ -34,14 +34,14 @@ public class PlayerSaverScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        TimeElapsed += timeincrease * Time.deltaTime;
+        TimeElapsed -= timeincrease * Time.deltaTime;
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter == Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character)
             {
                 ErrorMessagePanel.SetActive(true);
-                TimeElapsed = 0;
+                TimeElapsed = 5;
             }
 
             if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter != Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character)
@@ -58,19 +58,19 @@ public class PlayerSaverScript : MonoBehaviour
             if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter > 4)
             {
                 NotAvailableMessagePanel.SetActive(true);
-                TimeElapsed = 0;
+                TimeElapsed = 5;
                 WhichPlayer = ("Player 1");
             }
 
             if (Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character > 4)
             {
                 NotAvailableMessagePanel.SetActive(true);
-                TimeElapsed = 0;
+                TimeElapsed = 5;
                 WhichPlayer = ("Player 2");
             }
         }
 
-        if (TimeElapsed >= 4)
+        if (TimeElapsed <= 0)
         {
             TurnOffErrorMessage();
         }

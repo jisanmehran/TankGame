@@ -5,15 +5,21 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Choice : MonoBehaviour
 {
-    public int QuitorReplay;
+    public bool Replay;
     public Image ImageChoice;
     public AudioClip Selection;
+
+    void Start ()
+    {
+        Replay = true;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("up"))
+        if (Input.GetKeyDown("up"))
         {
+            Replay = true;     
             RectTransform picture = ImageChoice.GetComponent<RectTransform>();
             if (picture.anchoredPosition.y != -24)
             {
@@ -22,12 +28,11 @@ public class Choice : MonoBehaviour
                 audio.clip = Selection;
                 audio.Play();
             }
-
-            QuitorReplay = 2;     
         }
 
         else if (Input.GetKeyDown("r"))
         {
+            Replay = true;  
             RectTransform picture = ImageChoice.GetComponent<RectTransform>();
             if (picture.anchoredPosition.y != -24)
             {
@@ -36,12 +41,11 @@ public class Choice : MonoBehaviour
                 audio.clip = Selection;
                 audio.Play();
             }
-
-            QuitorReplay = 2;  
         }
 
         else if (Input.GetKeyDown("down"))
         {
+            Replay = false;    
             RectTransform picture = ImageChoice.GetComponent<RectTransform>();
             if (picture.anchoredPosition.y != -64)
             {
@@ -50,12 +54,11 @@ public class Choice : MonoBehaviour
                 audio.clip = Selection;
                 audio.Play();
             }
-
-            QuitorReplay = 1;    
         }
 
         else if (Input.GetKeyDown("f"))
         {
+            Replay = false; 
             RectTransform picture = ImageChoice.GetComponent<RectTransform>();
             if (picture.anchoredPosition.y != -64)
             {
@@ -64,21 +67,19 @@ public class Choice : MonoBehaviour
                 audio.clip = Selection;
                 audio.Play();
             }
-
-            QuitorReplay = 1; 
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             
-            if (QuitorReplay == 1)
+            if (Replay == false)
             {
                 Application.Quit();
             }
 
-            if (QuitorReplay == 2)
+            if (Replay == true)
             {
-                SceneManager.LoadScene(sceneName:"ChooseScreen"); 
+                SceneManager.LoadScene("ChooseScreen"); 
             }
         }
     }

@@ -274,6 +274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 406804337}
   - component: {fileID: 406804336}
+  - component: {fileID: 406804338}
   - component: {fileID: 406804335}
   - component: {fileID: 406804334}
   m_Layer: 5
@@ -370,6 +371,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &406804338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406804333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d800327c0efb5242865aca1d06c8d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  QuitorReplay: 0
+  ImageChoice: {fileID: 1227130366}
+  Selection: {fileID: 8300000, guid: 0e111c851f190724696ba4521d2252f1, type: 3}
 --- !u!1 &569045402
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,7 +922,6 @@ GameObject:
   - component: {fileID: 1227130367}
   - component: {fileID: 1227130366}
   - component: {fileID: 1227130369}
-  - component: {fileID: 1227130368}
   m_Layer: 5
   m_Name: Choice
   m_TagString: choice
@@ -971,21 +986,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227130364}
   m_CullTransparentMesh: 1
---- !u!114 &1227130368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227130364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d800327c0efb5242865aca1d06c8d72, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  QuitorReplay: 0
-  ImageChoice: {fileID: 1227130366}
-  Selection: {fileID: 8300000, guid: 0e111c851f190724696ba4521d2252f1, type: 3}
 --- !u!61 &1227130369
 BoxCollider2D:
   m_ObjectHideFlags: 0

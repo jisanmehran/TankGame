@@ -181,64 +181,59 @@ public class PlayerSelect : MonoBehaviour
             }
         }
 
-        // if (Input.GetKeyDown(KeyCode.LeftControl))
-        // {
-        //     //Image3 is giltank
-        //     //Image2 is tptank
-        //     //Image1 is Aibombtank
-        //     //Image4 is summontank
-        //     RectTransform picture = POneSelect.GetComponent<RectTransform>();
-        //     if (picture.anchoredPosition == new Vector2(0,0))
-        //     {
-        //         PlayerOne.color = Image3.color;
-        //         TankChosen1 = true;
-        //     }
-        //     else if (picture.anchoredPosition == new Vector2(-75,0))
-        //     {
-        //         PlayerOne.color = Image2.color;
-        //         TankChosen1 = true;
-        //     }
-        //     else if (picture.anchoredPosition == new Vector2(-150,0))
-        //     {
-        //         PlayerOne.color = Image1.color;
-        //         TankChosen1 = true;
-        //     }
-        //     else if (picture.anchoredPosition == new Vector2(-150,-75))
-        //     {
-        //         PlayerOne.color = Image4.color;
-        //         TankChosen1 = true;
-        //     }
-        // }
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            //Image3 is giltank
+            //Image2 is tptank
+            //Image1 is Aibombtank
+            //Image4 is summontank
+            RectTransform picture = POneSelect.GetComponent<RectTransform>();
+            if (picture.anchoredPosition == new Vector2(0,0))
+            {
+                PlayerOne.color = Image3.color;
+                TankChosen1 = true;
+            }
+            else if (picture.anchoredPosition == new Vector2(-75,0))
+            {
+                PlayerOne.color = Image2.color;
+                TankChosen1 = true;
+            }
+            else if (picture.anchoredPosition == new Vector2(-150,0))
+            {
+                PlayerOne.color = Image1.color;
+                TankChosen1 = true;
+            }
+            else if (picture.anchoredPosition == new Vector2(-150,-75))
+            {
+                PlayerOne.color = Image4.color;
+                TankChosen1 = true;
+            }
+        }
 
-        // if (Input.GetKeyDown("a"))
-        // {
+        if (Input.GetKeyDown("a"))
+        {
             
-        //     RectTransform picture = PTwoSelect.GetComponent<RectTransform>();
-        //     if (picture.anchoredPosition == new Vector2(0,0))
-        //     {
-        //         PlayerTwo.color = Image3.color;
-        //         TankChosen2 = true;
-        //     }
-        //     else if (picture.anchoredPosition == new Vector2(-150,0))
-        //     {
-        //         PlayerTwo.color = Image1.color;
-        //         TankChosen2 = true;
-        //     }
-        //     else if (picture.anchoredPosition == new Vector2(-150,-75))
-        //     {
-        //         PlayerTwo.color = Image4.color;
-        //         TankChosen2 = true;
-        //     }
-        //     else if (picture.anchoredPosition == new Vector2(-75,0))
-        //     {
-        //         PlayerTwo.color = Image2.color;
-        //         TankChosen2 = true;
-        //     }
-        // }  
-        // if (TankChosen1 == true && TankChosen2 == true)
-        // {
-        //     int number = Random.Range(1, 5);
-        //     SceneManager.LoadScene (sceneName:"Map" + number.ToString());
-        // } 
+            RectTransform picture = PTwoSelect.GetComponent<RectTransform>();
+            if (picture.anchoredPosition == new Vector2(0,0))
+            {
+                PlayerTwo.color = Image3.color;
+                TankChosen2 = true;
+            }
+            else if (picture.anchoredPosition == new Vector2(-150,0))
+            {
+                PlayerTwo.color = Image1.color;
+                TankChosen2 = true;
+            }
+            else if (picture.anchoredPosition == new Vector2(-150,-75))
+            {
+                PlayerTwo.color = Image4.color;
+                TankChosen2 = true;
+            }
+            else if (picture.anchoredPosition == new Vector2(-75,0))
+            {
+                PlayerTwo.color = Image2.color;
+                TankChosen2 = true;
+            }
+        }  
     }
 }

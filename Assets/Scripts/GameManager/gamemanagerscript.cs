@@ -13,13 +13,25 @@ public class gamemanagerscript : MonoBehaviour
     {
         if (player1hitCount == 3)
         {
-            SceneManager.LoadScene("PlayAgain");
+            Invoke("loadPlayAgainScreen", 2f);
+            destroyGameManager();
         }
 
         else if (player2hitCount == 3)
         {
-            SceneManager.LoadScene("PlayAgain");
+            Invoke("loadPlayAgainScreen", 2f);
+            destroyGameManager();
         }
         
+    }
+
+    void destroyGameManager()
+    {
+        Destroy(gameObject);
+    }
+
+    void loadPlayAgainScreen()
+    {
+        SceneManager.LoadScene("PlayAgain");
     }
 }

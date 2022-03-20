@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1044925587940456590}
   - component: {fileID: -8825214512308100749}
   - component: {fileID: 3046536113626730278}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: One's Greatest High
   m_TagString: Tank
   m_Icon: {fileID: 0}
@@ -317,7 +317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2094229456081044044}
   - component: {fileID: 575877190054253998}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -402,7 +402,7 @@ GameObject:
   - component: {fileID: 3713175750052014198}
   - component: {fileID: 8892194762010251419}
   - component: {fileID: 4838724662342344744}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: FirePoint3
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -604,7 +604,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1430824256326040994}
   - component: {fileID: 4619576232758949087}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Cannon (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -687,7 +687,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5878220801329987929}
   - component: {fileID: 5280786057838903801}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -769,7 +769,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4992288609133074318}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -808,7 +808,7 @@ GameObject:
   - component: {fileID: 1988099176112030575}
   - component: {fileID: 2994980662381100088}
   - component: {fileID: 5936812949644125033}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: FirePoint2
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -1008,7 +1008,7 @@ GameObject:
   - component: {fileID: 3016582775194084564}
   - component: {fileID: 24209092347768608}
   - component: {fileID: 3721148989523945844}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -1232,7 +1232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2836978467240528031}
   - component: {fileID: 2732470781152356537}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Cannon (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

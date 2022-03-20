@@ -22,10 +22,7 @@ EditorBuildSettings:
     guid: 6503d50d9b798f44b8766ca0f0547480
   - enabled: 1
     path: Assets/Scenes/Map3.unity
-    guid: 62c8beed18fce3c48a411a3f78cca17b
-  - enabled: 1
-    path: Assets/Scenes/Map4.unity
-    guid: 6a9a4bda8f896824da42cac9b062dea9
+    guid: 77f5b9c8256f11542a27ea20357e5084
   - enabled: 1
     path: Assets/Scenes/PlayAgain.unity
     guid: f6987d0e161ffff4397d019bb8042a04

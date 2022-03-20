@@ -5,21 +5,21 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class MapSelect : MonoBehaviour
 {
+    
+    //public Image PlayerOne;
+    //public Image PlayerTwo;
+    //public Text PlayerTwoTxt;
+    // public Image Image1;
+    // public Image Image2;
+    // public Image Image3;
+    public Text PlayerOneTxt;
     public Image POneSelect;
     public bool TankChosen1;
-
     public string Level;
-    public Image PlayerOne;
-    //public Image PlayerTwo;
-    public Text PlayerOneTxt;
-    //public Text PlayerTwoTxt;
-    public Image Image1;
-    public Image Image2;
-    public Image Image3;
-    public Sprite GilTank;
-    public Sprite SummonTank;
-    public Sprite AIBombTank;
-    public Sprite TeleportTank;
+    public RawImage PlayerRawOne;
+    public Texture Map1;
+    public Texture Map3;
+    public Texture Map2;
     public AudioClip MapSelection;
 
 
@@ -36,23 +36,18 @@ public class MapSelect : MonoBehaviour
         RectTransform picture1 = POneSelect.GetComponent<RectTransform>();
         if (picture1.anchoredPosition == new Vector2(0,0))
         {
-            PlayerOne.sprite = GilTank;
-            PlayerOneTxt.text = "Jaiden's child that shootz out tree shells at the same time, is biased off of gilgameesh and dose 2 much dmg 😭. If u no beet dem, join em....";
+            PlayerRawOne.texture = Map3;
+            PlayerOneTxt.text = "This is the third map which has three rotating walls in the middle.";
         }
         else if (picture1.anchoredPosition == new Vector2(-75,0))
         {
-            PlayerOne.sprite = TeleportTank;
-            PlayerOneTxt.text = "tank that ignores psykicks and coliders resulting in the ultimait kenbunshoku haki 💨. (21skimask, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21, 21)";
+            PlayerRawOne.texture = Map2;
+            PlayerOneTxt.text = "This is the second map which has four walls going up and down.";
         }
         else if (picture1.anchoredPosition == new Vector2(-150,0))
         {
-            PlayerOne.sprite = AIBombTank;
-            PlayerOneTxt.text = "i shoot bulet, bulet folows u, crack ba BOOOOOMMMMMMMMMMMMMMMMM! i no move; i stil win L.";
-        }
-        else if (picture1.anchoredPosition == new Vector2(-150,-75))
-        {
-            PlayerOne.sprite = SummonTank;
-            PlayerOneTxt.text = "sumoning the dead lik im orochimaru, think that you safe imma chase you lik karoo, thought you would win imma go prove you wrong, ambassador of the dead singin this lil song.";
+            PlayerRawOne.texture = Map1;
+            PlayerOneTxt.text = "This is the first map which has many barriers and is the best map to start with.";
         }
 
         if (TankChosen1 == false) 

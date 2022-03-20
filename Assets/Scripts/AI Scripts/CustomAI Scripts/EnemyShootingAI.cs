@@ -24,12 +24,14 @@ public class EnemyShootingAI : MonoBehaviour
     private GameObject Player1;
     private GameObject Player2;
     public float AlreadyCounted = 0;
+    private GameObject Gm;
 
 
     void Start()
     {
-        Player1 = GameObject.FindGameObjectWithTag("Player1");
-        Player2 = GameObject.FindGameObjectWithTag("Player2");
+        Gm = GameObject.Find("GameManager");
+        Player1 = GameObject.FindWithTag("Player1");
+        Player2 = GameObject.FindWithTag("Player2");
         explodebomb = false;
         GameControl = GameObject.Find("GameControl");
 
@@ -66,11 +68,12 @@ public class EnemyShootingAI : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Bullet")
         {
-            Destroy(gameObject, 1f);
+            explode();
+            Destroy(other.gameObject);
         }
     }
 
@@ -84,13 +87,15 @@ public class EnemyShootingAI : MonoBehaviour
 
             if (obj.gameObject.tag == "Player1" && AlreadyCounted == 0)
             {
-                Player1.GetComponent<HealthScript>().Invoke("player1deathiterator", 3f);
+                //Player1.GetComponent<HealthScript>().Invoke("player1deathiterator", 2f);
+                Gm.GetComponent<gamemanagerscript>().player1hitCount++;
                 AlreadyCounted++;
             }
 
             if (obj.gameObject.tag == "Player2" && AlreadyCounted == 0)
             {
-                Player2.GetComponent<HealthScript>().Invoke("player2deathiterator", 3f);
+                //Player2.GetComponent<HealthScript>().Invoke("player2deathiterator", 2f);
+                Gm.GetComponent<gamemanagerscript>().player2hitCount++;
                 AlreadyCounted++;
             }
         }
