@@ -87,14 +87,12 @@ public class EnemyShootingAI : MonoBehaviour
 
             if (obj.gameObject.tag == "Player1" && AlreadyCounted == 0)
             {
-                //Player1.GetComponent<HealthScript>().Invoke("player1deathiterator", 2f);
                 Gm.GetComponent<gamemanagerscript>().player1hitCount++;
                 AlreadyCounted++;
             }
 
             if (obj.gameObject.tag == "Player2" && AlreadyCounted == 0)
             {
-                //Player2.GetComponent<HealthScript>().Invoke("player2deathiterator", 2f);
                 Gm.GetComponent<gamemanagerscript>().player2hitCount++;
                 AlreadyCounted++;
             }

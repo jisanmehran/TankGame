@@ -14,13 +14,13 @@ public class gamemanagerscript : MonoBehaviour
         if (player1hitCount == 3)
         {
             Invoke("loadPlayAgainScreen", 2f);
-            destroyGameManager();
+            Invoke("destroyGameManager", 2f);
         }
 
         else if (player2hitCount == 3)
         {
             Invoke("loadPlayAgainScreen", 2f);
-            destroyGameManager();
+            Invoke("destroyGameManager", 2f);
         }
         
     }

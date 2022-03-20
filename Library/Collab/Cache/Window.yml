@@ -14,14 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Test Char Select/Examples & Extras/Resources/Fonts & Materials/Anton
-      SDF.asset
-    - Assets/Test Char Select/Examples & Extras/Resources/Fonts & Materials/Bangers
-      SDF.asset
-    - ProjectSettings/EditorBuildSettings.asset
+    - Assets/Prefabs/Bullet.prefab
     - 
-    m_Values: 01010101
-  RevisionSummary: Fixed Play again screen. Fixed not dying bug
+    m_Values: 0101
+  RevisionSummary: Improved Artificial Intelligence efficency. A* calculation path
+    now updates at runtime
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

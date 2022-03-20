@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Choice : MonoBehaviour
 {
-    public bool Replay;
+    private bool Replay;
     public Image ImageChoice;
     public AudioClip Selection;
 

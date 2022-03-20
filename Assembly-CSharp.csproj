@@ -87,6 +87,7 @@
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
      <Compile Include="Assets\Scripts\StartScreen\MainMenu.cs" />
      <Compile Include="Assets\Scripts\StageScripts\Rotate.cs" />
+     <Compile Include="Assets\Scripts\StartScreen\StartScreenScript.cs" />
      <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShaker.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Character Selection Menu And Scene\CharacterSelectionMenu.cs" />

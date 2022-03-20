@@ -850,10 +850,17 @@ public class AstarPath : VersionedMonoBehaviour {
 	/// See: PathProcessor.TickNonMultithreaded
 	/// See: PathReturnQueue.ReturnPaths
 	/// </summary>
+	private bool alreadyscanned = false;
 	private void Update () {
 		// This class uses the [ExecuteInEditMode] attribute
 		// So Update is called even when not playing
 		// Don't do anything when not in play mode
+
+		if (alreadyscanned == false) {
+			Invoke("RescanAiPaths", 0.5f);
+			alreadyscanned = true;
+		}
+
 		if (!Application.isPlaying) return;
 
 		navmeshUpdates.Update();
@@ -869,6 +876,11 @@ public class AstarPath : VersionedMonoBehaviour {
 
 		// Return calculated paths
 		pathReturnQueue.ReturnPaths(true);
+	}
+
+	private void RescanAiPaths() {
+		AstarPath.active.Scan();
+		alreadyscanned = false;
 	}
 
 	private void PerformBlockingActions (bool force = false) {

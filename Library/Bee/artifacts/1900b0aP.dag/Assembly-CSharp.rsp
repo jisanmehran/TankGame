@@ -351,6 +351,7 @@
 "Assets/Scripts/StageScripts/Rotate.cs"
 "Assets/Scripts/StageScripts/Timer.cs"
 "Assets/Scripts/StartScreen/MainMenu.cs"
+"Assets/Scripts/StartScreen/StartScreenScript.cs"
 "Assets/Test Char Select/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/Test Char Select/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/Test Char Select/Examples & Extras/Scripts/Benchmark02.cs"
