@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 6898406850752110375}
   - component: {fileID: 6898406850752110370}
   - component: {fileID: 6898406850752110374}
+  - component: {fileID: 2056504788380597099}
   - component: {fileID: 1078801907957397731}
   - component: {fileID: 2461720222491345916}
-  - component: {fileID: 379846637845273746}
+  - component: {fileID: 3928313538292003580}
   m_Layer: 11
   m_Name: AI Tank
   m_TagString: Untagged
@@ -78,10 +79,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 5
-  radius: 1
+  radius: 1.7
   height: 2
   canMove: 1
-  maxSpeed: 3
+  maxSpeed: 4
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -90,13 +91,13 @@ MonoBehaviour:
   repathRateCompatibility: NaN
   canSearchCompability: 0
   orientation: 1
-  enableRotation: 1
+  enableRotation: 0
   autoRepath:
-    mode: 2
-    interval: 0.5
-    sensitivity: 14
+    mode: 1
+    interval: 0.1
+    sensitivity: 20
     maximumInterval: 2
-    visualizeSensitivity: 0
+    visualizeSensitivity: 1
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
@@ -104,7 +105,7 @@ MonoBehaviour:
   pickNextWaypointDist: 2
   endReachedDistance: 0.2
   alwaysDrawGizmos: 0
-  slowWhenNotFacingTarget: 0
+  slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
   constrainInsideGraph: 0
 --- !u!114 &6898406850752110370
@@ -147,6 +148,19 @@ MonoBehaviour:
   version: 1
   target: {fileID: 0}
   TargetPlayer1: 0
+--- !u!114 &2056504788380597099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6898406850752110373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d9a4b9efb2bed14a950c0bee9161ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aiPath: {fileID: 6898406850752110375}
 --- !u!61 &1078801907957397731
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -160,18 +174,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.07629573, y: 0.022142202}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.25, y: 2.25}
+    oldSize: {x: 2.31, y: 1.32}
     newSize: {x: 2.25, y: 2.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.792067, y: 0.5832153}
   m_EdgeRadius: 0
 --- !u!212 &2461720222491345916
 SpriteRenderer:
@@ -214,7 +228,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 697ce5ad7a97f0a458accf84c24f211a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6d5b9296a5ea1414698b7892cbbaaea0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -225,7 +239,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &379846637845273746
+--- !u!50 &3928313538292003580
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -240,9 +254,9 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

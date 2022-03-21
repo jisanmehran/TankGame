@@ -381,6 +381,8 @@
 "Assets/Prefabs/SpecialTanks/TemplateTank/SpecialBulletScript.cs"
 "Assets/Prefabs/SpecialTanks/TemplateTank/SpecialFiringScript.cs"
 "Assets/Prefabs/SpecialTanks/TemplateTank/SpecialHealthScript.cs"
+"Assets/Scripts/AI Scripts/CustomAI Scripts/AIGraphicsScript.cs"
+"Assets/Scripts/AI Scripts/CustomAI Scripts/EnemyAI.cs"
 "Assets/Scripts/AI Scripts/CustomAI Scripts/EnemyShootingAI.cs"
 "Assets/Scripts/BulletScript/BulletScript.cs"
 "Assets/Scripts/GameManager/gamemanagerscript.cs"
