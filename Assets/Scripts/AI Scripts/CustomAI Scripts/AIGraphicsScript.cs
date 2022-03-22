@@ -6,6 +6,7 @@ using Pathfinding;
 public class AIGraphicsScript : MonoBehaviour
 {
     public AIPath aiPath;
+    public Transform player;
 
     private Path path;
 
@@ -15,6 +16,8 @@ public class AIGraphicsScript : MonoBehaviour
     //Create one script for to Handle all the ai using brackeys tutorial and then have the script update to each map dynamically using the InvokeRepeatingMethod
     void Update()
     {
+        transform.up = player.transform.position - transform.position;
+
         if (aiPath.desiredVelocity.x >= 0.01f)
         {
             transform.localScale = new Vector3(1f, 1f, 1f);

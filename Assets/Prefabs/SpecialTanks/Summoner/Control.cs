@@ -15,6 +15,11 @@ public class Control : MonoBehaviour
     public Servant thePossessed;
     public AudioClip switchTo;
     public AudioClip switchBack;
+    public AudioClip pulse;
+    public GameObject ControlEffect;
+    public GameObject CurrentControlEffect;
+    public GameObject SecondSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +29,17 @@ public class Control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (thePossessed == null && Possessed == true)
+        {
+            Cooldown = true;
+            timeBtwShots = cd;
+            gameObject.GetComponent<TankScript>().enabled = true;
+            gameObject.GetComponentInChildren<FiringScript>().enabled = true;
+            Possessed = false;
+            AudioSource audio = Master.GetComponent<AudioSource>();
+            audio.clip = switchBack;
+            audio.Play();
+        }
         if (Cooldown == false)
         {
             if (Input.GetKey(KeyCode.Q) && gameObject.GetComponent<TankScript>().isPlayer2Input == true)
@@ -46,17 +62,24 @@ public class Control : MonoBehaviour
                             thePossessed =  closestServant; 
                         }
                     }
-                    Debug.Log("Switch To");
+                    //Debug.Log("Switch To");
                     Cooldown = true;
                     timeBtwShots = cd;
                     gameObject.GetComponent<TankScript>().enabled = false;
                     gameObject.GetComponentInChildren<FiringScript>().enabled = false;
                     closestServant.GetComponent<TankScript>().enabled = true;
+                    closestServant.GetComponent<TurretScript>().enabled = false;
                     closestServant.GetComponentInChildren<FiringScript>().enabled = true;
                     Possessed = true;
+                    GameObject ControlEffectIns = Instantiate(ControlEffect, closestServant.transform.position, Quaternion.identity);
+                    CurrentControlEffect = ControlEffectIns;
+                    ControlEffectIns.transform.parent = closestServant.transform;
                     AudioSource audio = Master.GetComponent<AudioSource>();
                     audio.clip = switchTo;
                     audio.Play();
+                    AudioSource audio2 = SecondSound.GetComponent<AudioSource>();
+                    audio2.clip = pulse;
+                    audio2.Play();
 
                     if (gameObject.GetComponent<TankScript>().isPlayer2Input == false)
                     {
@@ -70,17 +93,21 @@ public class Control : MonoBehaviour
                 }
                 else if (Possessed == true)
                 {
-                    Debug.Log("Switch Back");
+                    //Debug.Log("Switch Back");
                     Cooldown = true;
                     timeBtwShots = cd;
                     gameObject.GetComponent<TankScript>().enabled = true;
                     gameObject.GetComponentInChildren<FiringScript>().enabled = true;
                     thePossessed.GetComponent<TankScript>().enabled = false;
+                    thePossessed.GetComponent<TurretScript>().enabled = true;
                     thePossessed.GetComponentInChildren<FiringScript>().enabled = false;
                     Possessed = false;
+                    Destroy(CurrentControlEffect);
                     AudioSource audio = Master.GetComponent<AudioSource>();
                     audio.clip = switchBack;
                     audio.Play();
+                    AudioSource audio2 = SecondSound.GetComponent<AudioSource>();
+                    audio2.Stop();
                 }  
             }
 
@@ -104,17 +131,24 @@ public class Control : MonoBehaviour
                             thePossessed =  closestServant; 
                         }
                     }
-                    Debug.Log("Switch To");
+                    //Debug.Log("Switch To");
                     Cooldown = true;
                     timeBtwShots = cd;
                     gameObject.GetComponent<TankScript>().enabled = false;
                     gameObject.GetComponentInChildren<FiringScript>().enabled = false;
                     closestServant.GetComponent<TankScript>().enabled = true;
+                    closestServant.GetComponent<TurretScript>().enabled = false;
                     closestServant.GetComponentInChildren<FiringScript>().enabled = true;
                     Possessed = true;
+                    GameObject ControlEffectIns = Instantiate(ControlEffect, closestServant.transform.position, Quaternion.identity);
+                    CurrentControlEffect = ControlEffectIns;
+                    ControlEffectIns.transform.parent = closestServant.transform;
                     AudioSource audio = Master.GetComponent<AudioSource>();
                     audio.clip = switchTo;
                     audio.Play();
+                    AudioSource audio2 = SecondSound.GetComponent<AudioSource>();
+                    audio2.clip = pulse;
+                    audio2.Play();
 
                     if (gameObject.GetComponent<TankScript>().isPlayer2Input == false)
                     {
@@ -128,17 +162,21 @@ public class Control : MonoBehaviour
                 }
                 else if (Possessed == true)
                 {
-                    Debug.Log("Switch Back");
+                    //Debug.Log("Switch Back");
                     Cooldown = true;
                     timeBtwShots = cd;
                     gameObject.GetComponent<TankScript>().enabled = true;
                     gameObject.GetComponentInChildren<FiringScript>().enabled = true;
                     thePossessed.GetComponent<TankScript>().enabled = false;
+                    thePossessed.GetComponent<TurretScript>().enabled = true;
                     thePossessed.GetComponentInChildren<FiringScript>().enabled = false;
                     Possessed = false;
+                    Destroy(CurrentControlEffect);
                     AudioSource audio = Master.GetComponent<AudioSource>();
                     audio.clip = switchBack;
                     audio.Play();
+                    AudioSource audio2 = SecondSound.GetComponent<AudioSource>();
+                    audio2.Stop();
                 }  
             }
         }

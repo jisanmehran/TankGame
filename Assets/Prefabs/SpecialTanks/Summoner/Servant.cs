@@ -11,17 +11,12 @@ public class Servant : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Bullet")
-        {
-            Destroy(gameObject);
-            Destroy(other.gameObject);
-        }
-    }
+    // void OnCollisionEnter2D(Collision2D other)
+    // {
+    //     if (other.gameObject.tag == "Bullet")
+    //     {
+    //         Destroy(gameObject);
+    //         Destroy(other.gameObject);
+    //     }
+    // }
 }
