@@ -69,7 +69,7 @@ public class Choice : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             
             if (Replay == false)

@@ -36,7 +36,7 @@ public class PlayerSaverScript : MonoBehaviour
     {
         TimeElapsed -= timeincrease * Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter == Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character)
             {

@@ -8,7 +8,7 @@ public class MapOptionSelect : MonoBehaviour
     public string Level;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             SceneManager.LoadScene(Level);
         }

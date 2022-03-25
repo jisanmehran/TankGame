@@ -1,15 +1,20 @@
 using UnityEngine;
 using UnityEngine.Video;
- 
+using UnityEngine.UI;
+using System.Collections;
 public class Jumpscare : MonoBehaviour
 {
-    private VideoPlayer MyVideoPlayer;
- 
+    public VideoPlayer MyVideoPlayer;
+    public RawImage JScare;
+    public VideoClip ScareVid;
+    public GameObject Placeholder;
     private void Start()
     {
-        //video player component
-        MyVideoPlayer = GetComponent<VideoPlayer>();
-        // assign video clip
+        
+    }
+
+    void Awake()
+    {
         
     }
 
@@ -17,7 +22,15 @@ public class Jumpscare : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E) | Input.GetKey(KeyCode.Z))
         {
-            MyVideoPlayer.clip = Resources.Load<VideoClip>("JScare");
+            Placeholder.SetActive(true);
+            StartCoroutine("quit");
         }
+    }
+
+    IEnumerator func() 
+    {
+        yield return new WaitForSecondsRealtime(1.5f);
+        Application.Quit();
+        Debug.Log("quit");
     }
 }

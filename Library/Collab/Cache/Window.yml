@@ -14,9 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/Prefabs/SpecialTanks/Summoner/ServantBullet.prefab
     - 
-    m_Values: 01
-  RevisionSummary: 
+    m_Values: 0101
+  RevisionSummary: 'Gave Bomb Tank 3 Bombs
+
+    Fixed Movement bug with servant tanks
+
+    Gave
+    summoner tank 3 servants max
+
+    Added new visual hit effect'
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

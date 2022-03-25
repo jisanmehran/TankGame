@@ -39,7 +39,7 @@ public class AIBombTank : MonoBehaviour
         TankScript scr = gameObject.GetComponent<TankScript>();
         if (Cooldown == false && scr.isPlayer2Input == false)
         {
-            if (Input.GetKey(KeyCode.LeftAlt) | Input.GetKey(KeyCode.RightAlt) && ServantNum < 2)
+            if (Input.GetKey(KeyCode.LeftAlt) | Input.GetKey(KeyCode.RightAlt) && ServantNum < 3)
             {  
                 Cooldown = true;
                 timeBtwShots = cd;
@@ -65,7 +65,7 @@ public class AIBombTank : MonoBehaviour
 
         if (Cooldown == false && scr.isPlayer2Input == true)
         {
-            if (Input.GetKey(KeyCode.S) && ServantNum < 2)
+            if (Input.GetKey(KeyCode.S) && ServantNum < 3)
             {  
                 Cooldown = true;
                 timeBtwShots = cd;

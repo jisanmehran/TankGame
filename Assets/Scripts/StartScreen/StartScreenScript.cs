@@ -70,7 +70,7 @@ public class StartScreenScript : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             RectTransform picture = ImageChoice.GetComponent<RectTransform>();
             if (picture.anchoredPosition.y == -64)

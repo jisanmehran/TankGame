@@ -129,9 +129,9 @@
      <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShakePresets.cs" />
      <Compile Include="Assets\Character Selection Menu And Scene\Game2Control.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\TemplateTank\Barrage.cs" />
+     <Compile Include="Assets\Prefabs\SpecialTanks\TemplateTank\OtherSeekers\Jumpscare.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\TemplateTank\Sequence2.cs" />
-     <Compile Include="Assets\Prefabs\SpecialTanks\TemplateTank\OtherSeekers\Jumpscare.cs" />
      <None Include="Assets\Test Char Select\Shaders\TMPro.cginc" />
      <None Include="Assets\Test Char Select\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Test Char Select\Shaders\TMP_Bitmap.shader" />

@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.23529412, g: 0, b: 0.6745098, a: 1}
+  m_Color: {r: 0.26666668, g: 0.1882353, b: 0.41568628, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -105,6 +105,8 @@ MonoBehaviour:
   TSBtw: 0
   bulletSpeed: 10
   fireSound: {fileID: 8300000, guid: ec6472795b363614baf01dae7ce7d1a0, type: 3}
+  CBar: {fileID: 0}
+  CDImage: {fileID: 0}
 --- !u!1 &4023500618468245474
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,7 +360,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.23529412, g: 0, b: 0.6745098, a: 1}
+  m_Color: {r: 0.26666668, g: 0.1882353, b: 0.41568628, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -606,7 +608,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.23529412, g: 0, b: 0.6745098, a: 1}
+  m_Color: {r: 0.26847264, g: 0.18992524, b: 0.41509432, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -683,7 +685,7 @@ MonoBehaviour:
   firePoint: {fileID: 3247215519355221793}
   bullet: {fileID: 7924436910818419937, guid: 11149674b26d7f74b8cb69a46aa39e70, type: 3}
   Cooldown: 0
-  cd: 0.75
+  cd: 1.5
   speed: 2
   bulletSpeed: 15
   fireSound: {fileID: 8300000, guid: ec6472795b363614baf01dae7ce7d1a0, type: 3}
@@ -718,6 +720,8 @@ MonoBehaviour:
   rotateAcceleration: 8
   rotateDeceleration: 10
   rotateSpeedMax: 170
+  broken1: {fileID: 0}
+  broken2: {fileID: 0}
 --- !u!82 &-2388130751851677694
 AudioSource:
   m_ObjectHideFlags: 0

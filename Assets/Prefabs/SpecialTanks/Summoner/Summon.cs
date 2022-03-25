@@ -35,7 +35,7 @@ public class Summon : MonoBehaviour
     {
         if (Cooldown == false)
         {
-            if (Input.GetKey(KeyCode.S) && gameObject.GetComponent<TankScript>().isPlayer2Input == true && ServantNum < 7)
+            if (Input.GetKey(KeyCode.S) && gameObject.GetComponent<TankScript>().isPlayer2Input == true && ServantNum < 3)
             {  
                 Cooldown = true;
                 timeBtwShots = cd;
@@ -46,7 +46,7 @@ public class Summon : MonoBehaviour
                 audio.Play();          
             }
 
-            if (Input.GetKey(KeyCode.LeftAlt) | Input.GetKey(KeyCode.RightAlt) && gameObject.GetComponent<TankScript>().isPlayer2Input == false && ServantNum < 7)
+            if (Input.GetKey(KeyCode.LeftAlt) | Input.GetKey(KeyCode.RightAlt) && gameObject.GetComponent<TankScript>().isPlayer2Input == false && ServantNum < 3)
             {  
                 Cooldown = true;
                 timeBtwShots = cd;
