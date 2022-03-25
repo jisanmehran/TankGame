@@ -680,6 +680,7 @@ MonoBehaviour:
   AlarmLight: {fileID: 4023500618468245474}
   Barrel: {fileID: 5879350118049065687}
   Turret: {fileID: 8502038342541946406}
+  firePoint: {fileID: 3247215519355221793}
   bullet: {fileID: 7924436910818419937, guid: 11149674b26d7f74b8cb69a46aa39e70, type: 3}
   Cooldown: 0
   cd: 0.75

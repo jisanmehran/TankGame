@@ -39,6 +39,7 @@
      <Compile Include="Assets\Prefabs\SpecialTanks\TemplateTank\Sequence.cs" />
      <Compile Include="Assets\Scripts\AI Scripts\CustomAI Scripts\EnemyShootingAI.cs" />
      <Compile Include="Assets\Scripts\StageScripts\MenuScript.cs" />
+     <Compile Include="Assets\Scripts\HealthScripts\CooldownBar.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\Scripts\StageScripts\BarrierMovement.cs" />
@@ -58,6 +59,7 @@
      <Compile Include="Assets\Character Selection Menu And Scene\GameControl.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\Scripts\PowerUpScript\HealthUp.cs" />
+     <Compile Include="Assets\Scripts\StageScripts\AudioDelete.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\Special Tank Scripts\TeleportTankScript.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
@@ -80,13 +82,16 @@
      <Compile Include="Assets\EZ Camera Shake\Demo\Sample Scripts\ShakeOnKeyPress.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+     <Compile Include="Assets\Scripts\StageScripts\SceneAudio.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\AI Bomb Tank\Backend Scripts\AIBombTank.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\Prefabs\SpecialTanks\iFrame Tank\Dash.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Summoner\Control.cs" />
      <Compile Include="Assets\Scripts\PlayerSelect\MapOptionSelect.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\TemplateTank\SeriousSeries.cs" />
+     <Compile Include="Assets\Prefabs\SpecialTanks\iFrame Tank\Echo.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
      <Compile Include="Assets\Scripts\StartScreen\MainMenu.cs" />
@@ -95,6 +100,7 @@
      <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShaker.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\Character Selection Menu And Scene\CharacterSelectionMenu.cs" />
+     <Compile Include="Assets\Prefabs\SpecialTanks\iFrame Tank\EchoDeath.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\Scripts\PlayerSelect\PlayerSaverScript.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\TankScript.cs" />
@@ -103,7 +109,7 @@
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Summoner\Servant.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-     <Compile Include="Assets\Prefabs\SpecialTanks\turret test\TurretScript.cs" />
+     <Compile Include="Assets\Prefabs\SpecialTanks\Summoner\TurretScript.cs" />
      <Compile Include="Assets\Scripts\HealthScripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\PlayerSelect\SceneLoaderScript.cs" />
      <Compile Include="Assets\EZ Camera Shake\Demo\Sample Scripts\ShakeOnTrigger.cs" />
@@ -125,6 +131,7 @@
      <Compile Include="Assets\Prefabs\SpecialTanks\TemplateTank\Barrage.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\TemplateTank\Sequence2.cs" />
+     <Compile Include="Assets\Prefabs\SpecialTanks\TemplateTank\OtherSeekers\Jumpscare.cs" />
      <None Include="Assets\Test Char Select\Shaders\TMPro.cginc" />
      <None Include="Assets\Test Char Select\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Test Char Select\Shaders\TMP_Bitmap.shader" />

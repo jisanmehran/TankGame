@@ -857,7 +857,7 @@ public class AstarPath : VersionedMonoBehaviour {
 		// Don't do anything when not in play mode
 
 		if (alreadyscanned == false) {
-			Invoke("RescanAiPaths", 0.5f);
+			Invoke("RescanAiPaths", 0.1f);
 			alreadyscanned = true;
 		}
 

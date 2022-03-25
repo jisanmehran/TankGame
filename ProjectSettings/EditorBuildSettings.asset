@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: 7f716bb90676da84f84c0553cc37ec96
   - enabled: 1
+    path: Assets/Scenes/RuleScreen.unity
+    guid: 1e1cf47bf575d6940a7b1dfd438ec333
+  - enabled: 1
     path: Assets/Scenes/ChooseScreen.unity
     guid: b32c27ca19ceac24fbcb8650e4ea3fa3
   - enabled: 1

@@ -9,6 +9,7 @@ public class HealthScript : MonoBehaviour
 
     private GameObject gameManager;
     public bool alreadycounted;
+    public GameObject hitEffect;
 
     void Start()
     {
@@ -26,6 +27,8 @@ public class HealthScript : MonoBehaviour
             alreadycounted = true;
             Invoke("ResetBullets", 2f);
             Destroy(other.gameObject);
+            GameObject hitEffectIns = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(hitEffectIns, 0.9f);
         }
         
         if (other.gameObject.tag == "Bullet" && gameObject.tag == "Player2" && alreadycounted == false)
@@ -34,6 +37,8 @@ public class HealthScript : MonoBehaviour
             alreadycounted = true;
             Invoke("ResetBullets", 2f);
             Destroy(other.gameObject);
+            GameObject hitEffectIns = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(hitEffectIns, 0.9f);
         }
 
         if (other.gameObject.tag == "Bullet" && gameObject.tag == "Player1" && alreadycounted == true)
@@ -51,7 +56,7 @@ public class HealthScript : MonoBehaviour
     {
         DontDestroyOnLoad(gameManager);
         gameManager.GetComponent<gamemanagerscript>().player1hitCount += 1;
-        //reloadScene();
+        
     }
 
     void ResetBullets()
@@ -63,7 +68,7 @@ public class HealthScript : MonoBehaviour
     {
         DontDestroyOnLoad(gameManager);
         gameManager.GetComponent<gamemanagerscript>().player2hitCount += 1;
-        //reloadScene();
+        
     }
 
     void reloadScene()

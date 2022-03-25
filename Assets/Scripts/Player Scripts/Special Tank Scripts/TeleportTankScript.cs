@@ -21,41 +21,77 @@ public class TeleportTankScript : MonoBehaviour
 
     public AudioClip phase;
 
+    public SpriteRenderer Render;
 
+    public bool Cooldown;
+
+    private float timeBtwShots;
+
+    public float cd;
+
+    public CooldownBar CBar;
+
+    public GameObject CDImage;
+    
+    void Start()
+    {
+        Cooldown = false;
+        if (gameObject.tag == "Player1")
+        {
+            CDImage = GameObject.FindWithTag("OneFireOneCD");
+        }
+        else
+        {
+            CDImage = GameObject.FindWithTag("TwoFireOneCD");
+        }
+        
+        CBar = CDImage.GetComponent<CooldownBar>();
+        CBar.CD = cd;
+    }
     private void Update()
 
     {
+        if (Cooldown == false)
+        {
+            if (Input.GetKey(KeyCode.LeftAlt) | Input.GetKey(KeyCode.RightAlt) && gameObject.GetComponent<TankScript>().isPlayer2Input == false)
+            {
+                Cooldown = true;
+                timeBtwShots = cd;
+                
+                TeleportEnabled = true;
+            
+                elapsedTime = 0;
+        
+                AudioSource audio = TankCollider.GetComponent<AudioSource>();
+                audio.clip = phase;
+                audio.Play();
+            }
 
+            if (Input.GetKeyDown(KeyCode.S) && gameObject.GetComponent<TankScript>().isPlayer2Input == true)
+            {
+                Cooldown = true;
+                timeBtwShots = cd;
+
+                TeleportEnabled = true;
+            
+                elapsedTime = 0;
+
+                AudioSource audio = TankCollider.GetComponent<AudioSource>();
+                audio.clip = phase;
+                audio.Play();
+            }
+        }
+        else
+        {
+            timeBtwShots -= Time.deltaTime;
+            CBar.currentCD = timeBtwShots;
+        }
+        if (timeBtwShots <= 0)
+        {
+            Cooldown = false;
+        }
         elapsedTime += timeamountincrease * Time.deltaTime;
         
-        
-        if (Input.GetKey(KeyCode.LeftAlt) | Input.GetKey(KeyCode.RightAlt) && gameObject.GetComponent<TankScript>().isPlayer2Input == false)
-
-        {
-
-            TeleportEnabled = true;
-            
-            elapsedTime = 0;
-
-            AudioSource audio = TankCollider.GetComponent<AudioSource>();
-            audio.clip = phase;
-            audio.Play();
-        }
-
-        if (Input.GetKeyDown(KeyCode.S) && gameObject.GetComponent<TankScript>().isPlayer2Input == true)
-
-        {
-
-            TeleportEnabled = true;
-            
-            elapsedTime = 0;
-
-            AudioSource audio = TankCollider.GetComponent<AudioSource>();
-            audio.clip = phase;
-            audio.Play();
-        }
-
-
         if (elapsedTime >= 5)
 
         {
@@ -64,8 +100,7 @@ public class TeleportTankScript : MonoBehaviour
 
         }
 
-        
-
+    
         if (TeleportEnabled == true)
 
         {
@@ -95,6 +130,8 @@ public class TeleportTankScript : MonoBehaviour
 
         TeleportEnabled= false;
 
+        Render.color = new Color (Render.color.r, Render.color.g, Render.color.b, 1f);
+
     }
 
     private void TeleportOn()
@@ -104,6 +141,8 @@ public class TeleportTankScript : MonoBehaviour
         Physics2D.IgnoreLayerCollision (8, 9, true);
 
         Physics2D.IgnoreLayerCollision (8, 10, true);
+
+        Render.color = new Color (Render.color.r, Render.color.g, Render.color.b, .5f);
 
     }
 

@@ -5,6 +5,8 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
+using UnityEngine.UI;
+
 public class TankScript : MonoBehaviour
 
 {
@@ -43,6 +45,11 @@ public class TankScript : MonoBehaviour
     public float rotateAcceleration = 4f;
     public float rotateDeceleration = 10f;
     public float rotateSpeedMax = 130f;
+
+    //Image Variables
+
+    public Sprite broken1;
+    public Sprite broken2;
 
 
 //Functions
@@ -208,7 +215,7 @@ public class TankScript : MonoBehaviour
             transform.Translate( 0f, moveSpeedReverse * Time.deltaTime * -1f, 0f );
         }
     }
-    
+
     
     private void HandleGameExit()
     {

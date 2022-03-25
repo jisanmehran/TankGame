@@ -19,7 +19,6 @@ public class ServantDamage : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log(other.gameObject);
         if (other.gameObject.tag == "Bullet" && other.gameObject.name != "ServantBullet(Clone)")
         {
             

@@ -21,6 +21,13 @@ TagManager:
   - choice
   - nobutton
   - yesbutton
+  - Music
+  - OneCD
+  - TwoCD
+  - OneFireOneCD
+  - TwoFireOneCD
+  - OneFireTwoCD
+  - TwoFireTwoCD
   layers:
   - Default
   - TransparentFX

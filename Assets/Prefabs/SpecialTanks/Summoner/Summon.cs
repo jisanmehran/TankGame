@@ -11,10 +11,23 @@ public class Summon : MonoBehaviour
     public float cd;
     public int ServantNum = 0;
     public AudioClip summon;
+    public CooldownBar CBar;
+    public GameObject CDImage;
     // Start is called before the first frame update
     void Start()
     {
         Cooldown = false;
+        if (gameObject.tag == "Player1")
+        {
+            CDImage = GameObject.FindWithTag("OneFireOneCD");
+        }
+        else
+        {
+            CDImage = GameObject.FindWithTag("TwoFireOneCD");
+        }
+        
+        CBar = CDImage.GetComponent<CooldownBar>();
+        CBar.CD = cd;
     }
 
     // Update is called once per frame
@@ -47,6 +60,7 @@ public class Summon : MonoBehaviour
         else
         {
             timeBtwShots -= Time.deltaTime;
+            CBar.currentCD = timeBtwShots;
         }
         if (timeBtwShots <= 0)
         {

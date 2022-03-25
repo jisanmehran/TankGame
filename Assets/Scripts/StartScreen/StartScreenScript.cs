@@ -48,7 +48,7 @@ public class StartScreenScript : MonoBehaviour
         {
             StartGame = false;    
             RectTransform picture = ImageChoice.GetComponent<RectTransform>();
-            if (picture.anchoredPosition.y != -64)
+            if (picture.anchoredPosition.y != -104)
             {
                 picture.anchoredPosition = new Vector2(picture.anchoredPosition.x, picture.anchoredPosition.y-40);
                 AudioSource audio = gameObject.GetComponent<AudioSource>();
@@ -61,7 +61,7 @@ public class StartScreenScript : MonoBehaviour
         {
             StartGame = false; 
             RectTransform picture = ImageChoice.GetComponent<RectTransform>();
-            if (picture.anchoredPosition.y != -64)
+            if (picture.anchoredPosition.y != -104)
             {
                 picture.anchoredPosition = new Vector2(picture.anchoredPosition.x, picture.anchoredPosition.y-40);
                 AudioSource audio = gameObject.GetComponent<AudioSource>();
@@ -72,15 +72,20 @@ public class StartScreenScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            
-            if (StartGame == false)
+            RectTransform picture = ImageChoice.GetComponent<RectTransform>();
+            if (picture.anchoredPosition.y == -64)
             {
                 Application.Quit();
             }
 
-            if (StartGame == true)
+            if (picture.anchoredPosition.y == -24)
             {
                 SceneManager.LoadScene("ChooseScreen"); 
+            }
+
+            if (picture.anchoredPosition.y == -104)
+            {
+                SceneManager.LoadScene("RuleScreen"); 
             }
         }
     }

@@ -14,11 +14,24 @@ public class FiringScript : MonoBehaviour
     public float TSBtw;
     public float bulletSpeed = 10;
     public AudioClip fireSound;
+    public CooldownBar CBar;
+    public GameObject CDImage;
     // Start is called before the first frame update
 
     void Start()
     {
         Cooldown = false;
+        if (Tank.tag == "Player1")
+        {
+            CDImage = GameObject.FindWithTag("OneCD");
+        }
+        else
+        {
+            CDImage = GameObject.FindWithTag("TwoCD");
+        }
+        
+        CBar = CDImage.GetComponent<CooldownBar>();
+        CBar.CD = cd;
     }
 
     // Update is called once per frame
@@ -44,6 +57,8 @@ public class FiringScript : MonoBehaviour
         else
         {
             timeBtwShots -= Time.deltaTime;
+            CBar.currentCD = timeBtwShots;
+            
         }
 
         if (timeBtwShots <= 0)
@@ -59,7 +74,6 @@ public class FiringScript : MonoBehaviour
                 Cooldown = true;
                 timeBtwShots = cd;
                 GameObject shotBullet = Instantiate(bullet, new Vector2(transform.position.x, transform.position.y), transform.rotation);
-                //thebullet.AddRelativeForce(Vector3.up * bulletSpeed);
                 var destroyTime = 5;
                 Destroy (shotBullet, destroyTime);
                 AudioSource audio = Tank.GetComponent<AudioSource>();
@@ -71,6 +85,7 @@ public class FiringScript : MonoBehaviour
         else
         {
             timeBtwShots -= Time.deltaTime;
+            CBar.currentCD = timeBtwShots;
         }
         
         if (timeBtwShots <= 0)

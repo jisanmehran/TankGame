@@ -6,16 +6,30 @@ public class AIBombTank : MonoBehaviour
 {
 
     public GameObject Master;
+    public GameObject droneLaunchEffect;
     public GameObject Servant;
     public bool Cooldown;
     private float timeBtwShots;
     public float cd;
     public int ServantNum = 0;
     public AudioClip bombSpawn;
+    public CooldownBar CBar;
+    public GameObject CDImage;
     // Start is called before the first frame update
     void Start()
     {
         Cooldown = false;
+        if (Master.tag == "Player1")
+        {
+            CDImage = GameObject.FindWithTag("OneFireOneCD");
+        }
+        else
+        {
+            CDImage = GameObject.FindWithTag("TwoFireOneCD");
+        }
+        
+        CBar = CDImage.GetComponent<CooldownBar>();
+        CBar.CD = cd;
     }
 
     // Update is called once per frame
@@ -30,6 +44,8 @@ public class AIBombTank : MonoBehaviour
                 Cooldown = true;
                 timeBtwShots = cd;
                 GameObject Summon = Instantiate(Servant, new Vector2(transform.position.x, transform.position.y), transform.rotation);
+                GameObject tmpeffect = Instantiate(droneLaunchEffect, Summon.transform.position, Quaternion.identity);
+                Destroy(tmpeffect, 1f);    
                 ServantNum += 1;
                 AudioSource audio = Master.GetComponent<AudioSource>();
                 audio.clip = bombSpawn;
@@ -40,6 +56,7 @@ public class AIBombTank : MonoBehaviour
         else
         {
             timeBtwShots -= Time.deltaTime;
+            CBar.currentCD = timeBtwShots;
         }
         if (timeBtwShots <= 0)
         {
@@ -53,6 +70,8 @@ public class AIBombTank : MonoBehaviour
                 Cooldown = true;
                 timeBtwShots = cd;
                 GameObject Summon = Instantiate(Servant, new Vector2(transform.position.x, transform.position.y), transform.rotation);
+                GameObject tmpeffect = Instantiate(droneLaunchEffect, Summon.transform.position, Quaternion.identity);
+                Destroy(tmpeffect, 1f);                
                 ServantNum += 1;
                 AudioSource audio = gameObject.GetComponent<AudioSource>();
                 audio.clip = bombSpawn;
@@ -63,6 +82,7 @@ public class AIBombTank : MonoBehaviour
         else
         {
             timeBtwShots -= Time.deltaTime;
+            CBar.currentCD = timeBtwShots;
         }
         
         if (timeBtwShots <= 0)

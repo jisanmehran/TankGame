@@ -1,5 +1,114 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &588343578494586520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 72072615461510186}
+  - component: {fileID: 3158296439366707084}
+  m_Layer: 14
+  m_Name: TankLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &72072615461510186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588343578494586520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4378854754298259422}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3158296439366707084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588343578494586520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 1
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.5
+  m_Color: {r: 0.1249258, g: 0.12335351, b: 0.7924528, a: 1}
+  m_Intensity: 4
+  m_LightVolumeIntensity: 1
+  m_LightVolumeIntensityEnabled: 0
+  m_ApplyToSortingLayers: 65600bc78fde7e3000000000b1b938c4
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowIntensityEnabled: 0
+  m_ShadowIntensity: 0.75
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_Vertices:
+  - position: {x: 0.9985302, y: 0.9985302, z: 0}
+    color: {r: 0.70710677, g: 0.70710677, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: 0.9985302, y: 0.9985302, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.9985302, y: 0.9985302, z: 0}
+    color: {r: -0.70710677, g: 0.70710677, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.9985302, y: 0.9985302, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.99853003, y: -0.9985304, z: 0}
+    color: {r: -0.70710665, g: -0.7071069, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: -0.99853003, y: -0.9985304, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: 0.99853003, y: -0.9985304, z: 0}
+    color: {r: 0.70710665, g: -0.7071069, b: 0, a: 0}
+    uv: {x: 0, y: 0}
+  - position: {x: 0.99853003, y: -0.9985304, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  - position: {x: 0, y: 0, z: 0}
+    color: {r: 0, g: 0, b: 0, a: 1}
+    uv: {x: 0, y: 0}
+  m_Triangles: 030001000800020000000100030002000100050003000800040002000300050004000300070005000800060004000500070006000500010007000800000006000700010000000700
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
 --- !u!1 &1778422850650891040
 GameObject:
   m_ObjectHideFlags: 0
@@ -25,7 +134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1778422850650891040}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.75, z: 0}
+  m_LocalPosition: {x: -0.016, y: 0.75, z: 0}
   m_LocalScale: {x: 0.25, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4378854754298259422}
@@ -73,7 +182,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.046749115, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.046749115, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -197,7 +306,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4378854754298259409}
   m_LocalRotation: {x: -0, y: -0, z: 0.707107, w: 0.7071066}
-  m_LocalPosition: {x: 1.48, y: -0.07, z: 0}
+  m_LocalPosition: {x: 1.3451, y: -0.072432, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6392449919898621872}
@@ -209,6 +318,7 @@ Transform:
   - {fileID: 8170684502748639529}
   - {fileID: 8170684502358769978}
   - {fileID: 8170684503049284630}
+  - {fileID: 72072615461510186}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
@@ -253,12 +363,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.046749115, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 471a3ababc2659847aa1acca8e6c3e51, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -327,6 +437,8 @@ MonoBehaviour:
   rotateAcceleration: 8
   rotateDeceleration: 10
   rotateSpeedMax: 170
+  broken1: {fileID: 21300000, guid: dd7c114372e2d114a9079fd4900348e3, type: 3}
+  broken2: {fileID: 21300000, guid: d522228981ecb8741b790f87b5eb3adb, type: 3}
 --- !u!114 &-845482605828190159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,6 +452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alreadycounted: 0
+  hitEffect: {fileID: 5137486014994558876, guid: e3d559fbd6f296441ad901b8a42dd937, type: 3}
 --- !u!60 &5553638568015026396
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -357,8 +470,8 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -507,7 +620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7217566707869646550}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.008, y: 1.128, z: 0}
+  m_LocalPosition: {x: -0.025, y: 1.112, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 4378854754298259422}
@@ -555,7 +668,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.046749115, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.046749115, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -579,13 +692,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7924436910818419937, guid: 985e03b946b05de4999f204c9a712bf9, type: 3}
   Cooldown: 0
-  cd: 1
+  cd: 2
   Tank: {fileID: 4378854754298259409}
   speed: 2
   TripleShot: 0
   TSBtw: 0
   bulletSpeed: 10
   fireSound: {fileID: 8300000, guid: ec6472795b363614baf01dae7ce7d1a0, type: 3}
+  CBar: {fileID: 0}
+  CDImage: {fileID: 0}
 --- !u!82 &6812935245584183485
 AudioSource:
   m_ObjectHideFlags: 0
@@ -792,7 +907,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8170684501568941671}
   m_LocalRotation: {x: -0, y: -0, z: 0.00000017881393, w: 1}
-  m_LocalPosition: {x: 0.374, y: 1.049, z: 0}
+  m_LocalPosition: {x: 0.39, y: 1.057, z: 0}
   m_LocalScale: {x: 0.20000002, y: 0.20000002, z: 1}
   m_Children: []
   m_Father: {fileID: 4378854754298259422}
@@ -840,7 +955,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.046749115, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.046749115, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -864,13 +979,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7924436910818419937, guid: 985e03b946b05de4999f204c9a712bf9, type: 3}
   Cooldown: 0
-  cd: 1
+  cd: 2
   Tank: {fileID: 4378854754298259409}
   speed: 2
   TripleShot: 0
   TSBtw: 0
   bulletSpeed: 10
   fireSound: {fileID: 8300000, guid: ec6472795b363614baf01dae7ce7d1a0, type: 3}
+  CBar: {fileID: 0}
+  CDImage: {fileID: 0}
 --- !u!82 &7373459102044420011
 AudioSource:
   m_ObjectHideFlags: 0
@@ -992,7 +1109,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8170684502358769979}
   m_LocalRotation: {x: -0, y: -0, z: 0.002835244, w: 0.99999607}
-  m_LocalPosition: {x: -0.37867647, y: 0.6473825, z: 0}
+  m_LocalPosition: {x: -0.452, y: 0.623, z: 0}
   m_LocalScale: {x: 0.25, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4378854754298259422}
@@ -1040,7 +1157,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.046749115, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.046749115, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1077,7 +1194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8170684502748639530}
   m_LocalRotation: {x: -0, y: -0, z: 0.002835244, w: 0.99999607}
-  m_LocalPosition: {x: -0.372, y: 1.048, z: 0}
+  m_LocalPosition: {x: -0.421, y: 1.064, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 4378854754298259422}
@@ -1125,7 +1242,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.046749115, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.046749115, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1149,13 +1266,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7924436910818419937, guid: 985e03b946b05de4999f204c9a712bf9, type: 3}
   Cooldown: 0
-  cd: 1
+  cd: 2
   Tank: {fileID: 4378854754298259409}
   speed: 2
   TripleShot: 0
   TSBtw: 0
   bulletSpeed: 10
   fireSound: {fileID: 8300000, guid: ec6472795b363614baf01dae7ce7d1a0, type: 3}
+  CBar: {fileID: 0}
+  CDImage: {fileID: 0}
 --- !u!82 &1319504895793022234
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1408,7 +1527,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.046749115, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.046749115, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
