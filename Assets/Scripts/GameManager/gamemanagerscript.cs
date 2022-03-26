@@ -74,7 +74,7 @@ public class gamemanagerscript : MonoBehaviour
                 player1.GetComponentInChildren<FiringScript>().enabled = false;
                 GameObject deathEffectIns = Instantiate(deathEffect, player1.transform.position, Quaternion.identity);
                 Destroy(deathEffectIns, 2f);
-                Invoke("loadPlayAgainScreen", 3f);
+                Invoke("loadPlayAgainScreen2", 3f);
                 Invoke("destroyGameManager", 3f);
                 alreadyspawnedeffect = true;
             }
@@ -105,5 +105,10 @@ public class gamemanagerscript : MonoBehaviour
     void loadPlayAgainScreen()
     {
         SceneManager.LoadScene("PlayAgain");
+    }
+
+    void loadPlayAgainScreen2()
+    {
+        SceneManager.LoadScene("PlayAgain2");
     }
 }

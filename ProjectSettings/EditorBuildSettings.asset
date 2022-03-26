@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Credits Screen/Splash Screen.unity
+    guid: 0dbabbaca33daab46aec50291202e3be
+  - enabled: 1
     path: Assets/Scenes/StartScreen.unity
     guid: 7f716bb90676da84f84c0553cc37ec96
   - enabled: 1
@@ -29,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PlayAgain.unity
     guid: f6987d0e161ffff4397d019bb8042a04
+  - enabled: 1
+    path: Assets/Scenes/PlayAgain2.unity
+    guid: e62103b82ffaafe43b6b6677c8b93d56
   m_configObjects: {}

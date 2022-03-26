@@ -25,6 +25,9 @@ public class EnemyShootingAI : MonoBehaviour
     private GameObject Player2;
     public float AlreadyCounted = 0;
     private GameObject Gm;
+    private float timeincrease = 1f;
+    public float elapsedTime;
+    public bool overtimelimit = false;
 
 
     void Start()
@@ -50,6 +53,7 @@ public class EnemyShootingAI : MonoBehaviour
     void Update()
     {
         distToPlayer = Vector2.Distance(transform.position, player.position);
+        elapsedTime += timeincrease * Time.deltaTime;
 
         if (distToPlayer <= range)
         {
@@ -62,6 +66,11 @@ public class EnemyShootingAI : MonoBehaviour
         }
 
         if (explodebomb == true)
+        {
+            explode();
+        }
+
+        if (elapsedTime >= 15 && overtimelimit == true)
         {
             explode();
         }

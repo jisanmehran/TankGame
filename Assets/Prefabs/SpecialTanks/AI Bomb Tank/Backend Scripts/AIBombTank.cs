@@ -15,6 +15,7 @@ public class AIBombTank : MonoBehaviour
     public AudioClip bombSpawn;
     public CooldownBar CBar;
     public GameObject CDImage;
+    private bool alreadyresetbombtime;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +45,16 @@ public class AIBombTank : MonoBehaviour
                 Cooldown = true;
                 timeBtwShots = cd;
                 GameObject Summon = Instantiate(Servant, new Vector2(transform.position.x, transform.position.y), transform.rotation);
+
+                if (alreadyresetbombtime == false)
+                {
+                    Summon.GetComponent<EnemyShootingAI>().elapsedTime = 0;
+                    Summon.GetComponent<EnemyShootingAI>().overtimelimit = true;
+                    alreadyresetbombtime = true;
+                    Invoke("ResetBombCooldown", 10f);
+                }
+
+                Summon.GetComponent<EnemyShootingAI>().overtimelimit = true;
                 GameObject tmpeffect = Instantiate(droneLaunchEffect, Summon.transform.position, Quaternion.identity);
                 Destroy(tmpeffect, 1f);    
                 ServantNum += 1;
@@ -70,6 +81,15 @@ public class AIBombTank : MonoBehaviour
                 Cooldown = true;
                 timeBtwShots = cd;
                 GameObject Summon = Instantiate(Servant, new Vector2(transform.position.x, transform.position.y), transform.rotation);
+
+                if (alreadyresetbombtime == false)
+                {
+                    Summon.GetComponent<EnemyShootingAI>().elapsedTime = 0;
+                    Summon.GetComponent<EnemyShootingAI>().overtimelimit = true;
+                    alreadyresetbombtime = true;
+                    Invoke("ResetBombCooldown", 10f);
+                }
+
                 GameObject tmpeffect = Instantiate(droneLaunchEffect, Summon.transform.position, Quaternion.identity);
                 Destroy(tmpeffect, 1f);                
                 ServantNum += 1;
@@ -90,4 +110,10 @@ public class AIBombTank : MonoBehaviour
             Cooldown = false;
         }
     }
+
+    void ResetBombCooldown()
+    {
+        alreadyresetbombtime = false;
+    }
+
 }

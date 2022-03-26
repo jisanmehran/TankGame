@@ -388,6 +388,8 @@
 "Assets/Prefabs/SpecialTanks/TemplateTank/SpecialBulletScript.cs"
 "Assets/Prefabs/SpecialTanks/TemplateTank/SpecialFiringScript.cs"
 "Assets/Prefabs/SpecialTanks/TemplateTank/SpecialHealthScript.cs"
+"Assets/Scenes/Credits Screen/ColorRamp.cs"
+"Assets/Scenes/Credits Screen/ImageFader.cs"
 "Assets/Scripts/AI Scripts/CustomAI Scripts/AIGraphicsScript.cs"
 "Assets/Scripts/AI Scripts/CustomAI Scripts/EnemyAI.cs"
 "Assets/Scripts/AI Scripts/CustomAI Scripts/EnemyShootingAI.cs"
