@@ -15,6 +15,13 @@ public class gamemanagerscript : MonoBehaviour
     private bool alreadyspawnedeffect = false;
     private Renderer player1SpriteRender;
     private Renderer player2SpriteRender;
+    private GameObject player1heart1;
+    private GameObject player1heart2;
+    private GameObject player1heart3;
+    private GameObject player2heart1;
+    private GameObject player2heart2;
+    private GameObject player2heart3;
+
 
 
 
@@ -22,6 +29,7 @@ public class gamemanagerscript : MonoBehaviour
     {
         Invoke("FindSpriteRenderers", 2f);
         Invoke("findplayers", 1f);
+        Invoke("findSprites", 1f);
     }
 
     void FindSpriteRenderers()
@@ -36,6 +44,18 @@ public class gamemanagerscript : MonoBehaviour
         player2 = GameObject.FindWithTag("Player2");
     }
 
+    void findSprites()
+    {
+        player1heart1 = GameObject.Find("P1Heart1");
+        player1heart2 = GameObject.Find("P1Heart2");
+        player1heart3 = GameObject.Find("P1Heart3");
+
+        player2heart1 = GameObject.Find("P2Heart1");
+        player2heart2 = GameObject.Find("P2Heart2");
+        player2heart3 = GameObject.Find("P2Heart3");
+
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -44,11 +64,13 @@ public class gamemanagerscript : MonoBehaviour
         if (player1hitCount == 1)
         {
             player1.GetComponent<SpriteRenderer>().sprite = player1.GetComponent<TankScript>().broken1;
+            player1heart3.SetActive(false);
         }
 
         else if (player1hitCount == 2)
         {
             player1.GetComponent<SpriteRenderer>().sprite = player1.GetComponent<TankScript>().broken2;
+            player1heart2.SetActive(false);
         }
 
         //Check if player 2  is hit and change the sprites accordingly
@@ -56,11 +78,13 @@ public class gamemanagerscript : MonoBehaviour
         if (player2hitCount == 1)
         {
             player2.GetComponent<SpriteRenderer>().sprite = player2.GetComponent<TankScript>().broken1;
+            player2heart3.SetActive(false);
         }
 
         else if (player2hitCount == 2)
         {
             player2.GetComponent<SpriteRenderer>().sprite = player2.GetComponent<TankScript>().broken2;
+            player2heart2.SetActive(false);
         }
 
         //Check is one of the players are dead
@@ -77,6 +101,7 @@ public class gamemanagerscript : MonoBehaviour
                 Invoke("loadPlayAgainScreen2", 3f);
                 Invoke("destroyGameManager", 3f);
                 alreadyspawnedeffect = true;
+                player1heart1.SetActive(false);
             }
         }
 
@@ -92,6 +117,7 @@ public class gamemanagerscript : MonoBehaviour
                 Invoke("loadPlayAgainScreen", 3f);
                 Invoke("destroyGameManager", 3f);
                 alreadyspawnedeffect = true;
+                player2heart1.SetActive(false);
             }
         }
         

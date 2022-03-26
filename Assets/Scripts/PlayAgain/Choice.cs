@@ -80,7 +80,8 @@ public class Choice : MonoBehaviour
 
             if (Replay == true)
             {
-                levelloader.GetComponent<LevelLoader>().LoadLevel("ChooseScreen"); 
+                levelloader.GetComponent<LevelLoader>().loadingScreen.SetActive(true);
+                levelloader.GetComponent<LevelLoader>().LoadLevel("StartScreen"); 
             }
         }
     }

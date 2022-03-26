@@ -8,7 +8,7 @@ public class AudioDelete : MonoBehaviour
     void Start()
     {
         GameObject.FindGameObjectWithTag("Music").GetComponent<SceneAudio>().StopMusic();
-
+        Destroy(GameObject.FindGameObjectWithTag("Music"));
     }
 
     // Update is called once per frame

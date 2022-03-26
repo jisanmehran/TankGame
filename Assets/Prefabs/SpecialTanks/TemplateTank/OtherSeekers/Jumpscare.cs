@@ -20,11 +20,8 @@ public class Jumpscare : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.E) | Input.GetKey(KeyCode.Z))
-        {
-            Placeholder.SetActive(true);
-            StartCoroutine("quit");
-        }
+        Placeholder.SetActive(true);
+        StartCoroutine("quit");
     }
 
     IEnumerator quit() 

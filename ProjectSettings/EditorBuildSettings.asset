@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/RuleScreen.unity
     guid: 1e1cf47bf575d6940a7b1dfd438ec333
   - enabled: 1
+    path: Assets/Scenes/JumpscareScene.unity
+    guid: 6adabb1234a3f344c8a4b9f0afa8ca20
+  - enabled: 1
     path: Assets/Scenes/ChooseScreen.unity
     guid: b32c27ca19ceac24fbcb8650e4ea3fa3
   - enabled: 1

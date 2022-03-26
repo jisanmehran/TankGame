@@ -17,6 +17,7 @@ public class MapOptionSelect : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
+            levelloader.GetComponent<LevelLoader>().loadingScreen.SetActive(true);
             levelloader.GetComponent<LevelLoader>().LoadLevel(Level);
         }
     }

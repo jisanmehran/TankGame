@@ -52,6 +52,7 @@ public class PlayerSaverScript : MonoBehaviour
                 {
                     if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter <= 4)
                     {
+                        levelloader.GetComponent<LevelLoader>().loadingScreen.SetActive(true);
                         levelloader.GetComponent<LevelLoader>().LoadLevel("MapChooseScreen");
                     }
                 }

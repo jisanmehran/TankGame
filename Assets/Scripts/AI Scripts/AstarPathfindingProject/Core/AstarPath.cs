@@ -855,11 +855,11 @@ public class AstarPath : VersionedMonoBehaviour {
 		// This class uses the [ExecuteInEditMode] attribute
 		// So Update is called even when not playing
 		// Don't do anything when not in play mode
-		RescanAiPaths();
-		// if (alreadyscanned == false) {
-		// 	Invoke("RescanAiPaths", 0.1f);
-		// 	alreadyscanned = true;
-		// }
+		//RescanAiPaths();
+		if (alreadyscanned == false) {
+			Invoke("RescanAiPaths", 0.01f);
+			alreadyscanned = true;
+		}
 
 		if (!Application.isPlaying) return;
 

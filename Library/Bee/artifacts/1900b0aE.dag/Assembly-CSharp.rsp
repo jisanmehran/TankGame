@@ -106,6 +106,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"Assets/Scripts/AI Scripts/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll"
@@ -329,6 +330,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Mathematics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipeline.Universal.ShaderLibrary.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Core.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.RenderPipelines.Core.Runtime.ref.dll"
@@ -414,8 +417,10 @@
 "Assets/Scripts/PowerUpScript/TripleShot.cs"
 "Assets/Scripts/StageScripts/AudioDelete.cs"
 "Assets/Scripts/StageScripts/BarrierMovement.cs"
+"Assets/Scripts/StageScripts/LeaveRules.cs"
 "Assets/Scripts/StageScripts/MenuScript.cs"
 "Assets/Scripts/StageScripts/Rotate.cs"
+"Assets/Scripts/StageScripts/ScareSwitch.cs"
 "Assets/Scripts/StageScripts/SceneAudio.cs"
 "Assets/Scripts/StageScripts/Timer.cs"
 "Assets/Scripts/StartScreen/MainMenu.cs"

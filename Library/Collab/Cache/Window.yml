@@ -14,20 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scenes/ChooseScreen.unity
-    - Assets/Scenes/MapChooseScreen.unity
-    - Assets/Scenes/PlayAgain.unity
-    - Assets/Scenes/PlayAgain2.unity
-    - Assets/Scenes/RuleScreen.unity
-    - Assets/Scenes/StartScreen.unity
-    - Assets/Scripts/LoadingScreenScript.meta
-    - Assets/Scripts/LoadingScreenScript/LevelLoader.cs
-    - Assets/Scripts/LoadingScreenScript/LevelLoader.cs.meta
-    - Assets/Scripts/PlayerSelect/MapOptionSelect.cs
-    - Assets/Scripts/PlayerSelect/PlayerSaverScript.cs
-    - Assets/Sprites/Health Sprites/Animations.meta
     - 
-    m_Values: 00000000000000000000000000
+    m_Values: 01
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
