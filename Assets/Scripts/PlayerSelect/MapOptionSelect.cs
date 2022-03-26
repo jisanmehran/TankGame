@@ -6,11 +6,18 @@ public class MapOptionSelect : MonoBehaviour
 {
     
     public string Level;
+    private GameObject levelloader;
+
+    void Start()
+    {
+        levelloader = GameObject.Find("LevelLoader");
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            SceneManager.LoadScene(Level);
+            levelloader.GetComponent<LevelLoader>().LoadLevel(Level);
         }
     }
 }

@@ -7,6 +7,7 @@ public class Choice : MonoBehaviour
 {
     private bool Replay;
     public Image ImageChoice;
+    public GameObject levelloader;
     public AudioClip Selection;
 
     void Start ()
@@ -79,7 +80,7 @@ public class Choice : MonoBehaviour
 
             if (Replay == true)
             {
-                SceneManager.LoadScene("ChooseScreen"); 
+                levelloader.GetComponent<LevelLoader>().LoadLevel("ChooseScreen"); 
             }
         }
     }

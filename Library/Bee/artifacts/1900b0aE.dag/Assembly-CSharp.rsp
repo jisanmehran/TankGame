@@ -397,6 +397,7 @@
 "Assets/Scripts/GameManager/gamemanagerscript.cs"
 "Assets/Scripts/HealthScripts/CooldownBar.cs"
 "Assets/Scripts/HealthScripts/HealthScript.cs"
+"Assets/Scripts/LoadingScreenScript/LevelLoader.cs"
 "Assets/Scripts/PlayAgain/Choice.cs"
 "Assets/Scripts/Player Scripts/Connect2Fire.cs"
 "Assets/Scripts/Player Scripts/FiringScript.cs"

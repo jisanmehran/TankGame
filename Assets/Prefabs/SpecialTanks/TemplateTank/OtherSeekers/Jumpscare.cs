@@ -27,7 +27,7 @@ public class Jumpscare : MonoBehaviour
         }
     }
 
-    IEnumerator func() 
+    IEnumerator quit() 
     {
         yield return new WaitForSecondsRealtime(1.5f);
         Application.Quit();

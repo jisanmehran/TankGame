@@ -22,11 +22,13 @@ public class PlayerSaverScript : MonoBehaviour
     private float timeincrease = 1f;
 
     public int selectionOnGrid;
+    private GameObject levelloader;
     
 
     // Start is called before the first frame update
     void Start()
     {
+        levelloader = GameObject.Find("LevelLoader");
         CharacterSelectorScript = GameObject.Find("Script-CharacterSelection");
         Player2CharacterSelectorScript = GameObject.Find("Player2CharacterSelection");
     }
@@ -50,7 +52,7 @@ public class PlayerSaverScript : MonoBehaviour
                 {
                     if (CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter <= 4)
                     {
-                        SceneManager.LoadScene("MapChooseScreen");                
+                        levelloader.GetComponent<LevelLoader>().LoadLevel("MapChooseScreen");
                     }
                 }
             }
