@@ -104,7 +104,7 @@ MonoBehaviour:
   TripleShot: 0
   TSBtw: 0
   bulletSpeed: 10
-  fireSound: {fileID: 8300000, guid: ec6472795b363614baf01dae7ce7d1a0, type: 3}
+  fireSound: {fileID: 8300000, guid: 4fa34825c70c6aa4294510d7ca45df9e, type: 3}
   CBar: {fileID: 0}
   CDImage: {fileID: 0}
 --- !u!1 &5537666159973899153
@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: -5435935888016503149}
   - component: {fileID: 1319857343863237007}
   - component: {fileID: -6490672912716577164}
+  - component: {fileID: 6013151338565068115}
   m_Layer: 8
   m_Name: Teleport Tank
   m_TagString: Tank
@@ -253,7 +254,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -397,6 +398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alreadycounted: 0
   hitEffect: {fileID: 644250500410998029, guid: 99af2538dbfaddd4f97dd424586148f8, type: 3}
+  hitsound: {fileID: 8300000, guid: b98f894437517634888eebd619d7a17e, type: 3}
 --- !u!82 &-5435935888016503149
 AudioSource:
   m_ObjectHideFlags: 0
@@ -527,6 +529,24 @@ MonoBehaviour:
   timeBtwSpawns: 0
   startTimeBtwSpawns: 0.1
   echo: {fileID: 6403202279296066995, guid: 94aba97f4a8252d45ad4feb2cb1b2fef, type: 3}
+--- !u!114 &6013151338565068115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6403202279296066995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 1, g: 0, b: 0, a: 1}
+  glowBrightness: 10
+  outlineWidth: 2
+  alphaThreshold: 0.01
+  drawOutside: 0
+  enableInstancing: 0
 --- !u!1 &8986464216913830210
 GameObject:
   m_ObjectHideFlags: 0

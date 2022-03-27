@@ -228,13 +228,14 @@ GameObject:
   - component: {fileID: 4021340305451364957}
   - component: {fileID: -2677719819008025053}
   - component: {fileID: -2700760002685932613}
+  - component: {fileID: 4881827280313478770}
   m_Layer: 14
   m_Name: SummonerTank
   m_TagString: Tank
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4021340305451364945
 Transform:
   m_ObjectHideFlags: 0
@@ -273,7 +274,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -457,6 +458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alreadycounted: 0
   hitEffect: {fileID: 644250500410998029, guid: 99af2538dbfaddd4f97dd424586148f8, type: 3}
+  hitsound: {fileID: 8300000, guid: b98f894437517634888eebd619d7a17e, type: 3}
 --- !u!82 &-2700760002685932613
 AudioSource:
   m_ObjectHideFlags: 0
@@ -553,6 +555,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4881827280313478770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4021340305451364958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 0.3019608, g: 0, b: 0.7924528, a: 1}
+  glowBrightness: 1.23
+  outlineWidth: 2
+  alphaThreshold: 0.01
+  drawOutside: 0
+  enableInstancing: 0
 --- !u!1 &4959860863889898041
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,6 +786,6 @@ MonoBehaviour:
   TripleShot: 0
   TSBtw: 0
   bulletSpeed: 10
-  fireSound: {fileID: 8300000, guid: ec6472795b363614baf01dae7ce7d1a0, type: 3}
+  fireSound: {fileID: 8300000, guid: 4fa34825c70c6aa4294510d7ca45df9e, type: 3}
   CBar: {fileID: 0}
   CDImage: {fileID: 0}

@@ -15,7 +15,7 @@ public class Sequence : MonoBehaviour
     void Start()
     {
         //CharacterSelectorScript = GameObject.Find("Script-CharacterSelection");
-        Sequence1 = "upleftFire2leftdownrightrightFire3Fire1";
+        Sequence1 = "uplefteftdownrightrightFire3Fire1";
         KeyPressed = false;
         cd = 7;
         timetopress = cd;

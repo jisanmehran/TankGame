@@ -540,6 +540,7 @@ GameObject:
   - component: {fileID: -5257119479332115086}
   - component: {fileID: 8502038342541946405}
   - component: {fileID: -2388130751851677694}
+  - component: {fileID: 5728441614835041576}
   m_Layer: 14
   m_Name: Servant
   m_TagString: Servant
@@ -586,7 +587,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -688,7 +689,7 @@ MonoBehaviour:
   cd: 1.5
   speed: 2
   bulletSpeed: 15
-  fireSound: {fileID: 8300000, guid: ec6472795b363614baf01dae7ce7d1a0, type: 3}
+  fireSound: {fileID: 8300000, guid: 4fa34825c70c6aa4294510d7ca45df9e, type: 3}
   Ignore:
     serializedVersion: 2
     m_Bits: 4
@@ -818,3 +819,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5728441614835041576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8502038342541946406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 0.34756604, g: 0, b: 0.7169812, a: 1}
+  glowBrightness: 1.25
+  outlineWidth: 4
+  alphaThreshold: 0.01
+  drawOutside: 0
+  enableInstancing: 0

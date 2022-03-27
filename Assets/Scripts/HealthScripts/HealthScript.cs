@@ -10,6 +10,7 @@ public class HealthScript : MonoBehaviour
     private GameObject gameManager;
     public bool alreadycounted;
     public GameObject hitEffect;
+    public AudioClip hitsound;
 
     void Start()
     {
@@ -23,6 +24,9 @@ public class HealthScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Bullet" && gameObject.tag == "Player1" && alreadycounted == false)
         {
+            AudioSource audio = gameObject.GetComponent<AudioSource>();
+            audio.clip = hitsound;
+            audio.Play();
             player1deathiterator();
             alreadycounted = true;
             Invoke("ResetBullets", 2f);
@@ -33,6 +37,9 @@ public class HealthScript : MonoBehaviour
         
         if (other.gameObject.tag == "Bullet" && gameObject.tag == "Player2" && alreadycounted == false)
         {   
+            AudioSource audio = gameObject.GetComponent<AudioSource>();
+            audio.clip = hitsound;
+            audio.Play();
             player2deathiterator();
             alreadycounted = true;
             Invoke("ResetBullets", 2f);

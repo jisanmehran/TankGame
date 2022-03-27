@@ -14,9 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/GeneralSounds/Sounds.meta
+    - Assets/GeneralSounds/Sounds/8-Bit-SFX_Explosion-3.mp3
+    - Assets/GeneralSounds/Sounds/8-Bit-SFX_Explosion-3.mp3.meta
+    - Assets/GeneralSounds/Sounds/8-bit-kit-snare-11.wav
+    - Assets/GeneralSounds/Sounds/8-bit-kit-snare-11.wav.meta
+    - Assets/GeneralSounds/Sounds/8-bit-power-down-2.wav
+    - Assets/GeneralSounds/Sounds/8-bit-power-down-2.wav.meta
+    - Assets/GeneralSounds/Sounds/8-bit-type-digital-bass_120bpm_G_minor.wav
+    - Assets/GeneralSounds/Sounds/8-bit-type-digital-bass_120bpm_G_minor.wav.meta
+    - Assets/GeneralSounds/Sounds/noisy-8-bit-riser.wav
+    - Assets/GeneralSounds/Sounds/noisy-8-bit-riser.wav.meta
+    - Assets/Scenes/ChooseScreen.unity
     - 
-    m_Values: 01
-  RevisionSummary: 
+    m_Values: 01010101010101010101010101
+  RevisionSummary: 'Fixed game not ending on timer end
+
+    Added power up cooldown
+    background sprites
+
+    added glow to players'
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0

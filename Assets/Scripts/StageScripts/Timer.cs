@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                Debug.Log("Time has run out!");
+                SceneManager.LoadScene("PlayAgainBoth");
                 theTime = 0;
                 timerIsRunning = false;
             }

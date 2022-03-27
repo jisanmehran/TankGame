@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1811665409292244673}
   - component: {fileID: 262375534855524850}
   - component: {fileID: 1909872290223119138}
+  - component: {fileID: 4754532633255474052}
   m_Layer: 14
   m_Name: AI Bomb Tank
   m_TagString: Tank
@@ -62,7 +63,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -159,7 +160,7 @@ MonoBehaviour:
   Cooldown: 0
   cd: 1
   ServantNum: 0
-  bombSpawn: {fileID: 8300000, guid: 7505f05292148b944a29a246f0e9e009, type: 3}
+  bombSpawn: {fileID: 8300000, guid: e9c6001f91ce9934183cd8111df1f867, type: 3}
   CBar: {fileID: 0}
   CDImage: {fileID: 0}
 --- !u!114 &3738921058062202411
@@ -190,6 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alreadycounted: 0
   hitEffect: {fileID: 644250500410998029, guid: 99af2538dbfaddd4f97dd424586148f8, type: 3}
+  hitsound: {fileID: 8300000, guid: b98f894437517634888eebd619d7a17e, type: 3}
 --- !u!114 &262375534855524850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -316,6 +318,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4754532633255474052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262375534855524849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 0.99260664, g: 0, b: 1, a: 1}
+  glowBrightness: 5.35
+  outlineWidth: 1
+  alphaThreshold: 0.01
+  drawOutside: 0
+  enableInstancing: 0
 --- !u!1 &1702683558399373267
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,7 +606,7 @@ MonoBehaviour:
   TripleShot: 0
   TSBtw: 0
   bulletSpeed: 10
-  fireSound: {fileID: 8300000, guid: ec6472795b363614baf01dae7ce7d1a0, type: 3}
+  fireSound: {fileID: 8300000, guid: 4fa34825c70c6aa4294510d7ca45df9e, type: 3}
   CBar: {fileID: 0}
   CDImage: {fileID: 0}
 --- !u!1 &8948697121979976474

@@ -12,7 +12,7 @@ public class EnemyShootingAI : MonoBehaviour
     public GameObject Tank; 
     public float speed = 2;
 
-    public AudioClip fireSound;
+    public AudioClip explosionsound;
     public float fieldofImpact;
     public float force;
     public LayerMask LayerToHit;
@@ -105,6 +105,10 @@ public class EnemyShootingAI : MonoBehaviour
                 AlreadyCounted++;
             }
         }
+
+        AudioSource audio = Gm.GetComponent<AudioSource>();
+        audio.clip = explosionsound;
+        audio.Play();
 
         CameraShaker.Instance.ShakeOnce(4, 4, 0.1f, 1f);
         GameObject ExplosionEffectIns = Instantiate(ExplosionEffect, transform.position, Quaternion.identity);

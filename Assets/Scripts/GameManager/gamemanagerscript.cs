@@ -22,13 +22,15 @@ public class gamemanagerscript : MonoBehaviour
     private GameObject player2heart2;
     private GameObject player2heart3;
 
+    public AudioClip deathsound;
+
 
 
 
     void Start()
     {
         Invoke("FindSpriteRenderers", 2f);
-        Invoke("findplayers", 1f);
+        Invoke("findplayers", 2f);
         Invoke("findSprites", 1f);
     }
 
@@ -93,6 +95,9 @@ public class gamemanagerscript : MonoBehaviour
         {
             if (alreadyspawnedeffect == false)
             {
+                AudioSource audio = gameObject.GetComponent<AudioSource>();
+                audio.clip = deathsound;
+                audio.Play();
                 CameraShaker.Instance.ShakeOnce(5, 5, 0.2f, 1f);
                 player1.GetComponent<TankScript>().enabled = false;
                 player1.GetComponentInChildren<FiringScript>().enabled = false;
@@ -109,6 +114,9 @@ public class gamemanagerscript : MonoBehaviour
         {
             if (alreadyspawnedeffect == false)
             {
+                AudioSource audio = gameObject.GetComponent<AudioSource>();
+                audio.clip = deathsound;
+                audio.Play();
                 CameraShaker.Instance.ShakeOnce(5, 5, 0.2f, 1f);
                 player2.GetComponent<TankScript>().enabled = false;
                 player2.GetComponentInChildren<FiringScript>().enabled = false;
