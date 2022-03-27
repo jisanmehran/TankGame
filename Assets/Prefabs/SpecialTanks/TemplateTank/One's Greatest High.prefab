@@ -199,6 +199,8 @@ MonoBehaviour:
   rotateAcceleration: 8
   rotateDeceleration: 10
   rotateSpeedMax: 170
+  broken1: {fileID: 0}
+  broken2: {fileID: 0}
 --- !u!114 &-8825214512308100749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,6 +213,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 807c29a6be7271447a1aae96a91c8a6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alreadycounted: 0
+  hitEffect: {fileID: 7326770113068202325, guid: c2cff1574636ce74c8a7c23cac481b3e, type: 3}
+  hitsound: {fileID: 8300000, guid: aebaccce499c51d4a976c0e8f85c0e94, type: 3}
 --- !u!82 &3046536113626730278
 AudioSource:
   m_ObjectHideFlags: 0
@@ -823,7 +828,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6143407934783935675}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.13, z: 0}
+  m_LocalPosition: {x: 0, y: 4.58, z: 0}
   m_LocalScale: {x: 0.79999995, y: 0.79999995, z: 1}
   m_Children: []
   m_Father: {fileID: 4992288609133074318}

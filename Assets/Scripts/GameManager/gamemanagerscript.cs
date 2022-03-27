@@ -7,6 +7,16 @@ using EZCameraShake;
 
 public class gamemanagerscript : MonoBehaviour
 {
+    //Handle Game Exit Variables
+    public float holdTime = 3.0f; // how long you need to hold to trigger the effect
+ 
+    private float startTime = 0f;
+    private float timer = 0f;
+ 
+    // Use if you only want to call the method once after holding for the required time
+    private bool held = false;
+
+    //Game Varaibles
     public int player1hitCount;
     public int player2hitCount;
     private GameObject player1;
@@ -61,17 +71,26 @@ public class gamemanagerscript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Handle OngameExit
+        HandleGameExit();
+
         //Check if player 1 is hit and change the sprites accordingly
 
         if (player1hitCount == 1)
         {
-            player1.GetComponent<SpriteRenderer>().sprite = player1.GetComponent<TankScript>().broken1;
+            if (player1.name != "One's Greatest High(Clone)")
+            {
+                player1.GetComponent<SpriteRenderer>().sprite = player1.GetComponent<TankScript>().broken1;
+            } 
             player1heart3.SetActive(false);
         }
 
         else if (player1hitCount == 2)
         {
-            player1.GetComponent<SpriteRenderer>().sprite = player1.GetComponent<TankScript>().broken2;
+            if (player1.name != "One's Greatest High(Clone)")
+            {
+                player1.GetComponent<SpriteRenderer>().sprite = player1.GetComponent<TankScript>().broken2;
+            }
             player1heart2.SetActive(false);
         }
 
@@ -79,13 +98,19 @@ public class gamemanagerscript : MonoBehaviour
 
         if (player2hitCount == 1)
         {
-            player2.GetComponent<SpriteRenderer>().sprite = player2.GetComponent<TankScript>().broken1;
+            if (player2.name != "One's Greatest High(Clone)")
+            {
+                player2.GetComponent<SpriteRenderer>().sprite = player2.GetComponent<TankScript>().broken1;
+            }
             player2heart3.SetActive(false);
         }
 
         else if (player2hitCount == 2)
         {
-            player2.GetComponent<SpriteRenderer>().sprite = player2.GetComponent<TankScript>().broken2;
+            if (player1.name != "One's Greatest High(Clone)")
+            {
+                player2.GetComponent<SpriteRenderer>().sprite = player2.GetComponent<TankScript>().broken2;
+            }
             player2heart2.SetActive(false);
         }
 
@@ -148,5 +173,42 @@ public class gamemanagerscript : MonoBehaviour
     void loadPlayAgainScreen2()
     {
         SceneManager.LoadScene("PlayAgain2");
+    }
+
+    private void HandleGameExit()
+    {
+        string key = "escape";
+
+        // Starts the timer from when the key is pressed
+        if (Input.GetKeyDown(key))
+        {
+            startTime = Time.time;
+            timer = startTime;
+        }
+ 
+        // Adds time onto the timer so long as the key is pressed
+        if (Input.GetKey(key) && held == false)
+        {
+            timer += Time.deltaTime;
+ 
+            // Once the timer float has added on the required holdTime, changes the bool (for a single trigger), and calls the function
+            if (timer > (startTime + holdTime))
+            {
+                held = true;
+                EscapeButtonHeld();
+            }
+        }
+ 
+        // For single effects. Remove if not needed
+        if (Input.GetKeyUp(key))
+        {
+            held = false;
+        }
+    
+    }
+        void EscapeButtonHeld()
+    {
+        Debug.Log("held for " + holdTime + " seconds");
+        Application.Quit();
     }
 }

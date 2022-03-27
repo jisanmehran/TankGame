@@ -95,6 +95,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"Assets/Scripts/AI Scripts/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll"
@@ -290,6 +291,7 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.2D.Tilemap.Extras.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.InternalAPIEngineBridge.001.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Mathematics.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.RenderPipeline.Universal.ShaderLibrary.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.RenderPipelines.Core.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.RenderPipelines.Core.ShaderLibrary.ref.dll"
@@ -344,6 +346,7 @@
 "Assets/Scripts/GameManager/gamemanagerscript.cs"
 "Assets/Scripts/HealthScripts/CooldownBar.cs"
 "Assets/Scripts/HealthScripts/HealthScript.cs"
+"Assets/Scripts/LoadingScreenScript/LevelLoader.cs"
 "Assets/Scripts/PlayAgain/Choice.cs"
 "Assets/Scripts/Player Scripts/Connect2Fire.cs"
 "Assets/Scripts/Player Scripts/FiringScript.cs"
@@ -358,10 +361,13 @@
 "Assets/Scripts/PowerUpScript/HealthUp.cs"
 "Assets/Scripts/PowerUpScript/Immunity.cs"
 "Assets/Scripts/PowerUpScript/TripleShot.cs"
+"Assets/Scripts/PowerUpScript/UIAbilitiesScript.cs"
 "Assets/Scripts/StageScripts/AudioDelete.cs"
 "Assets/Scripts/StageScripts/BarrierMovement.cs"
+"Assets/Scripts/StageScripts/LeaveRules.cs"
 "Assets/Scripts/StageScripts/MenuScript.cs"
 "Assets/Scripts/StageScripts/Rotate.cs"
+"Assets/Scripts/StageScripts/ScareSwitch.cs"
 "Assets/Scripts/StageScripts/SceneAudio.cs"
 "Assets/Scripts/StageScripts/Timer.cs"
 "Assets/Scripts/StartScreen/MainMenu.cs"

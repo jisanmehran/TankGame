@@ -12,6 +12,9 @@ public class PlayerSaverScript : MonoBehaviour
 
     private string WhichPlayer;
 
+    public Sequence sequence1;
+    public Sequence2 sequence2;
+
     public GameObject ErrorMessagePanel;
     public GameObject NotAvailableMessagePanel;
     public Text ReturntoScreenText;
@@ -85,13 +88,13 @@ public class PlayerSaverScript : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.gameObject.tag == "Player1Select")
+        if (other.gameObject.tag == "Player1Select" && sequence1.SecretActive == false)
         {
             CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter = selectionOnGrid;
             CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().StartGame();
         }
 
-        if (other.gameObject.tag == "Player2Select")
+        if (other.gameObject.tag == "Player2Select" && sequence2.SecretActive == false)
         {
             Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character = selectionOnGrid;
             Player2CharacterSelectorScript.GetComponent<Character2Selection>().StartGame();

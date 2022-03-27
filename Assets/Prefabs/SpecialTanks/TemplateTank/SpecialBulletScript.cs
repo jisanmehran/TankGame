@@ -7,15 +7,11 @@ public class SpecialBulletScript : MonoBehaviour
     private Rigidbody2D rb;
     public float bulletSpeed = 20;
     private Vector3 direction;
-    public bool Cooldown;
-    private float timeBtwShots;
-    public float cd;
     public AudioClip bounced;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         direction = transform.up;
-        Cooldown = false;
     }
  
     // Update is called once per frame
@@ -44,6 +40,12 @@ public class SpecialBulletScript : MonoBehaviour
             audio.clip = bounced;
             audio.Play();
         }
+
+        if (collision.gameObject.layer == 10)
+        {
+            Physics2D.IgnoreLayerCollision (10, 10, true);
+        }
+        
         if (collision.gameObject.tag == "Tank")
         {
             Destroy(gameObject);

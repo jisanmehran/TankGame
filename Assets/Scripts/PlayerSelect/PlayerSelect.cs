@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class PlayerSelect : MonoBehaviour
 {
+    public float toplimit = 0f;
     public Image POneSelect;
     public Image PTwoSelect;
     public bool TankChosen1;
@@ -44,53 +45,63 @@ public class PlayerSelect : MonoBehaviour
     {
 
         RectTransform picture1 = POneSelect.GetComponent<RectTransform>();
+
         if (picture1.anchoredPosition == new Vector2(0,0))
         {
             PlayerOne.sprite = GilTank;
             PlayerOneTxt.text = "Gilgamesh Tank - Tank with three barrels that shoots are three bullets at the same time, but has a slower fire rate than the others.";
         }
+
         else if (picture1.anchoredPosition == new Vector2(-75,0))
         {
             PlayerOne.sprite = TeleportTank;
             PlayerOneTxt.text = "Teleport Tank - Tank that can phase through the walls and bullets for 5 seconds, and is able to dash away to safety.";
         }
+
         else if (picture1.anchoredPosition == new Vector2(-150,0))
         {
             PlayerOne.sprite = AIBombTank;
             PlayerOneTxt.text = "AI Bomb Tank - Tank that summons autotracking drones which follow you unti blown up; whether you shoot it or not.";
         }
+
         else if (picture1.anchoredPosition == new Vector2(-150,-75))
         {
             PlayerOne.sprite = SummonTank;
             PlayerOneTxt.text = "Summoner Tank - Tank that summons smaller tank which act as turrets, but can also be controlled by the player leaving the main tank defenseless.";
         }
+
         RectTransform picture2 = PTwoSelect.GetComponent<RectTransform>();
+
         if (picture2.anchoredPosition == new Vector2(0,0))
         {
             PlayerTwo.sprite = GilTank;
             PlayerTwoTxt.text = "Gilgamesh Tank - Tank with three barrels that shoots are three bullets at the same time, but has a slower fire rate than the others.";
         }
+
         else if (picture2.anchoredPosition == new Vector2(-75,0))
         {
             PlayerTwo.sprite = TeleportTank;
             PlayerTwoTxt.text = "Teleport Tank - Tank that can phase through the walls and bullets for 5 seconds, and is able to dash away to safety.";
         }
+
         else if (picture2.anchoredPosition == new Vector2(-150,0))
         {
             PlayerTwo.sprite = AIBombTank;
             PlayerTwoTxt.text = "AI Bomb Tank - Tank that summons autotracking drones which follow you unti blown up; whether you shoot it or not.";
         }
+
         else if (picture2.anchoredPosition == new Vector2(-150,-75))
         {
             PlayerTwo.sprite = SummonTank;
             PlayerTwoTxt.text = "Summoner Tank - Tank that summons smaller tank which act as turrets, but can also be controlled by the player leaving the main tank defenseless.";
         }
+
         if (TankChosen1 == false) 
         {
             if(Input.GetKeyDown("up"))
             {
                 RectTransform picture = POneSelect.GetComponent<RectTransform>();
-                if (picture.anchoredPosition.y != 0)
+                if (picture.anchoredPosition.y <= toplimit)
                 {
                     picture.anchoredPosition = new Vector2(picture.anchoredPosition.x, picture.anchoredPosition.y+75);
                     AudioSource audio = gameObject.GetComponent<AudioSource>();
@@ -112,7 +123,7 @@ public class PlayerSelect : MonoBehaviour
             else if (Input.GetKeyDown("down"))
             {
                 RectTransform picture = POneSelect.GetComponent<RectTransform>();
-                if (picture.anchoredPosition.y != -150)
+                if (picture.anchoredPosition.y > -150)
                 {
                     picture.anchoredPosition = new Vector2(picture.anchoredPosition.x, picture.anchoredPosition.y-75);
                     AudioSource audio = gameObject.GetComponent<AudioSource>();
@@ -133,12 +144,13 @@ public class PlayerSelect : MonoBehaviour
                 }         
             }
         }
+
         if (TankChosen2 == false) 
         {
             if(Input.GetKeyDown(KeyCode.R))
             {
                 RectTransform picture = PTwoSelect.GetComponent<RectTransform>();
-                if (picture.anchoredPosition.y != 0)
+                if (picture.anchoredPosition.y <= toplimit)
                 {
                     picture.anchoredPosition = new Vector2(picture.anchoredPosition.x, picture.anchoredPosition.y+75);
                     AudioSource audio = gameObject.GetComponent<AudioSource>();
@@ -160,7 +172,7 @@ public class PlayerSelect : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.F))
             {
                 RectTransform picture = PTwoSelect.GetComponent<RectTransform>();
-                if (picture.anchoredPosition.y != -150)
+                if (picture.anchoredPosition.y > -150)
                 {
                     picture.anchoredPosition = new Vector2(picture.anchoredPosition.x, picture.anchoredPosition.y-75);
                     AudioSource audio = gameObject.GetComponent<AudioSource>();
@@ -181,7 +193,7 @@ public class PlayerSelect : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl) | Input.GetKeyDown(KeyCode.RightControl))
         {
             //Image3 is giltank
             //Image2 is tptank
@@ -210,7 +222,7 @@ public class PlayerSelect : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown("a"))
+        if (Input.GetKeyDown(KeyCode.A))
         {
             
             RectTransform picture = PTwoSelect.GetComponent<RectTransform>();

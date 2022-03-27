@@ -420,6 +420,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSelectorScript: {fileID: 1232150644}
   Player2CharacterSelectorScript: {fileID: 1129081025}
+  sequence1: {fileID: 846290607}
+  sequence2: {fileID: 991685190}
   ErrorMessagePanel: {fileID: 791679311}
   NotAvailableMessagePanel: {fileID: 1580042495}
   ReturntoScreenText: {fileID: 33120461}
@@ -755,9 +757,7 @@ GameObject:
   - component: {fileID: 539405598}
   - component: {fileID: 539405597}
   - component: {fileID: 539405596}
-  - component: {fileID: 539405595}
   - component: {fileID: 539405594}
-  - component: {fileID: 539405593}
   m_Layer: 5
   m_Name: TopRightBG
   m_TagString: SelectionImages
@@ -784,19 +784,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &539405593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 539405591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c50a0848ed11c6647a9d6ee459972e90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player2CharacterSelectorScript: {fileID: 900949108}
 --- !u!50 &539405594
 Rigidbody2D:
   serializedVersion: 4
@@ -818,26 +805,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &539405595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 539405591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CharacterSelectorScript: {fileID: 1232150644}
-  Player2CharacterSelectorScript: {fileID: 1129081025}
-  ErrorMessagePanel: {fileID: 791679311}
-  NotAvailableMessagePanel: {fileID: 1580042495}
-  ReturntoScreenText: {fileID: 33120461}
-  ReturntoScreenforNotAvailText: {fileID: 409232788}
-  Playerdeterminererrortext: {fileID: 2015565549}
-  selectionOnGrid: 3
 --- !u!61 &539405596
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -914,9 +881,7 @@ GameObject:
   - component: {fileID: 604459400}
   - component: {fileID: 604459399}
   - component: {fileID: 604459398}
-  - component: {fileID: 604459397}
   - component: {fileID: 604459396}
-  - component: {fileID: 604459395}
   m_Layer: 5
   m_Name: TopLeftBG
   m_TagString: SelectionImages
@@ -943,19 +908,6 @@ RectTransform:
   m_AnchoredPosition: {x: -150, y: 0}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &604459395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 604459393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c50a0848ed11c6647a9d6ee459972e90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player2CharacterSelectorScript: {fileID: 900949108}
 --- !u!50 &604459396
 Rigidbody2D:
   serializedVersion: 4
@@ -977,26 +929,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &604459397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 604459393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CharacterSelectorScript: {fileID: 1232150644}
-  Player2CharacterSelectorScript: {fileID: 1129081025}
-  ErrorMessagePanel: {fileID: 791679311}
-  NotAvailableMessagePanel: {fileID: 1580042495}
-  ReturntoScreenText: {fileID: 33120461}
-  ReturntoScreenforNotAvailText: {fileID: 409232788}
-  Playerdeterminererrortext: {fileID: 2015565549}
-  selectionOnGrid: 2
 --- !u!61 &604459398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1832,6 +1764,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSelectorScript: {fileID: 1232150644}
   Player2CharacterSelectorScript: {fileID: 1129081025}
+  sequence1: {fileID: 846290607}
+  sequence2: {fileID: 991685190}
   ErrorMessagePanel: {fileID: 791679311}
   NotAvailableMessagePanel: {fileID: 1580042495}
   ReturntoScreenText: {fileID: 33120461}
@@ -1851,6 +1785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterSelectorScript: {fileID: 1251525175}
+  SecretActive: 0
 --- !u!1 &851107696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1990,6 +1925,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSelectorScript: {fileID: 1232150644}
   Player2CharacterSelectorScript: {fileID: 1129081025}
+  sequence1: {fileID: 846290607}
+  sequence2: {fileID: 991685190}
   ErrorMessagePanel: {fileID: 791679311}
   NotAvailableMessagePanel: {fileID: 1580042495}
   ReturntoScreenText: {fileID: 33120461}
@@ -2261,6 +2198,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSelectorScript: {fileID: 1232150644}
   Player2CharacterSelectorScript: {fileID: 1129081025}
+  sequence1: {fileID: 846290607}
+  sequence2: {fileID: 991685190}
   ErrorMessagePanel: {fileID: 791679311}
   NotAvailableMessagePanel: {fileID: 1580042495}
   ReturntoScreenText: {fileID: 33120461}
@@ -2280,6 +2219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player2CharacterSelectorScript: {fileID: 900949108}
+  SecretActive: 0
 --- !u!1 &1071158927
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,6 +2952,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSelectorScript: {fileID: 1232150644}
   Player2CharacterSelectorScript: {fileID: 1129081025}
+  sequence1: {fileID: 846290607}
+  sequence2: {fileID: 991685190}
   ErrorMessagePanel: {fileID: 791679311}
   NotAvailableMessagePanel: {fileID: 1580042495}
   ReturntoScreenText: {fileID: 33120461}
@@ -3030,9 +2972,7 @@ GameObject:
   - component: {fileID: 1390290462}
   - component: {fileID: 1390290461}
   - component: {fileID: 1390290460}
-  - component: {fileID: 1390290459}
   - component: {fileID: 1390290458}
-  - component: {fileID: 1390290457}
   m_Layer: 5
   m_Name: TopMiddleBG
   m_TagString: SelectionImages
@@ -3059,19 +2999,6 @@ RectTransform:
   m_AnchoredPosition: {x: -75, y: 0}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1390290457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390290455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c50a0848ed11c6647a9d6ee459972e90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player2CharacterSelectorScript: {fileID: 900949108}
 --- !u!50 &1390290458
 Rigidbody2D:
   serializedVersion: 4
@@ -3093,26 +3020,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1390290459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390290455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CharacterSelectorScript: {fileID: 1232150644}
-  Player2CharacterSelectorScript: {fileID: 1129081025}
-  ErrorMessagePanel: {fileID: 791679311}
-  NotAvailableMessagePanel: {fileID: 1580042495}
-  ReturntoScreenText: {fileID: 33120461}
-  ReturntoScreenforNotAvailText: {fileID: 409232788}
-  Playerdeterminererrortext: {fileID: 2015565549}
-  selectionOnGrid: 0
 --- !u!61 &1390290460
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3316,6 +3223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSelectorScript: {fileID: 1232150644}
   Player2CharacterSelectorScript: {fileID: 1129081025}
+  sequence1: {fileID: 846290607}
+  sequence2: {fileID: 991685190}
   ErrorMessagePanel: {fileID: 791679311}
   NotAvailableMessagePanel: {fileID: 1580042495}
   ReturntoScreenText: {fileID: 33120461}
@@ -3645,9 +3554,7 @@ GameObject:
   - component: {fileID: 1638328301}
   - component: {fileID: 1638328300}
   - component: {fileID: 1638328299}
-  - component: {fileID: 1638328298}
   - component: {fileID: 1638328297}
-  - component: {fileID: 1638328296}
   m_Layer: 5
   m_Name: MiddleLeftBG
   m_TagString: SelectionImages
@@ -3674,19 +3581,6 @@ RectTransform:
   m_AnchoredPosition: {x: -150, y: -75}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1638328296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638328294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c50a0848ed11c6647a9d6ee459972e90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player2CharacterSelectorScript: {fileID: 900949108}
 --- !u!50 &1638328297
 Rigidbody2D:
   serializedVersion: 4
@@ -3708,26 +3602,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1638328298
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1638328294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab00ddeae5ca8944b81b6e78e8aa323f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CharacterSelectorScript: {fileID: 1232150644}
-  Player2CharacterSelectorScript: {fileID: 1129081025}
-  ErrorMessagePanel: {fileID: 791679311}
-  NotAvailableMessagePanel: {fileID: 1580042495}
-  ReturntoScreenText: {fileID: 33120461}
-  ReturntoScreenforNotAvailText: {fileID: 409232788}
-  Playerdeterminererrortext: {fileID: 2015565549}
-  selectionOnGrid: 1
 --- !u!61 &1638328299
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3931,6 +3805,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSelectorScript: {fileID: 1232150644}
   Player2CharacterSelectorScript: {fileID: 1129081025}
+  sequence1: {fileID: 846290607}
+  sequence2: {fileID: 991685190}
   ErrorMessagePanel: {fileID: 791679311}
   NotAvailableMessagePanel: {fileID: 1580042495}
   ReturntoScreenText: {fileID: 33120461}
@@ -4646,6 +4522,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSelectorScript: {fileID: 1232150644}
   Player2CharacterSelectorScript: {fileID: 1129081025}
+  sequence1: {fileID: 846290607}
+  sequence2: {fileID: 991685190}
   ErrorMessagePanel: {fileID: 791679311}
   NotAvailableMessagePanel: {fileID: 1580042495}
   ReturntoScreenText: {fileID: 33120461}
@@ -4946,6 +4824,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSelectorScript: {fileID: 1232150644}
   Player2CharacterSelectorScript: {fileID: 1129081025}
+  sequence1: {fileID: 846290607}
+  sequence2: {fileID: 991685190}
   ErrorMessagePanel: {fileID: 791679311}
   NotAvailableMessagePanel: {fileID: 1580042495}
   ReturntoScreenText: {fileID: 33120461}

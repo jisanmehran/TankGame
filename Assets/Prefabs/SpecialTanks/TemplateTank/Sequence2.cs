@@ -10,6 +10,7 @@ public class Sequence2 : MonoBehaviour
     private float timetopress;
     private float cd;
     public GameObject Player2CharacterSelectorScript;
+    public bool SecretActive;
 
     // Start is called before the first frame update
     void Start()
@@ -69,6 +70,7 @@ public class Sequence2 : MonoBehaviour
                 Player2CharacterSelectorScript.GetComponent<Character2Selection>().selected2Character = 4;
                 Player2CharacterSelectorScript.GetComponent<Character2Selection>().StartGame();
                 Debug.Log("secret activated");
+                SecretActive = true;
             }
             else
             {

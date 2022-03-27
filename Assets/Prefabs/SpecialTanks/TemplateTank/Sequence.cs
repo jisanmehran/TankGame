@@ -10,12 +10,13 @@ public class Sequence : MonoBehaviour
     private float timetopress;
     private float cd;
     public GameObject CharacterSelectorScript;
+    public bool SecretActive;
 
     // Start is called before the first frame update
     void Start()
     {
         //CharacterSelectorScript = GameObject.Find("Script-CharacterSelection");
-        Sequence1 = "uplefteftdownrightrightFire3Fire1";
+        Sequence1 = "upleftleftdownrightrightFire3Fire1";
         KeyPressed = false;
         cd = 7;
         timetopress = cd;
@@ -69,6 +70,7 @@ public class Sequence : MonoBehaviour
                 CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().selectedCharacter = 4;
                 CharacterSelectorScript.GetComponent<CharacterSelectionMenu>().StartGame();
                 Debug.Log("secret activated");
+                SecretActive = true;
             }
             else
             {
