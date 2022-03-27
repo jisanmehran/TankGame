@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AIBombTank : MonoBehaviour
 {
-
+    private GameObject UIController;
     public GameObject Master;
     public GameObject droneLaunchEffect;
     public GameObject Servant;
@@ -16,9 +17,11 @@ public class AIBombTank : MonoBehaviour
     public CooldownBar CBar;
     public GameObject CDImage;
     private bool alreadyresetbombtime;
+
     // Start is called before the first frame update
     void Start()
     {
+        UIController = GameObject.Find("UICooldownController");
         Cooldown = false;
         if (Master.tag == "Player1")
         {
@@ -35,8 +38,7 @@ public class AIBombTank : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        
+    {       
         TankScript scr = gameObject.GetComponent<TankScript>();
         if (Cooldown == false && scr.isPlayer2Input == false)
         {
@@ -52,6 +54,8 @@ public class AIBombTank : MonoBehaviour
                     Summon.GetComponent<EnemyShootingAI>().overtimelimit = true;
                     alreadyresetbombtime = true;
                     Invoke("ResetBombCooldown", 10f);
+                    Invoke("ResetCooldown", 10f);
+                    UIController.GetComponent<UIAbilitiesScript>().triggercooldown1P1 = true;
                 }
 
                 Summon.GetComponent<EnemyShootingAI>().overtimelimit = true;
@@ -69,10 +73,6 @@ public class AIBombTank : MonoBehaviour
             timeBtwShots -= Time.deltaTime;
             CBar.currentCD = timeBtwShots;
         }
-        if (timeBtwShots <= 0)
-        {
-            Cooldown = false;
-        }
 
         if (Cooldown == false && scr.isPlayer2Input == true)
         {
@@ -88,6 +88,8 @@ public class AIBombTank : MonoBehaviour
                     Summon.GetComponent<EnemyShootingAI>().overtimelimit = true;
                     alreadyresetbombtime = true;
                     Invoke("ResetBombCooldown", 10f);
+                    Invoke("ResetCooldown", 10f);
+                    UIController.GetComponent<UIAbilitiesScript>().triggercooldown1P2 = true;
                 }
 
                 GameObject tmpeffect = Instantiate(droneLaunchEffect, Summon.transform.position, Quaternion.identity);
@@ -104,16 +106,14 @@ public class AIBombTank : MonoBehaviour
             timeBtwShots -= Time.deltaTime;
             CBar.currentCD = timeBtwShots;
         }
-        
-        if (timeBtwShots <= 0)
-        {
-            Cooldown = false;
-        }
     }
 
     void ResetBombCooldown()
     {
         alreadyresetbombtime = false;
     }
-
+    void ResetCooldown()
+    {
+        Cooldown = false;
+    }
 }

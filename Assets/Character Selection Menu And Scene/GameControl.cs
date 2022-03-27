@@ -20,11 +20,28 @@ public class GameControl : MonoBehaviour
 
     private GameObject TanktoSpawn;
 
+    public GameObject TPCDP1Icon;
+    public GameObject TPCDP2Icon;
+    public GameObject AICDP1Icon;
+    public GameObject AICDP2Icon;
+
     // Start is called before the first frame update
     void Start()
     {   
+
         selectedCharacter = PlayerPrefs.GetInt(selectedCharacterDataName,0);
         characters[selectedCharacter].SetActive(true);
+
+        if (selectedCharacter == 0)
+        {
+            TPCDP1Icon.SetActive(true);
+        }
+
+        else if (selectedCharacter == 2)
+        {
+            AICDP1Icon.SetActive(true);
+        }
+
         playerObject = Instantiate(characters[selectedCharacter], playerStartPosition.position, characters[selectedCharacter].transform.rotation);
         playerObject.GetComponent<TankScript>().isPlayer2Input = false;
         playerObject.tag = "Player1";
@@ -42,6 +59,8 @@ public class GameControl : MonoBehaviour
             Aitank.GetComponent<AIDestinationSetter>().TargetPlayer1 = true; 
 
         }
+
+        
     }
 
     // // Update is called once per frame

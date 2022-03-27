@@ -120,6 +120,10 @@ public class gamemanagerscript : MonoBehaviour
                 player2heart1.SetActive(false);
             }
         }
+
+        //This Section is for cooldowns
+
+        
         
     }
 

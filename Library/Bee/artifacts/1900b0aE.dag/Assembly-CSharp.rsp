@@ -415,6 +415,7 @@
 "Assets/Scripts/PowerUpScript/HealthUp.cs"
 "Assets/Scripts/PowerUpScript/Immunity.cs"
 "Assets/Scripts/PowerUpScript/TripleShot.cs"
+"Assets/Scripts/PowerUpScript/UIAbilitiesScript.cs"
 "Assets/Scripts/StageScripts/AudioDelete.cs"
 "Assets/Scripts/StageScripts/BarrierMovement.cs"
 "Assets/Scripts/StageScripts/LeaveRules.cs"

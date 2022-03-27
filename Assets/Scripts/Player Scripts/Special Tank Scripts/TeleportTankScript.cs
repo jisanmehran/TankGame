@@ -32,9 +32,10 @@ public class TeleportTankScript : MonoBehaviour
     public CooldownBar CBar;
 
     public GameObject CDImage;
-    
+    private GameObject UIController;
     void Start()
     {
+        UIController = GameObject.Find("UICooldownController");
         Cooldown = false;
         if (gameObject.tag == "Player1")
         {
@@ -56,6 +57,7 @@ public class TeleportTankScript : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftAlt) | Input.GetKey(KeyCode.RightAlt) && gameObject.GetComponent<TankScript>().isPlayer2Input == false)
             {
                 Cooldown = true;
+                UIController.GetComponent<UIAbilitiesScript>().triggercooldown2P1 = true;
                 timeBtwShots = cd;
                 
                 TeleportEnabled = true;
@@ -70,6 +72,7 @@ public class TeleportTankScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.S) && gameObject.GetComponent<TankScript>().isPlayer2Input == true)
             {
                 Cooldown = true;
+                UIController.GetComponent<UIAbilitiesScript>().triggercooldown2P2 = true;
                 timeBtwShots = cd;
 
                 TeleportEnabled = true;
