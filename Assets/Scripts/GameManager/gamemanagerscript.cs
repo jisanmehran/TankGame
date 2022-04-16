@@ -31,7 +31,7 @@ public class gamemanagerscript : MonoBehaviour
     private GameObject player2heart1;
     private GameObject player2heart2;
     private GameObject player2heart3;
-
+    public GameObject AccuracyTracker;
     public AudioClip deathsound;
 
 
@@ -39,6 +39,7 @@ public class gamemanagerscript : MonoBehaviour
 
     void Start()
     {
+        AccuracyTracker = GameObject.Find("AccuracyTracker");
         Invoke("FindSpriteRenderers", 2f);
         Invoke("findplayers", 2f);
         Invoke("findSprites", 1f);
@@ -132,6 +133,7 @@ public class gamemanagerscript : MonoBehaviour
                 Invoke("destroyGameManager", 3f);
                 alreadyspawnedeffect = true;
                 player1heart1.SetActive(false);
+                DontDestroyOnLoad(AccuracyTracker);
             }
         }
 
@@ -151,13 +153,9 @@ public class gamemanagerscript : MonoBehaviour
                 Invoke("destroyGameManager", 3f);
                 alreadyspawnedeffect = true;
                 player2heart1.SetActive(false);
+                DontDestroyOnLoad(AccuracyTracker);
             }
-        }
-
-        //This Section is for cooldowns
-
-        
-        
+        }        
     }
 
     void destroyGameManager()

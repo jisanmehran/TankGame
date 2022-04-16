@@ -37,4 +37,12 @@ public class BarrageForward : MonoBehaviour
     {
         Destroy(gameObject, 0.2f);
     }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Bullet" && other.gameObject.name != "BarrageHit(Clone)")
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }

@@ -21,7 +21,7 @@ private Scene scene;
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag == "Bullet" && gameObject.tag == "Player1" && alreadycounted == false && other.gameObject.name != "specialBullet(Clone)")
+        if (other.gameObject.tag == "Bullet" && gameObject.tag == "Player1" && alreadycounted == false && other.gameObject.name != "specialBullet(Clone)" && other.gameObject.name != "BarrageHit(Clone)" && other.gameObject.name != "THEPunch(Clone)")
         {
             AudioSource audio = gameObject.GetComponent<AudioSource>();
             audio.clip = hitsound;
@@ -34,7 +34,7 @@ private Scene scene;
             Destroy(hitEffectIns, 0.9f);
         }
         
-        if (other.gameObject.tag == "Bullet" && gameObject.tag == "Player2" && alreadycounted == false && other.gameObject.name != "specialBullet(Clone)")
+        if (other.gameObject.tag == "Bullet" && gameObject.tag == "Player2" && alreadycounted == false && other.gameObject.name != "specialBullet(Clone)" && other.gameObject.name != "BarrageHit(Clone)" && other.gameObject.name != "THEPunch(Clone)")
         {   
             AudioSource audio = gameObject.GetComponent<AudioSource>();
             audio.clip = hitsound;

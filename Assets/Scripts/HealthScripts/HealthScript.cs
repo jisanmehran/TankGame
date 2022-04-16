@@ -6,14 +6,15 @@ using UnityEngine.SceneManagement;
 public class HealthScript : MonoBehaviour
 { 
     private Scene scene;
-
     private GameObject gameManager;
     public bool alreadycounted;
     public GameObject hitEffect;
     public AudioClip hitsound;
+    public GameObject AccuracyTracker;
 
     void Start()
     {
+        AccuracyTracker = GameObject.Find("AccuracyTracker");
         gameManager = GameObject.Find("GameManager");
         scene = SceneManager.GetActiveScene();
         alreadycounted = false;
@@ -33,6 +34,7 @@ public class HealthScript : MonoBehaviour
             Destroy(other.gameObject);
             GameObject hitEffectIns = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(hitEffectIns, 0.9f);
+            AccuracyTracker.GetComponent<Accuracy>().shots_hit_player1++;
         }
         
         if (other.gameObject.tag == "Bullet" && gameObject.tag == "Player2" && alreadycounted == false)
@@ -46,6 +48,7 @@ public class HealthScript : MonoBehaviour
             Destroy(other.gameObject);
             GameObject hitEffectIns = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(hitEffectIns, 0.9f);
+            AccuracyTracker.GetComponent<Accuracy>().shots_hit_player2++;
         }
 
         if (other.gameObject.tag == "Bullet" && gameObject.tag == "Player1" && alreadycounted == true)

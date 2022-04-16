@@ -16,10 +16,12 @@ public class FiringScript : MonoBehaviour
     public AudioClip fireSound;
     public CooldownBar CBar;
     public GameObject CDImage;
+    public GameObject AccuracyTracker;
     // Start is called before the first frame update
 
     void Start()
     {
+        AccuracyTracker = GameObject.Find("AccuracyTracker");
         Cooldown = false;
         if (Tank.tag == "Player1")
         {
@@ -51,6 +53,7 @@ public class FiringScript : MonoBehaviour
                 AudioSource audio = Tank.GetComponent<AudioSource>();
                 audio.clip = fireSound;
                 audio.Play();
+                AccuracyTracker.GetComponent<Accuracy>().AddShotPlayer1();
             }
         }
 
@@ -79,6 +82,7 @@ public class FiringScript : MonoBehaviour
                 AudioSource audio = Tank.GetComponent<AudioSource>();
                 audio.clip = fireSound;
                 audio.Play();
+                AccuracyTracker.GetComponent<Accuracy>().AddShotPlayer2();
             }  
         }
 

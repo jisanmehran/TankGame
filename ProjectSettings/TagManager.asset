@@ -28,6 +28,12 @@ TagManager:
   - TwoFireOneCD
   - OneFireTwoCD
   - TwoFireTwoCD
+  - AccuracyText_P1
+  - AccuracyText_P2
+  - ShotsHitText_P1
+  - ShotsHitText_P2
+  - ShotsFiredText_P1
+  - ShotsFiredText_P2
   layers:
   - Default
   - TransparentFX

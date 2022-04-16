@@ -1,0 +1,3 @@
+rep "TankGame@TankGameOrg@cloud"
+  path "/"
+    smartbranch "/main"

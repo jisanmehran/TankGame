@@ -12,17 +12,19 @@ public class Timer : MonoBehaviour
     public float theTime;
     public AudioClip SpecialMusic;
     public bool themePlaying;
+    public GameObject AccuracyTracker;
     private void Start()
     {
+        AccuracyTracker = GameObject.Find("AccuracyTracker");
         timerIsRunning = true;
         theTime = roundTime;
-         
+        themePlaying = false;
     }
     void Update()
     {
         if (GameObject.Find("One's Greatest High(Clone)") != null && themePlaying == false)
         {
-            AudioSource audio = timeText.GetComponent<AudioSource>();
+            AudioSource audio = gameObject.GetComponent<AudioSource>();
             audio.clip = SpecialMusic;
             audio.Play(); 
             themePlaying = true;
@@ -36,12 +38,13 @@ public class Timer : MonoBehaviour
             }
             else
             {
+                DontDestroyOnLoad(AccuracyTracker);
                 SceneManager.LoadScene("PlayAgainBoth");
                 theTime = 0;
                 timerIsRunning = false;
             }
 
-            if (Mathf.Round(theTime) == 2)
+            if (Mathf.Round(theTime) == roundTime/2)
             {
                 TheGameOver = GameObject.Find("One's Greatest High(Clone)");
                 GameObject child1 = TheGameOver.transform.GetChild(0).gameObject;

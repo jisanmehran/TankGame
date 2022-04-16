@@ -42,10 +42,12 @@
      <Compile Include="Assets\Scripts\HealthScripts\CooldownBar.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\SimpleScript.cs" />
+     <Compile Include="Assets\Scenes\VolumeOverrider.cs" />
      <Compile Include="Assets\Scripts\StageScripts\BarrierMovement.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\Special Tank Scripts\GilgameshTank.cs" />
      <Compile Include="Assets\Scenes\Credits Screen\ImageFader.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
+     <Compile Include="Assets\Scripts\StageScripts\RuleScrnMat\HowCouldYou.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\Character Selection Menu And Scene\Character2Selection.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Summoner\Summon.cs" />
@@ -55,6 +57,7 @@
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Summoner\ServantShooting.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark04.cs" />
+     <Compile Include="Assets\Scripts\PlayAgain\Accuracy.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\TemplateTank\BarrageForward.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
@@ -85,6 +88,7 @@
      <Compile Include="Assets\EZ Camera Shake\Demo\Sample Scripts\ShakeOnKeyPress.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+     <Compile Include="Assets\Scripts\StageScripts\AreaChangeRulesScrn.cs" />
      <Compile Include="Assets\Scripts\StageScripts\SceneAudio.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\AI Bomb Tank\Backend Scripts\AIBombTank.cs" />
@@ -101,6 +105,7 @@
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
      <Compile Include="Assets\Scripts\StartScreen\MainMenu.cs" />
      <Compile Include="Assets\Scripts\StageScripts\Rotate.cs" />
+     <Compile Include="Assets\AccuracyApplier.cs" />
      <Compile Include="Assets\Scripts\StartScreen\StartScreenScript.cs" />
      <Compile Include="Assets\EZ Camera Shake\Scripts\CameraShaker.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\Benchmark03.cs" />
@@ -115,6 +120,7 @@
      <Compile Include="Assets\Prefabs\SpecialTanks\Summoner\Servant.cs" />
      <Compile Include="Assets\Test Char Select\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
      <Compile Include="Assets\Prefabs\SpecialTanks\Summoner\TurretScript.cs" />
+     <Compile Include="Assets\Scripts\StageScripts\RuleScrnMat\TorielBounce.cs" />
      <Compile Include="Assets\Scripts\HealthScripts\HealthScript.cs" />
      <Compile Include="Assets\Scripts\PlayerSelect\SceneLoaderScript.cs" />
      <Compile Include="Assets\EZ Camera Shake\Demo\Sample Scripts\ShakeOnTrigger.cs" />
