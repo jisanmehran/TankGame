@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 72072615461510186}
   - component: {fileID: 3158296439366707084}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: TankLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7194256138853178885}
   - component: {fileID: 8866916461776510629}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3410546410281278736}
   - component: {fileID: 3871246554626870002}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -651,7 +651,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -718,6 +718,7 @@ MonoBehaviour:
   alreadycounted: 0
   hitEffect: {fileID: 644250500410998029, guid: 99af2538dbfaddd4f97dd424586148f8, type: 3}
   hitsound: {fileID: 8300000, guid: b98f894437517634888eebd619d7a17e, type: 3}
+  AccuracyTracker: {fileID: 0}
 --- !u!60 &5553638568015026396
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -888,7 +889,7 @@ GameObject:
   - component: {fileID: 3603132832982504684}
   - component: {fileID: 3322016499914796545}
   - component: {fileID: 6812935245584183485}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -982,8 +983,7 @@ MonoBehaviour:
   TSBtw: 0
   bulletSpeed: 10
   fireSound: {fileID: 8300000, guid: 4fa34825c70c6aa4294510d7ca45df9e, type: 3}
-  CBar: {fileID: 0}
-  CDImage: {fileID: 0}
+  AccuracyTracker: {fileID: 0}
 --- !u!82 &6812935245584183485
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1090,7 +1090,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8170684501438179408}
   - component: {fileID: 8170684501438179415}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1175,7 +1175,7 @@ GameObject:
   - component: {fileID: 8170684501568941668}
   - component: {fileID: 8170684501568941669}
   - component: {fileID: 7373459102044420011}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -1269,8 +1269,7 @@ MonoBehaviour:
   TSBtw: 0
   bulletSpeed: 10
   fireSound: {fileID: 8300000, guid: 4fa34825c70c6aa4294510d7ca45df9e, type: 3}
-  CBar: {fileID: 0}
-  CDImage: {fileID: 0}
+  AccuracyTracker: {fileID: 0}
 --- !u!82 &7373459102044420011
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1377,7 +1376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8170684502358769978}
   - component: {fileID: 8170684502358769977}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1462,7 +1461,7 @@ GameObject:
   - component: {fileID: 8170684502748639535}
   - component: {fileID: 8170684502748639528}
   - component: {fileID: 1319504895793022234}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -1556,8 +1555,7 @@ MonoBehaviour:
   TSBtw: 0
   bulletSpeed: 10
   fireSound: {fileID: 8300000, guid: 4fa34825c70c6aa4294510d7ca45df9e, type: 3}
-  CBar: {fileID: 0}
-  CDImage: {fileID: 0}
+  AccuracyTracker: {fileID: 0}
 --- !u!82 &1319504895793022234
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1664,7 +1662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8170684503049284630}
   - component: {fileID: 8170684503049284629}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1747,7 +1745,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8170684503200102042}
   - component: {fileID: 8170684503200102041}
-  m_Layer: 14
+  m_Layer: 2
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -14,8 +14,8 @@ public class FiringScript : MonoBehaviour
     public float TSBtw;
     public float bulletSpeed = 10;
     public AudioClip fireSound;
-    public CooldownBar CBar;
-    public GameObject CDImage;
+    //public CooldownBar CBar;
+    //public GameObject CDImage;
     public GameObject AccuracyTracker;
     // Start is called before the first frame update
 
@@ -23,17 +23,17 @@ public class FiringScript : MonoBehaviour
     {
         AccuracyTracker = GameObject.Find("AccuracyTracker");
         Cooldown = false;
-        if (Tank.tag == "Player1")
-        {
-            CDImage = GameObject.FindWithTag("OneCD");
-        }
-        else
-        {
-            CDImage = GameObject.FindWithTag("TwoCD");
-        }
+        // if (Tank.tag == "Player1")
+        // {
+        //     CDImage = GameObject.FindWithTag("OneCD");
+        // }
+        // else
+        // {
+        //     CDImage = GameObject.FindWithTag("TwoCD");
+        // }
         
-        CBar = CDImage.GetComponent<CooldownBar>();
-        CBar.CD = cd;
+        // CBar = CDImage.GetComponent<CooldownBar>();
+        // CBar.CD = cd;
     }
 
     // Update is called once per frame
@@ -60,7 +60,7 @@ public class FiringScript : MonoBehaviour
         else
         {
             timeBtwShots -= Time.deltaTime;
-            CBar.currentCD = timeBtwShots;
+            //CBar.currentCD = timeBtwShots;
             
         }
 
@@ -89,7 +89,7 @@ public class FiringScript : MonoBehaviour
         else
         {
             timeBtwShots -= Time.deltaTime;
-            CBar.currentCD = timeBtwShots;
+            //CBar.currentCD = timeBtwShots;
         }
         
         if (timeBtwShots <= 0)

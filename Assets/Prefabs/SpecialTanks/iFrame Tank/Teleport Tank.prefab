@@ -105,8 +105,7 @@ MonoBehaviour:
   TSBtw: 0
   bulletSpeed: 10
   fireSound: {fileID: 8300000, guid: 4fa34825c70c6aa4294510d7ca45df9e, type: 3}
-  CBar: {fileID: 0}
-  CDImage: {fileID: 0}
+  AccuracyTracker: {fileID: 0}
 --- !u!1 &5537666159973899153
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6403202279296067004
 Transform:
   m_ObjectHideFlags: 0
@@ -358,7 +357,7 @@ MonoBehaviour:
   moveSpeedMax: 5
   rotateSpeedRight: 0
   rotateSpeedLeft: 0
-  rotateAcceleration: 8
+  rotateAcceleration: 30
   rotateDeceleration: 10
   rotateSpeedMax: 170
   broken1: {fileID: 21300000, guid: a672c082966a99744bf6a5594abe5347, type: 3}
@@ -399,6 +398,7 @@ MonoBehaviour:
   alreadycounted: 0
   hitEffect: {fileID: 644250500410998029, guid: 99af2538dbfaddd4f97dd424586148f8, type: 3}
   hitsound: {fileID: 8300000, guid: b98f894437517634888eebd619d7a17e, type: 3}
+  AccuracyTracker: {fileID: 0}
 --- !u!82 &-5435935888016503149
 AudioSource:
   m_ObjectHideFlags: 0

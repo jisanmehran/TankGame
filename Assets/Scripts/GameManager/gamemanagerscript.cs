@@ -33,6 +33,7 @@ public class gamemanagerscript : MonoBehaviour
     private GameObject player2heart3;
     public GameObject AccuracyTracker;
     public AudioClip deathsound;
+    public AudioClip revival;
 
 
 
@@ -117,7 +118,32 @@ public class gamemanagerscript : MonoBehaviour
 
         //Check is one of the players are dead
 
-        if (player1hitCount == 3)
+        if (player1hitCount == 3 && player1.name != "KingOC Tank")
+        {
+            if (alreadyspawnedeffect == false)
+            {
+                AudioSource audio = gameObject.GetComponent<AudioSource>();
+                audio.clip = deathsound;
+                audio.Play();
+                CameraShaker.Instance.ShakeOnce(5, 5, 0.2f, 1f);
+                player1.GetComponent<TankScript>().enabled = false;
+                player1.GetComponentInChildren<FiringScript>().enabled = false;
+                GameObject deathEffectIns = Instantiate(deathEffect, player1.transform.position, Quaternion.identity);
+                Destroy(deathEffectIns, 2f);
+                Invoke("loadPlayAgainScreen2", 3f);
+                Invoke("destroyGameManager", 3f);
+                alreadyspawnedeffect = true;
+                player1heart1.SetActive(false);
+                DontDestroyOnLoad(AccuracyTracker);
+            }
+        }
+        else if (player1hitCount == 3 && player1.name == "KingOC Tank")
+        {
+            AudioSource audio = gameObject.GetComponent<AudioSource>();
+            audio.clip = revival;
+            audio.Play();
+        }
+        else if (player1hitCount == 4 && player1.name == "KingOC Tank")
         {
             if (alreadyspawnedeffect == false)
             {
@@ -137,7 +163,7 @@ public class gamemanagerscript : MonoBehaviour
             }
         }
 
-        else if (player2hitCount == 3)
+        else if (player2hitCount == 3 && player2.name != "KingOC Tank")
         {
             if (alreadyspawnedeffect == false)
             {
@@ -155,7 +181,32 @@ public class gamemanagerscript : MonoBehaviour
                 player2heart1.SetActive(false);
                 DontDestroyOnLoad(AccuracyTracker);
             }
-        }        
+        }  
+        else if (player2hitCount == 3 && player2.name == "KingOC Tank")
+        {
+            AudioSource audio = gameObject.GetComponent<AudioSource>();
+            audio.clip = revival;
+            audio.Play();
+        }
+        else if (player2hitCount == 4 && player2.name == "KingOC Tank")
+        {
+            if (alreadyspawnedeffect == false)
+            {
+                AudioSource audio = gameObject.GetComponent<AudioSource>();
+                audio.clip = deathsound;
+                audio.Play();
+                CameraShaker.Instance.ShakeOnce(5, 5, 0.2f, 1f);
+                player2.GetComponent<TankScript>().enabled = false;
+                player2.GetComponentInChildren<FiringScript>().enabled = false;
+                GameObject deathEffectIns = Instantiate(deathEffect, player2.transform.position, Quaternion.identity);
+                Destroy(deathEffectIns, 2f);
+                Invoke("loadPlayAgainScreen2", 3f);
+                Invoke("destroyGameManager", 3f);
+                alreadyspawnedeffect = true;
+                player2heart1.SetActive(false);
+                DontDestroyOnLoad(AccuracyTracker);
+            }
+        }      
     }
 
     void destroyGameManager()

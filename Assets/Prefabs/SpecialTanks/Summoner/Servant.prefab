@@ -105,8 +105,7 @@ MonoBehaviour:
   TSBtw: 0
   bulletSpeed: 10
   fireSound: {fileID: 8300000, guid: ec6472795b363614baf01dae7ce7d1a0, type: 3}
-  CBar: {fileID: 0}
-  CDImage: {fileID: 0}
+  AccuracyTracker: {fileID: 0}
 --- !u!1 &4023500618468245474
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +631,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

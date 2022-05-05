@@ -15,6 +15,15 @@ public class Game2Control : MonoBehaviour
     public GameObject AICDP1Icon;
     public GameObject AICDP2Icon;
 
+    public GameObject SNTankCDIcon1;
+    public GameObject SNTankCDIcon2;
+
+    public GameObject BMTankCDIcon1;
+    public GameObject BMTankCDIcon2;
+
+    public GameObject SHTankCDIcon1;
+    public GameObject SHTankCDIcon2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +38,21 @@ public class Game2Control : MonoBehaviour
         else if (selected2Character == 2)
         {
             AICDP2Icon.SetActive(true);
+        }
+
+        else if (selected2Character == 5)
+        {
+            BMTankCDIcon2.SetActive(true);
+        }
+
+        else if (selected2Character == 6)
+        {
+            SNTankCDIcon2.SetActive(true);
+        }
+
+        else if (selected2Character == 9)
+        {
+            SHTankCDIcon2.SetActive(true);
         }
 
         characters2[selected2Character].SetActive(true);

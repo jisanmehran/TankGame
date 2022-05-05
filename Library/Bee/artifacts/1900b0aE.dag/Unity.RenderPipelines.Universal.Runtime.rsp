@@ -113,6 +113,7 @@
 -define:USING_PHYSICS2D_MODULE
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/JMO Assets/Editor/JMOAssets_CartoonFXFreeWelcome.dll"
 -r:"Assets/Scripts/AI Scripts/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll"
 -r:"C:/Program Files/Unity 2021.1.15f1/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity 2021.1.15f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"

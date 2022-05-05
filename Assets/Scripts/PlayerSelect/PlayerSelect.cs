@@ -29,6 +29,11 @@ public class PlayerSelect : MonoBehaviour
     public Sprite SummonTank;
     public Sprite AIBombTank;
     public Sprite TeleportTank;
+    public Sprite BeamTank;
+    public Sprite StunTank;
+    public Sprite SwordTank;
+    public Sprite KickerTank;
+    public Sprite ShadowTank;
     public AudioClip PlayerSelection;
 
 
@@ -70,6 +75,36 @@ public class PlayerSelect : MonoBehaviour
             PlayerOneTxt.text = "Summoner Tank - Tank that summons smaller tank which act as turrets, but can also be controlled by the player leaving the main tank defenseless.";
         }
 
+        else if (picture1.anchoredPosition == new Vector2(-75,-75))
+        {
+            PlayerOne.sprite = BeamTank;
+            PlayerOneTxt.text = "Beam Tank - Tank that can shoot a very hard to hit beam that goes through walls, so if your great at aiming, take a shot at this tank!";
+        }
+
+        else if (picture1.anchoredPosition == new Vector2(0,-75))
+        {
+            PlayerOne.sprite = StunTank;
+            PlayerOneTxt.text = "Stun Tank - Tank that can disable enemy moves for certain amounts of time, so if your opponent is chosing a skill-heavy tank, tell this tank 'I Chose You!'";
+        }
+
+        else if (picture1.anchoredPosition == new Vector2(0,-150))
+        {
+            PlayerOne.sprite = ShadowTank;
+            PlayerOneTxt.text = "Shadow Tank - Tank that can teleport itself to the position of the bullet, and blind the opponent. I wonder which depths it came from...";
+        }
+
+        else if (picture1.anchoredPosition == new Vector2(-75,-150))
+        {
+            PlayerOne.sprite = KickerTank;
+            PlayerOneTxt.text = "Kicker Tank - Melee Tank dripped out with Soba Gear that can dash while kicking, send out strong wind bullets, spin to create a barrage of kicks, while also having a mode...THAT SETS IT ON FIRE.";
+        }
+
+        else if (picture1.anchoredPosition == new Vector2(-150,-150))
+        {
+            PlayerOne.sprite = SwordTank;
+            PlayerOneTxt.text = "Sword Tank - Melee Tank that uses Three-Sword-Style to slice, dash, and send tornados to the opponents way. Don't forget, this one is athletic, it can jump over walls!";
+        }
+
         RectTransform picture2 = PTwoSelect.GetComponent<RectTransform>();
 
         if (picture2.anchoredPosition == new Vector2(0,0))
@@ -94,6 +129,36 @@ public class PlayerSelect : MonoBehaviour
         {
             PlayerTwo.sprite = SummonTank;
             PlayerTwoTxt.text = "Summoner Tank - Tank that summons smaller tank which act as turrets, but can also be controlled by the player leaving the main tank defenseless.";
+        }
+
+        else if (picture2.anchoredPosition == new Vector2(-75,-75))
+        {
+            PlayerTwo.sprite = BeamTank;
+            PlayerTwoTxt.text = "Beam Tank - Tank that can shoot a very hard to hit beam that goes through walls, so if your great at aiming, take a shot at this tank!";
+        }
+
+        else if (picture2.anchoredPosition == new Vector2(0,-75))
+        {
+            PlayerTwo.sprite = StunTank;
+            PlayerTwoTxt.text = "Stun Tank - Tank that can disable enemy moves for certain amounts of time, so if your opponent is chosing a skill-heavy tank, tell this tank 'I Chose You!'";
+        }
+
+        else if (picture2.anchoredPosition == new Vector2(0,-150))
+        {
+            PlayerTwo.sprite = ShadowTank;
+            PlayerTwoTxt.text = "Shadow Tank - Tank that can teleport itself to the position of the bullet, and blind the opponent. I wonder which depths it came from...";
+        }
+
+        else if (picture2.anchoredPosition == new Vector2(-75,-150))
+        {
+            PlayerTwo.sprite = KickerTank;
+            PlayerTwoTxt.text = "Kicker Tank - Melee Tank dripped out with Soba Gear that can dash while kicking, send out strong wind bullets, spin to create a barrage of kicks, while also having a mode...THAT SETS IT ON FIRE.";
+        }
+
+        else if (picture2.anchoredPosition == new Vector2(-150,-150))
+        {
+            PlayerTwo.sprite = SwordTank;
+            PlayerTwoTxt.text = "Sword Tank - Melee Tank that uses Three-Sword-Style to slice, dash, and send tornados to the opponents way. Don't forget, this one is athletic, it can jump over walls!";
         }
 
         if (TankChosen1 == false) 

@@ -25,6 +25,15 @@ public class GameControl : MonoBehaviour
     public GameObject AICDP1Icon;
     public GameObject AICDP2Icon;
 
+    public GameObject SNTankCDIcon1;
+    public GameObject SNTankCDIcon2;
+
+    public GameObject BMTankCDIcon1;
+    public GameObject BMTankCDIcon2;
+
+    public GameObject SHTankCDIcon1;
+    public GameObject SHTankCDIcon2;
+
     // Start is called before the first frame update
     void Start()
     {   
@@ -40,6 +49,21 @@ public class GameControl : MonoBehaviour
         else if (selectedCharacter == 2)
         {
             AICDP1Icon.SetActive(true);
+        }
+
+        else if (selectedCharacter == 5)
+        {
+            BMTankCDIcon1.SetActive(true);
+        }
+
+        else if (selectedCharacter == 6)
+        {
+            SNTankCDIcon1.SetActive(true);
+        }
+
+        else if (selectedCharacter == 9)
+        {
+            SHTankCDIcon1.SetActive(true);
         }
 
         playerObject = Instantiate(characters[selectedCharacter], playerStartPosition.position, characters[selectedCharacter].transform.rotation);
@@ -62,20 +86,5 @@ public class GameControl : MonoBehaviour
 
         
     }
-
-    // // Update is called once per frame
-    // void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.Escape))
-    //     {
-    //         ReturnToMainMenu();
-    //     }
-    // }
-
-    // public void ReturnToMainMenu()
-    // {
-    //     SceneManager.LoadScene(menuScene);
-
-    // }
 
 }

@@ -45,5 +45,6 @@ public class BulletScript : MonoBehaviour
         {
             Physics2D.IgnoreLayerCollision (10, 10, true);
         }
+
     }
 }

@@ -1699,7 +1699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 027ffe1c789882c44a7cf584fff18e9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5bb2234784e9d194ca99176944699613, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1785,7 +1785,7 @@ MonoBehaviour:
   ReturntoScreenText: {fileID: 33120461}
   ReturntoScreenforNotAvailText: {fileID: 409232788}
   Playerdeterminererrortext: {fileID: 2015565549}
-  selectionOnGrid: 10
+  selectionOnGrid: 8
 --- !u!114 &846290607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1982,6 +1982,11 @@ MonoBehaviour:
   - {fileID: 262375534855524849, guid: 8eecab15f4dd01243a9919e988686ed0, type: 3}
   - {fileID: 4378854754298259409, guid: 8f3d001c6a8aa3d4c9e6262ca77f546a, type: 3}
   - {fileID: 1044925587940456589, guid: 846615e6ce983d443804bf8dd5d4ac94, type: 3}
+  - {fileID: 9168493875500113805, guid: c38f1204639d2414abffafe91d0a4540, type: 3}
+  - {fileID: 8087121342249043962, guid: a5466b4a20e4f434ab4b41c267d08b13, type: 3}
+  - {fileID: 3163893682920143149, guid: 1fc35fef8c6bae24faf690c25e4ae099, type: 3}
+  - {fileID: 262375534855524849, guid: 9815c5a258a44cb4690c3d002ac6af33, type: 3}
+  - {fileID: 1783597412195610502, guid: 80bbf3b4a9b721048893015d29c5ea92, type: 3}
   selected2Character: 0
 --- !u!4 &900949110
 Transform:
@@ -2133,7 +2138,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 027ffe1c789882c44a7cf584fff18e9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca967f6153c1a7041b0853eb33d667d8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2219,7 +2224,7 @@ MonoBehaviour:
   ReturntoScreenText: {fileID: 33120461}
   ReturntoScreenforNotAvailText: {fileID: 409232788}
   Playerdeterminererrortext: {fileID: 2015565549}
-  selectionOnGrid: 10
+  selectionOnGrid: 5
 --- !u!114 &991685190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2665,6 +2670,11 @@ MonoBehaviour:
   - {fileID: 262375534855524849, guid: 8eecab15f4dd01243a9919e988686ed0, type: 3}
   - {fileID: 4378854754298259409, guid: 8f3d001c6a8aa3d4c9e6262ca77f546a, type: 3}
   - {fileID: 1044925587940456589, guid: 846615e6ce983d443804bf8dd5d4ac94, type: 3}
+  - {fileID: 9168493875500113805, guid: c38f1204639d2414abffafe91d0a4540, type: 3}
+  - {fileID: 8087121342249043962, guid: a5466b4a20e4f434ab4b41c267d08b13, type: 3}
+  - {fileID: 3163893682920143149, guid: 1fc35fef8c6bae24faf690c25e4ae099, type: 3}
+  - {fileID: 262375534855524849, guid: 9815c5a258a44cb4690c3d002ac6af33, type: 3}
+  - {fileID: 1783597412195610502, guid: 80bbf3b4a9b721048893015d29c5ea92, type: 3}
   selectedCharacter: 1
 --- !u!4 &1251525177
 Transform:
@@ -3158,7 +3168,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 027ffe1c789882c44a7cf584fff18e9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8004e86adb344814cbfc97d2467cc9c7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3244,7 +3254,7 @@ MonoBehaviour:
   ReturntoScreenText: {fileID: 33120461}
   ReturntoScreenforNotAvailText: {fileID: 409232788}
   Playerdeterminererrortext: {fileID: 2015565549}
-  selectionOnGrid: 10
+  selectionOnGrid: 6
 --- !u!1 &1467255346
 GameObject:
   m_ObjectHideFlags: 0
@@ -3740,7 +3750,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 027ffe1c789882c44a7cf584fff18e9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cd98b773b7248c4cb6497acdef73002, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3826,7 +3836,7 @@ MonoBehaviour:
   ReturntoScreenText: {fileID: 33120461}
   ReturntoScreenforNotAvailText: {fileID: 409232788}
   Playerdeterminererrortext: {fileID: 2015565549}
-  selectionOnGrid: 10
+  selectionOnGrid: 7
 --- !u!1 &1723076894
 GameObject:
   m_ObjectHideFlags: 0
@@ -4140,6 +4150,11 @@ MonoBehaviour:
   SummonTank: {fileID: 21300000, guid: 95e52414d57db21459cdc25eb4d7f662, type: 3}
   AIBombTank: {fileID: 21300000, guid: 704d99710fa0ec94a8071dace88a73d7, type: 3}
   TeleportTank: {fileID: 21300000, guid: 1e3e923703687af42ac3a6b637312a7e, type: 3}
+  BeamTank: {fileID: 21300000, guid: ca967f6153c1a7041b0853eb33d667d8, type: 3}
+  StunTank: {fileID: 21300000, guid: 8004e86adb344814cbfc97d2467cc9c7, type: 3}
+  SwordTank: {fileID: 21300000, guid: 3cd98b773b7248c4cb6497acdef73002, type: 3}
+  KickerTank: {fileID: 21300000, guid: 5bb2234784e9d194ca99176944699613, type: 3}
+  ShadowTank: {fileID: 21300000, guid: 638ddbc36a652074f883f2140c1c569c, type: 3}
   PlayerSelection: {fileID: 8300000, guid: c62a9907731451d49a564a0a84bd32d9, type: 3}
 --- !u!82 &1884819157
 AudioSource:
@@ -4760,7 +4775,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 027ffe1c789882c44a7cf584fff18e9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 638ddbc36a652074f883f2140c1c569c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4846,4 +4861,4 @@ MonoBehaviour:
   ReturntoScreenText: {fileID: 33120461}
   ReturntoScreenforNotAvailText: {fileID: 409232788}
   Playerdeterminererrortext: {fileID: 2015565549}
-  selectionOnGrid: 10
+  selectionOnGrid: 9

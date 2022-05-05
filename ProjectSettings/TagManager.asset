@@ -34,6 +34,7 @@ TagManager:
   - ShotsHitText_P2
   - ShotsFiredText_P1
   - ShotsFiredText_P2
+  - Target
   layers:
   - Default
   - TransparentFX

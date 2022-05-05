@@ -235,7 +235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4021340305451364945
 Transform:
   m_ObjectHideFlags: 0
@@ -345,7 +345,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -459,6 +459,7 @@ MonoBehaviour:
   alreadycounted: 0
   hitEffect: {fileID: 644250500410998029, guid: 99af2538dbfaddd4f97dd424586148f8, type: 3}
   hitsound: {fileID: 8300000, guid: b98f894437517634888eebd619d7a17e, type: 3}
+  AccuracyTracker: {fileID: 0}
 --- !u!82 &-2700760002685932613
 AudioSource:
   m_ObjectHideFlags: 0
@@ -787,5 +788,4 @@ MonoBehaviour:
   TSBtw: 0
   bulletSpeed: 10
   fireSound: {fileID: 8300000, guid: 4fa34825c70c6aa4294510d7ca45df9e, type: 3}
-  CBar: {fileID: 0}
-  CDImage: {fileID: 0}
+  AccuracyTracker: {fileID: 0}
