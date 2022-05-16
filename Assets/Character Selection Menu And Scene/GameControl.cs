@@ -41,6 +41,24 @@ public class GameControl : MonoBehaviour
         selectedCharacter = PlayerPrefs.GetInt(selectedCharacterDataName,0);
         characters[selectedCharacter].SetActive(true);
 
+        playerObject = Instantiate(characters[selectedCharacter], playerStartPosition.position, characters[selectedCharacter].transform.rotation);
+        playerObject.GetComponent<TankScript>().isPlayer2Input = false;
+        playerObject.tag = "Player1";
+
+        if (selectedCharacter == 2)
+        {
+            TargetPlayer1 = false;
+            Aitank.GetComponent<AIDestinationSetter>().TargetPlayer1 = false; 
+
+        }
+
+        if(selectedCharacter != 2)
+        {
+            TargetPlayer1 = true;
+            Aitank.GetComponent<AIDestinationSetter>().TargetPlayer1 = true; 
+
+        }
+
         if (selectedCharacter == 0)
         {
             TPCDP1Icon.SetActive(true);
@@ -65,25 +83,6 @@ public class GameControl : MonoBehaviour
         {
             SHTankCDIcon1.SetActive(true);
         }
-
-        playerObject = Instantiate(characters[selectedCharacter], playerStartPosition.position, characters[selectedCharacter].transform.rotation);
-        playerObject.GetComponent<TankScript>().isPlayer2Input = false;
-        playerObject.tag = "Player1";
-
-        if (selectedCharacter == 2)
-        {
-            TargetPlayer1 = false;
-            Aitank.GetComponent<AIDestinationSetter>().TargetPlayer1 = false; 
-
-        }
-
-        if(selectedCharacter != 2)
-        {
-            TargetPlayer1 = true;
-            Aitank.GetComponent<AIDestinationSetter>().TargetPlayer1 = true; 
-
-        }
-
         
     }
 

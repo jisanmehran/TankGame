@@ -30,6 +30,12 @@ public class Game2Control : MonoBehaviour
 
         selected2Character = PlayerPrefs.GetInt(selected2CharacterDataName,0);
 
+        characters2[selected2Character].SetActive(true);
+        player2Object = Instantiate(characters2[selected2Character],player2StartPosition.position, characters2[selected2Character].transform.rotation);
+        player2Object.GetComponent<TankScript>().isPlayer2Input = true;
+        player2Object.tag = "Player2";
+
+
         if (selected2Character == 0)
         {
             TPCDP2Icon.SetActive(true);
@@ -54,10 +60,5 @@ public class Game2Control : MonoBehaviour
         {
             SHTankCDIcon2.SetActive(true);
         }
-
-        characters2[selected2Character].SetActive(true);
-        player2Object = Instantiate(characters2[selected2Character],player2StartPosition.position, characters2[selected2Character].transform.rotation);
-        player2Object.GetComponent<TankScript>().isPlayer2Input = true;
-        player2Object.tag = "Player2";
     }
 }

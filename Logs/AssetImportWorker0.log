@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.15f1 (e767a7370072) revision 15165351'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 22000.613; Version 2009; 64bit' Language: 'en' Physical Memory: 14264 MB
+OS: 'Windows 10 Pro; OS build 22000.675; Version 2009; 64bit' Language: 'en' Physical Memory: 14264 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ C:/Users/jisan/Documents/GitHub/TankGame
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60201
+63442
 Successfully changed project path to: C:/Users/jisan/Documents/GitHub/TankGame
 C:/Users/jisan/Documents/GitHub/TankGame
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 205.60 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 188.29 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.15f1 (e767a7370072)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.1.15f1/Editor/Data/Resources/UnitySubsystems
@@ -35,94 +35,94 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.1.15f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.1.15f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity 2021.1.15f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56268
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.1.15f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2021.1.15f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003292 seconds.
+Registered in 0.004942 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 182.51 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 255.88 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.022 seconds
+- Completed reload, in  2.142 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2023ms)
-		BeginReloadAssembly (78ms)
+	ReloadAssembly (2143ms)
+		BeginReloadAssembly (67ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (688ms)
-			LoadAssemblies (76ms)
+		EndReloadAssembly (783ms)
+			LoadAssemblies (64ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (223ms)
+			SetupTypeCache (203ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (364ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (469ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (183ms)
+				RefreshPlugins (256ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (132ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
+				ProcessInitializeOnLoadAttributes (156ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.013725 seconds.
+Registered in 0.011933 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 178.71 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 219.22 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.913 seconds
+- Completed reload, in  2.284 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1913ms)
-		BeginReloadAssembly (200ms)
+	ReloadAssembly (2285ms)
+		BeginReloadAssembly (198ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (1621ms)
-			LoadAssemblies (148ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1901ms)
+			LoadAssemblies (146ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (533ms)
+			SetupTypeCache (565ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (94ms)
-			SetupLoadedEditorAssemblies (721ms)
+			RebuildScriptCaches (99ms)
+			SetupLoadedEditorAssemblies (949ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (179ms)
-				BeforeProcessingInitializeOnLoad (142ms)
-				ProcessInitializeOnLoadAttributes (354ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
-				AfterProcessingInitializeOnLoad (11ms)
+				RefreshPlugins (219ms)
+				BeforeProcessingInitializeOnLoad (204ms)
+				ProcessInitializeOnLoadAttributes (469ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 1.13 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.19 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5310 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 205.7 MB.
-System memory in use after: 206.1 MB.
+Unloading 5318 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 206.1 MB.
+System memory in use after: 206.5 MB.
 
-Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 5770.
-Total: 6.990000 ms (FindLiveObjects: 2.062100 ms CreateObjectMapping: 0.642300 ms MarkObjects: 4.194200 ms  DeleteObjects: 0.090000 ms)
+Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 5778.
+Total: 4.664300 ms (FindLiveObjects: 0.515100 ms CreateObjectMapping: 0.459800 ms MarkObjects: 3.570400 ms  DeleteObjects: 0.117000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -136,718 +136,81 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Thaleah_PixelFont/Materials/ThaleahFat.png
-  artifactKey: Guid(0ac691dd25a276d468ee89cf1948229d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Thaleah_PixelFont/Materials/ThaleahFat.png using Guid(0ac691dd25a276d468ee89cf1948229d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ea64fa7d7438687c9aafcddc254bf7') in 0.191104 seconds 
+  path: Assets/Scenes/Map1.unity
+  artifactKey: Guid(ed19c72daffaf454bb1fe5bd0254c84e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map1.unity using Guid(ed19c72daffaf454bb1fe5bd0254c84e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ab3672829378d4dce3b75abc40f5792') in 0.046588 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.890412 seconds.
-  path: Assets/Scenes/Map3.unity
-  artifactKey: Guid(77f5b9c8256f11542a27ea20357e5084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Map3.unity using Guid(77f5b9c8256f11542a27ea20357e5084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df0e93bfe805b90e130e875c6b0e75ed') in 0.007436 seconds 
+  Time since last request: 0.000425 seconds.
+  path: Assets/Scenes/Map2.unity
+  artifactKey: Guid(6503d50d9b798f44b8766ca0f0547480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map2.unity using Guid(6503d50d9b798f44b8766ca0f0547480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dff431f5e01f10ebc2eb3ade109ba4d') in 0.028161 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 81.194987 seconds.
-  path: Assets/Scenes/Map3.unity
-  artifactKey: Guid(77f5b9c8256f11542a27ea20357e5084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Map3.unity using Guid(77f5b9c8256f11542a27ea20357e5084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f45d1c19e3e2805a87e3513cc1a1b997') in 0.033698 seconds 
+  Time since last request: 93.585707 seconds.
+  path: Assets/Scripts/StageScripts/Y2Mate.is - My Hero Academia S2S4 OST - Just Another Hero (INSTRUMENTAL)-F9XMSQFOVVU-160k-1647539358007.mp3
+  artifactKey: Guid(7f41e2ec1c1370c4f8eedafc25421f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/StageScripts/Y2Mate.is - My Hero Academia S2S4 OST - Just Another Hero (INSTRUMENTAL)-F9XMSQFOVVU-160k-1647539358007.mp3 using Guid(7f41e2ec1c1370c4f8eedafc25421f49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4afe60154dd2f86d0f2ae4b482a0e800') in 0.211084 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5490.312274 seconds.
-  path: Assets/Prefabs/SpecialTanks/Sword Tank/LightsaberTank.prefab
-  artifactKey: Guid(1fc35fef8c6bae24faf690c25e4ae099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Sword Tank/LightsaberTank.prefab using Guid(1fc35fef8c6bae24faf690c25e4ae099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d35ae54e7b3e3977f2011fa84924b2') in 0.374701 seconds 
+  Time since last request: 0.000312 seconds.
+  path: Assets/Scripts/StageScripts/Y2Mate.is - One Piece - Can't Escape, Fight! (Straw Hat Pirates Mix)-Yk5PRDlD_34-160k-1647034982126.mp3
+  artifactKey: Guid(776cd8273da50e7428f0f7402d4f718c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/StageScripts/Y2Mate.is - One Piece - Can't Escape, Fight! (Straw Hat Pirates Mix)-Yk5PRDlD_34-160k-1647034982126.mp3 using Guid(776cd8273da50e7428f0f7402d4f718c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0dac4bfac602a3e868c8ca5db64161') in 0.074210 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/Prefabs/SpecialTanks/Sword Tank/Tornado.prefab
-  artifactKey: Guid(6f2114dd3cec7a845bf279275226c471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Sword Tank/Tornado.prefab using Guid(6f2114dd3cec7a845bf279275226c471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25c32c6bd4ee78eaed120d41233be362') in 0.022570 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.300618 seconds.
-  path: Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab
-  artifactKey: Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab using Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a17da0bac0dd670f1e19da30782529f') in 0.037979 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000343 seconds.
-  path: Assets/Prefabs/SpecialTanks/Kicker/WindBullet.prefab
-  artifactKey: Guid(1b82d9478366a2042b6098ba8a40a845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Kicker/WindBullet.prefab using Guid(1b82d9478366a2042b6098ba8a40a845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf2cedb50cf28bd50610d0a8c81ae08b') in 0.025220 seconds 
+  Time since last request: 0.000254 seconds.
+  path: Assets/Scripts/StageScripts/Y2Mate.is - One Punch Man Op 1 The Hero!! with lyrics-6io5uRsXzrM-160k-1647033511617.mp3
+  artifactKey: Guid(9ab7bd20d2b3a7241aa7fe68c2dcd7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/StageScripts/Y2Mate.is - One Punch Man Op 1 The Hero!! with lyrics-6io5uRsXzrM-160k-1647033511617.mp3 using Guid(9ab7bd20d2b3a7241aa7fe68c2dcd7a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb169a27e6b4b11c7bfbeeb3e2ea8f6') in 0.123409 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.010524 seconds.
+Registered in 0.014475 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.36 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.15 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.710 seconds
+- Completed reload, in  2.000 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1710ms)
-		BeginReloadAssembly (234ms)
+	ReloadAssembly (2001ms)
+		BeginReloadAssembly (200ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (103ms)
-		EndReloadAssembly (1393ms)
-			LoadAssemblies (153ms)
+			CreateAndSetChildDomain (64ms)
+		EndReloadAssembly (1690ms)
+			LoadAssemblies (169ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (503ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (63ms)
-			SetupLoadedEditorAssemblies (487ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (106ms)
-				ProcessInitializeOnLoadAttributes (345ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (30ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.33 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5199 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 201.6 MB.
-System memory in use after: 202.1 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 5847.
-Total: 6.064600 ms (FindLiveObjects: 0.801500 ms CreateObjectMapping: 0.482900 ms MarkObjects: 4.746400 ms  DeleteObjects: 0.032000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 52.824615 seconds.
-  path: Assets/Prefabs/SpecialTanks/Kicker/FlamingWindBullet.prefab
-  artifactKey: Guid(77bc7467323241f49bb3a209d844d0b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Kicker/FlamingWindBullet.prefab using Guid(77bc7467323241f49bb3a209d844d0b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba332b578e6973063cece395fbc4b23f') in 0.219980 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000350 seconds.
-  path: Assets/Prefabs/SpecialTanks/Kicker/Square.png
-  artifactKey: Guid(b4c8ac69e62372a40a1d5d13d638c1d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Kicker/Square.png using Guid(b4c8ac69e62372a40a1d5d13d638c1d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd65345efb9c39ee2fe87c89fa18273e') in 0.045542 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab
-  artifactKey: Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab using Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f193830b3673358225a218e20afcdee8') in 0.054795 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Prefabs/SpecialTanks/Kicker/sobacape.png
-  artifactKey: Guid(9cb9e9291aeec384d9a6d5ed89735893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Kicker/sobacape.png using Guid(9cb9e9291aeec384d9a6d5ed89735893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3cbc829059d30500c575fb26dd736a7') in 0.033208 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009515 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.40 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.586 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1587ms)
-		BeginReloadAssembly (174ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (68ms)
-		EndReloadAssembly (1328ms)
-			LoadAssemblies (152ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (464ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (469ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (330ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (27ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.07 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5200 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 203.7 MB.
-System memory in use after: 204.1 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 5921.
-Total: 4.833100 ms (FindLiveObjects: 0.581400 ms CreateObjectMapping: 0.355800 ms MarkObjects: 3.864300 ms  DeleteObjects: 0.029900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011765 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.56 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.545 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1546ms)
-		BeginReloadAssembly (152ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (1287ms)
-			LoadAssemblies (130ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (469ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (429ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (101ms)
-				ProcessInitializeOnLoadAttributes (292ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (27ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.39 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5198 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 203.6 MB.
-System memory in use after: 204.1 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 5925.
-Total: 5.671900 ms (FindLiveObjects: 0.588000 ms CreateObjectMapping: 0.276400 ms MarkObjects: 4.776200 ms  DeleteObjects: 0.029600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 145.534616 seconds.
-  path: Assets/Prefabs
-  artifactKey: Guid(5a096a9dee8638044aa75e7294e0d9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(5a096a9dee8638044aa75e7294e0d9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b165942602f6b54c8f0f078ba589db') in 0.012969 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.295661 seconds.
-  path: Assets/Prefabs/SpecialTanks
-  artifactKey: Guid(407f0186f5cb19247a5c138af90b7ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks using Guid(407f0186f5cb19247a5c138af90b7ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4afa934df388e57ed5ce9ff94b863471') in 0.006381 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.108613 seconds.
-  path: Assets/Prefabs/SpecialTanks/Sword Tank/SwordHit.mp3
-  artifactKey: Guid(9d4cb1929e3aa4c4e8f994dee0da2da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Sword Tank/SwordHit.mp3 using Guid(9d4cb1929e3aa4c4e8f994dee0da2da1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44982fc8a470043d0be7397f1dd31649') in 0.063780 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/Prefabs/SpecialTanks/Sword Tank/Y2Mate.is - JoJo Barrage but sword-QGUqVapEwgk-160k-1650505832057 (mp3cut.net).mp3
-  artifactKey: Guid(b035263673618bf4392c98bcc2bce318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Sword Tank/Y2Mate.is - JoJo Barrage but sword-QGUqVapEwgk-160k-1650505832057 (mp3cut.net).mp3 using Guid(b035263673618bf4392c98bcc2bce318) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f292b840770274c9362e7d69f34757d') in 0.015378 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/Prefabs/SpecialTanks/Sword Tank/Tornado.prefab
-  artifactKey: Guid(6f2114dd3cec7a845bf279275226c471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Sword Tank/Tornado.prefab using Guid(6f2114dd3cec7a845bf279275226c471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9567c1dd5de8e35dc82386b43e6eb07') in 0.164713 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008803 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.85 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.464 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1465ms)
-		BeginReloadAssembly (152ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (58ms)
-		EndReloadAssembly (1236ms)
-			LoadAssemblies (124ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (439ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (416ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (98ms)
-				ProcessInitializeOnLoadAttributes (280ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (35ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.27 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5198 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 203.7 MB.
-System memory in use after: 204.2 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 5969.
-Total: 5.321800 ms (FindLiveObjects: 0.586300 ms CreateObjectMapping: 0.234400 ms MarkObjects: 4.470800 ms  DeleteObjects: 0.028900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 220.920077 seconds.
-  path: Assets/Sprites/TankSprites/kicker/KickerTankArt 1.png
-  artifactKey: Guid(56b45e072a97d7445a69fed5fbe4b6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TankSprites/kicker/KickerTankArt 1.png using Guid(56b45e072a97d7445a69fed5fbe4b6a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55c1c91bd04969008262cad0081f33d0') in 0.071763 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/Sprites/TankSprites/kicker/KickerTankSpriteBroke2.png
-  artifactKey: Guid(328364747fe857043a23c8f144d62e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TankSprites/kicker/KickerTankSpriteBroke2.png using Guid(328364747fe857043a23c8f144d62e28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd98e4fb8e32f3bca33cd416b3716ea8d') in 0.053904 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000430 seconds.
-  path: Assets/Sprites/TankSprites/kicker/KickerTankSpriteBroke1.png
-  artifactKey: Guid(a73d40fc7a184b2418117f5e5a39e1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TankSprites/kicker/KickerTankSpriteBroke1.png using Guid(a73d40fc7a184b2418117f5e5a39e1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef0a47cb2c7143fc79c75ea5f35a9ca4') in 0.054443 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000723 seconds.
-  path: Assets/Sprites/TankSprites/kicker/KickerTankSprite.png
-  artifactKey: Guid(cbb5321eb43c06749855e2d96bddb9ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/TankSprites/kicker/KickerTankSprite.png using Guid(cbb5321eb43c06749855e2d96bddb9ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e271addbab2508a3171932e82b175bfd') in 0.025869 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.387088 seconds.
-  path: Assets/Prefabs/SpecialTanks/Shadow Tank/ShadowTank.prefab
-  artifactKey: Guid(80bbf3b4a9b721048893015d29c5ea92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Shadow Tank/ShadowTank.prefab using Guid(80bbf3b4a9b721048893015d29c5ea92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) UnityException: FindGameObjectWithTag is not allowed to be called from a MonoBehaviour constructor (or instance field initializer), call it in Awake or Start instead. Called from MonoBehaviour 'ShadowBlindScript'.
-See "Script Serialization" page in the Unity Manual for further details.
-  at (wrapper managed-to-native) UnityEngine.GameObject.FindGameObjectWithTag(string)
-  at UnityEngine.GameObject.FindWithTag (System.String tag) [0x00001] in <adfa4b62400849189388df71c9e26e89>:0 
-  at ShadowBlindScript..ctor () [0x00000] in C:\Users\jisan\Documents\GitHub\TankGame\Assets\Prefabs\SpecialTanks\Shadow Tank\Backend\ShadowBlindScript.cs:9 
-
-(Filename: Assets/Prefabs/SpecialTanks/Shadow Tank/Backend/ShadowBlindScript.cs Line: 9)
-
-UnityException: FindGameObjectWithTag is not allowed to be called from a MonoBehaviour constructor (or instance field initializer), call it in Awake or Start instead. Called from MonoBehaviour 'ShadowBlindScript'.
-See "Script Serialization" page in the Unity Manual for further details.
-  at (wrapper managed-to-native) UnityEngine.GameObject.FindGameObjectWithTag(string)
-  at UnityEngine.GameObject.FindWithTag (System.String tag) [0x00001] in <adfa4b62400849189388df71c9e26e89>:0 
-  at ShadowBlindScript..ctor () [0x00000] in C:\Users\jisan\Documents\GitHub\TankGame\Assets\Prefabs\SpecialTanks\Shadow Tank\Backend\ShadowBlindScript.cs:9 
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle_Injected(Object, Vector3&, Quaternion&)
-UnityEditor.EditorUtility:Internal_InstantiateRemoveAllNonAnimationComponentsSingle(Object, Vector3, Quaternion)
-UnityEditor.EditorUtility:InstantiateRemoveAllNonAnimationComponents(Object, Vector3, Quaternion)
-UnityEditor.EditorUtility:InstantiateForAnimatorPreview(Object)
-UnityEditor.PreviewData:UpdateGameObject(Object)
-UnityEditor.PreviewData:.ctor(Object)
-UnityEditor.GameObjectInspector:GetPreviewData()
-UnityEditor.GameObjectInspector:RenderStaticPreview(String, Object[], Int32, Int32)
-UnityEditor.AssetPreviewUpdater:CreatePreview(Object, Object[], String, Int32, Int32)
-UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset(Object, Object[], String)
-
-(Filename: Assets/Prefabs/SpecialTanks/Shadow Tank/Backend/ShadowBlindScript.cs Line: 9)
-
- -> (artifact id: '8c34fda6fbc0b73ee950fcc21365a2ee') in 0.202526 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 140.518621 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/9Sliced.png
-  artifactKey: Guid(8884154dfe85442a3a3578be807dbcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/9Sliced.png using Guid(8884154dfe85442a3a3578be807dbcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e75e9a314b7196de4b39a62af981e6cf') in 0.022012 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000302 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Capsule.png
-  artifactKey: Guid(207ee8102dd4143d288186ef0be518ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Capsule.png using Guid(207ee8102dd4143d288186ef0be518ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fb293feade903e76cd66c22845f1c6f') in 0.036024 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png
-  artifactKey: Guid(311925a002f4447b3a28927169b83ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png using Guid(311925a002f4447b3a28927169b83ea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb61524d393200c425674496a904016') in 0.019638 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonPointedTop.png
-  artifactKey: Guid(5aa8b770bc43046bc8d993d0d5b7f4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonPointedTop.png using Guid(5aa8b770bc43046bc8d993d0d5b7f4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3d00f12ec8fdc4abdee2af6603ce489') in 0.024775 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Circle.png
-  artifactKey: Guid(a86470a33a6bf42c4b3595704624658b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Circle.png using Guid(a86470a33a6bf42c4b3595704624658b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '777518c51cad84d89af240eda0b973a9') in 0.023685 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000389 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonFlatTop.png
-  artifactKey: Guid(b670ab75dde984907b8570040daa08c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonFlatTop.png using Guid(b670ab75dde984907b8570040daa08c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddc7a4cdabe1d0278c9888490b39c3e8') in 0.025728 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000377 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/IsometricDiamond.png
-  artifactKey: Guid(19fb86013d8c24d6cb8410c0aadf30fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/IsometricDiamond.png using Guid(19fb86013d8c24d6cb8410c0aadf30fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83297f58c431750643bb2775af8264b6') in 0.021864 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.020396 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.59 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.767 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1767ms)
-		BeginReloadAssembly (208ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (14ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (73ms)
-		EndReloadAssembly (1463ms)
-			LoadAssemblies (167ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (534ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (68ms)
-			SetupLoadedEditorAssemblies (478ms)
+			SetupTypeCache (623ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (89ms)
+			SetupLoadedEditorAssemblies (599ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (109ms)
-				ProcessInitializeOnLoadAttributes (328ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (10ms)
+				BeforeProcessingInitializeOnLoad (133ms)
+				ProcessInitializeOnLoadAttributes (413ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (15ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (39ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.72 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5209 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.9 MB.
-System memory in use after: 210.3 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 6183.
-Total: 7.519600 ms (FindLiveObjects: 1.165800 ms CreateObjectMapping: 0.824000 ms MarkObjects: 5.486100 ms  DeleteObjects: 0.041900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 213.056507 seconds.
-  path: Assets/Prefabs/SpecialTanks/Sword Tank/LightsaberTank.prefab
-  artifactKey: Guid(1fc35fef8c6bae24faf690c25e4ae099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Sword Tank/LightsaberTank.prefab using Guid(1fc35fef8c6bae24faf690c25e4ae099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '648f30851db8617e3afc61c459464af5') in 0.214152 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.776565 seconds.
-  path: Assets/Prefabs/SpecialTanks/Sword Tank/LightsaberTank.prefab
-  artifactKey: Guid(1fc35fef8c6bae24faf690c25e4ae099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Sword Tank/LightsaberTank.prefab using Guid(1fc35fef8c6bae24faf690c25e4ae099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5f341d6dbe5290eb527ac7f388c05e7') in 0.040717 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.576087 seconds.
-  path: Assets/Prefabs/SpecialTanks/Sword Tank/LightsaberTank.prefab
-  artifactKey: Guid(1fc35fef8c6bae24faf690c25e4ae099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Sword Tank/LightsaberTank.prefab using Guid(1fc35fef8c6bae24faf690c25e4ae099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40fa9bb85fde064e111b6b45e1bfd650') in 0.037375 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.774120 seconds.
-  path: Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab
-  artifactKey: Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab using Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4880720e737a2087f088f063147e1695') in 0.047143 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.918338 seconds.
-  path: Assets/Prefabs/SpecialTanks/Kicker/VFX/DashMat2.mat
-  artifactKey: Guid(95ae0974a9c69f04a8fe1504a03988c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Kicker/VFX/DashMat2.mat using Guid(95ae0974a9c69f04a8fe1504a03988c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c8e9d4a6299b78cca14179fcf65693') in 0.053446 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.042053 seconds.
-  path: Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab
-  artifactKey: Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab using Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '273f97374513d6fb4029a887d58da014') in 0.054019 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.682932 seconds.
-  path: Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab
-  artifactKey: Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab using Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b1266efe9120b83feb42c0f6fd8c29') in 0.050460 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010153 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.35 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.499 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1500ms)
-		BeginReloadAssembly (152ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (1271ms)
-			LoadAssemblies (125ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (452ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (63ms)
-			SetupLoadedEditorAssemblies (428ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (96ms)
-				ProcessInitializeOnLoadAttributes (296ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (31ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.37 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5198 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.9 MB.
-System memory in use after: 210.4 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 6258.
-Total: 6.026300 ms (FindLiveObjects: 0.658100 ms CreateObjectMapping: 0.433600 ms MarkObjects: 4.899400 ms  DeleteObjects: 0.033300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009847 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.45 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.549 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1549ms)
-		BeginReloadAssembly (149ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (1326ms)
-			LoadAssemblies (141ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (453ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (74ms)
-			SetupLoadedEditorAssemblies (445ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (306ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (33ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.51 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5198 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 209.9 MB.
-System memory in use after: 210.4 MB.
-
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 6262.
-Total: 4.593600 ms (FindLiveObjects: 0.611500 ms CreateObjectMapping: 0.232600 ms MarkObjects: 3.723100 ms  DeleteObjects: 0.024800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 229.887800 seconds.
-  path: Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab
-  artifactKey: Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab using Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eeffb644d46338263a142fe280ea7ac') in 0.254608 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 102.501253 seconds.
-  path: Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab
-  artifactKey: Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab using Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '388f27e36d8b03ffe0c5da37f22fe06a') in 0.050639 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.339859 seconds.
-  path: Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab
-  artifactKey: Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/SpecialTanks/Kicker/KickerTank.prefab using Guid(9815c5a258a44cb4690c3d002ac6af33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb12037f1b5d25e404c7fb928f38043e') in 0.054644 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009091 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jisan\Documents\GitHub\TankGame\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.48 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.514 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1515ms)
-		BeginReloadAssembly (155ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (1285ms)
-			LoadAssemblies (136ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (449ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (414ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (96ms)
-				ProcessInitializeOnLoadAttributes (280ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (52ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
 Platform modules already initialized, skipping
 Refreshing native plugins compatible for Editor in 1.50 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5198 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 210.0 MB.
-System memory in use after: 210.5 MB.
+System memory in use before: 199.1 MB.
+System memory in use after: 199.6 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 6304.
-Total: 5.749600 ms (FindLiveObjects: 0.688700 ms CreateObjectMapping: 0.436400 ms MarkObjects: 4.591300 ms  DeleteObjects: 0.031100 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 5791.
+Total: 5.873100 ms (FindLiveObjects: 0.608800 ms CreateObjectMapping: 0.609900 ms MarkObjects: 4.624200 ms  DeleteObjects: 0.028200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -860,15 +223,102 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 312.478495 seconds.
+  path: Assets/Scenes/Map3.unity
+  artifactKey: Guid(77f5b9c8256f11542a27ea20357e5084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map3.unity using Guid(77f5b9c8256f11542a27ea20357e5084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50df4c4a150ae3e50602c8fe445934b1') in 0.039644 seconds 
+========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 7.91 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 32.67 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 107.6 MB.
-System memory in use after: 108.0 MB.
+System memory in use before: 96.7 MB.
+System memory in use after: 97.1 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 6304.
-Total: 5.640900 ms (FindLiveObjects: 0.613100 ms CreateObjectMapping: 0.215900 ms MarkObjects: 4.776800 ms  DeleteObjects: 0.033300 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 5791.
+Total: 9.283000 ms (FindLiveObjects: 1.606100 ms CreateObjectMapping: 0.761500 ms MarkObjects: 6.874300 ms  DeleteObjects: 0.038500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 414.867747 seconds.
+  path: Assets/Scenes/Map3.unity
+  artifactKey: Guid(77f5b9c8256f11542a27ea20357e5084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map3.unity using Guid(77f5b9c8256f11542a27ea20357e5084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '978d54ce547528e2bbd9b3391563ff27') in 0.007828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.361312 seconds.
+  path: Assets/Scenes/Map2.unity
+  artifactKey: Guid(6503d50d9b798f44b8766ca0f0547480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map2.unity using Guid(6503d50d9b798f44b8766ca0f0547480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6a8787ff6dfbfebadca012b53b856ef') in 0.008120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.327419 seconds.
+  path: Assets/Prefabs/SpecialTanks/Grapple Tank.prefab
+  artifactKey: Guid(c38f1204639d2414abffafe91d0a4540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SpecialTanks/Grapple Tank.prefab using Guid(c38f1204639d2414abffafe91d0a4540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f7d8f15b53c8d851d18c49fdf30887') in 0.277007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.075498 seconds.
+  path: Assets/Prefabs/SpecialTanks/BeamTank/BeamTank.prefab
+  artifactKey: Guid(74b62ec5f35468842b119c3bbf2108ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SpecialTanks/BeamTank/BeamTank.prefab using Guid(74b62ec5f35468842b119c3bbf2108ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15a8bff0caa3c14b1d3c435c334769ee') in 0.034653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.406503 seconds.
+  path: Assets/Prefabs/SpecialTanks/BeamTank/BeamTank.prefab
+  artifactKey: Guid(74b62ec5f35468842b119c3bbf2108ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SpecialTanks/BeamTank/BeamTank.prefab using Guid(74b62ec5f35468842b119c3bbf2108ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78df55ac175143eae3f0090798388eea') in 0.037698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.476431 seconds.
+  path: Assets/Prefabs/SpecialTanks/BeamTank/BeamTank.prefab
+  artifactKey: Guid(74b62ec5f35468842b119c3bbf2108ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SpecialTanks/BeamTank/BeamTank.prefab using Guid(74b62ec5f35468842b119c3bbf2108ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3148594f7f8c305648bd4103b2462506') in 0.126824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.017843 seconds.
+  path: Assets/Prefabs/SpecialTanks/BeamTank/BeamTank.prefab
+  artifactKey: Guid(74b62ec5f35468842b119c3bbf2108ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SpecialTanks/BeamTank/BeamTank.prefab using Guid(74b62ec5f35468842b119c3bbf2108ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3733403154116e65ca18724c6b7bae9') in 0.231792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.151763 seconds.
+  path: Assets/Prefabs/SpecialTanks/StunTank/StunTank.prefab
+  artifactKey: Guid(a5466b4a20e4f434ab4b41c267d08b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SpecialTanks/StunTank/StunTank.prefab using Guid(a5466b4a20e4f434ab4b41c267d08b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec1fd891c963127ee875d64c5e88c4e4') in 0.040333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.831119 seconds.
+  path: Assets/Prefabs/SpecialTanks/StunTank/StunTank.prefab
+  artifactKey: Guid(a5466b4a20e4f434ab4b41c267d08b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SpecialTanks/StunTank/StunTank.prefab using Guid(a5466b4a20e4f434ab4b41c267d08b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b35549118c059ba98dd78da9b5f2512e') in 0.038000 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.736109 seconds.
+  path: Assets/Prefabs/SpecialTanks/StunTank/StunTank.prefab
+  artifactKey: Guid(a5466b4a20e4f434ab4b41c267d08b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SpecialTanks/StunTank/StunTank.prefab using Guid(a5466b4a20e4f434ab4b41c267d08b13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5381c252d27013c44c516c95ec01640') in 0.031342 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 8.69 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.9 MB.
+System memory in use after: 99.4 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 5832.
+Total: 6.428400 ms (FindLiveObjects: 0.531500 ms CreateObjectMapping: 0.491700 ms MarkObjects: 5.376000 ms  DeleteObjects: 0.027100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

@@ -50,11 +50,21 @@ public class TankScript : MonoBehaviour
 
     public Sprite broken1;
     public Sprite broken2;
+    private float angle;
+
+    public float turnSpeed;
+
+    Vector2 input;
+    Quaternion targetRotation;
+    Transform cam;
 
 
 //Functions
 
-
+    private void Start()
+    {
+        cam = Camera.main.transform;
+    }
     private void HandleMameInputs()
         {
 
@@ -98,6 +108,8 @@ public class TankScript : MonoBehaviour
         
         if (isPlayer2Input == false)
         {
+            //input.x = Input.GetAxisRaw("Horizontal");
+            //input.y = Input.GetAxisRaw("Vertical");
 
             rotateLeft = ( Input.GetKeyDown("left") ) ? true : rotateLeft;
 
@@ -216,7 +228,23 @@ public class TankScript : MonoBehaviour
         }
     }
 
-    
+    // private void CalculateDirection()
+    // {
+    //     angle = Mathf.Atan2(input.x, input.y);
+    //     angle = Mathf.Rad2Deg * angle;
+    //     angle += cam.eulerAngles.y; 
+    // }
+
+    // private void rotate()
+    // {
+    //     targetRotation = Quaternion.Euler(0, angle, 0);
+    //     transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, turnSpeed * Time.deltaTime);
+    // }
+
+    // private void move()
+    // {
+    //     transform.position += transform.forward * moveSpeed * Time.deltaTime;
+    // }
     private void HandleGameExit()
     {
         string key = "escape";

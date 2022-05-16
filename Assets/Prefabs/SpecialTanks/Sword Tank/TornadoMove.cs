@@ -13,8 +13,10 @@ public class TornadoMove : MonoBehaviour
     public GameObject hitEffect;
     public LayerMask WallLayer;
     public GameObject gameManager;
+    public bool alreadyDamaged;
     void Start()
     {
+        alreadyDamaged = false;
         Tank = GameObject.Find("LightsaberTank(Clone)");
         if (Tank.tag == "Player1")
         {
@@ -50,19 +52,28 @@ public class TornadoMove : MonoBehaviour
         if(other.gameObject.name == enemy.name)
         {
             HealthScript scr = enemy.GetComponent<HealthScript>();
-            if (enemy.tag == "Player1")
+            if (enemy.tag == "Player1" & alreadyDamaged == false)
             {
                 gameManager.GetComponent<gamemanagerscript>().player1hitCount++;
+                alreadyDamaged = true;
+                Invoke("TurnOffAlreadyDamaged", 3f);
             }
             else
             {
                 gameManager.GetComponent<gamemanagerscript>().player2hitCount++;
+                alreadyDamaged = true;
+                Invoke("TurnOffAlreadyDamaged", 3f);
             }
             scr.alreadycounted = true;
             scr.Invoke("ResetBullets", 2f);
             GameObject hitEffectIns = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(hitEffectIns, 0.9f);
         } 
+    }
+
+    private void TurnOffAlreadyDamaged()
+    {
+        alreadyDamaged = false;
     }
 
     

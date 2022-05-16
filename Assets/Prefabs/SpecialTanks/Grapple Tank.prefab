@@ -1585,6 +1585,9 @@ MonoBehaviour:
   beamEffect: {fileID: 0}
   otherhitEffect: {fileID: 0}
   elapsedTime: 0
+  GameControl1: {fileID: 0}
+  GameControl2: {fileID: 0}
+  beamsound: {fileID: 0}
   AlreadyShotBeam: 0
 --- !u!50 &9168493875500113807
 Rigidbody2D:
